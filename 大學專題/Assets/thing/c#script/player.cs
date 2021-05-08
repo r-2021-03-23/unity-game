@@ -5,14 +5,15 @@ using UnityEngine.UI;
 
 public class player : MonoBehaviour
 {
+    
     public Animator ani;
     public Rigidbody2D rb;
     public int hp = 0;
     public int max_hp = 0;
     public GameObject bulletPrefab;
     public Image hp_bar;
-    
-    float speed_x_constraint = 5;
+    public GameObject dialogBox;
+    float horizontalMove = 0f;
     float speed = 3f;
     float jumpSpeed = 10f;
 
@@ -23,30 +24,22 @@ public class player : MonoBehaviour
         ani = GetComponent<Animator>();
         max_hp = 10;
         hp = max_hp;
+        
     }
 
     // Update is called once per frame
     void Update()
-    {
-        if (Input.GetButton("left"))
+    { 
+        horizontalMove = Input.GetAxisRaw("Horizontal") * speed;
+        if(Input.GetButton("right"))
         {
-            rb.velocity = new Vector2(-speed, rb.velocity.y);
-            ani.SetBool("moveLeft", true);
+            rb.velocity = new Vector2(speed,rb.velocity.y);
         }
-        if (Input.GetKeyUp(KeyCode.A))
+        if(Input.GetButton("left") )
         {
-            ani.SetBool("moveLeft", false);
+            rb.velocity = new Vector2(-speed,rb.velocity.y);
         }
-
-        if (Input.GetButton("right"))
-        {
-            rb.velocity = new Vector2(speed, rb.velocity.y);
-            ani.SetBool("moveRight", true);
-        }
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            ani.SetBool("moveRight", false);
-        }
+        ani.SetFloat("speed",Mathf.Abs(horizontalMove));
 
         if (Input.GetKeyDown(KeyCode.Space) && rb.velocity.y == 0)
         {
@@ -58,14 +51,7 @@ public class player : MonoBehaviour
             ani.SetBool("isJumping", false);
         }
 
-        if(rb.velocity.x > speed_x_constraint)
-        {
-            rb.velocity = new Vector2(speed_x_constraint, rb.velocity.y);
-        }
-        if(rb.velocity.x < -speed_x_constraint)
-        {
-            rb.velocity = new Vector2(-speed_x_constraint, rb.velocity.y);
-        }
+
 
         if(Input.GetKeyDown(KeyCode.X))
         {
@@ -73,6 +59,8 @@ public class player : MonoBehaviour
         }
 
         hp_bar.transform.localScale = new Vector3((float)hp / (float)max_hp, 1, transform.localScale.z);
+
+        
     }
         
     
@@ -93,5 +81,6 @@ public class player : MonoBehaviour
             Destroy(other.gameObject);
         }
     }  
-}
 
+
+}
