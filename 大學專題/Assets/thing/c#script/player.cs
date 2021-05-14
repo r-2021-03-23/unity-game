@@ -12,7 +12,7 @@ public class player : MonoBehaviour
     public int max_hp = 0;
     public GameObject bulletPrefab;
     public Image hp_bar;
-    public GameObject dialogBox;
+    
     float horizontalMove = 0f;
     float speed = 3f;
     float jumpSpeed = 10f;
@@ -43,6 +43,7 @@ public class player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && rb.velocity.y == 0)
         {
+           
             rb.AddForce(transform.up * jumpSpeed, ForceMode2D.Impulse);
             ani.SetBool("isJumping", true);
         }
@@ -51,12 +52,16 @@ public class player : MonoBehaviour
             ani.SetBool("isJumping", false);
         }
 
-
-
-        if(Input.GetKeyDown(KeyCode.X))
+        if(horizontalMove < 0)
         {
-            Instantiate(bulletPrefab, this.transform.position,Quaternion.identity);
+            transform.eulerAngles = new Vector3(0, 180, 0);
         }
+        else if(horizontalMove > 0)
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+
+
 
         hp_bar.transform.localScale = new Vector3((float)hp / (float)max_hp, 1, transform.localScale.z);
 

@@ -12,6 +12,10 @@ public class Title: MonoBehaviour
     }
     public void GameStart()
     {
-        SceneManager.LoadScene("game");
+        SceneManager.LoadScene("UI level");
+    }
+    public void BackButton()
+    {
+        SceneManager.LoadScene("gameStart");
     }
 }
