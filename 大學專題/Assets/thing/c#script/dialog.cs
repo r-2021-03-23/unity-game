@@ -16,8 +16,8 @@ public class dialog : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(Type());
-        
+        textDisplay.text = sentences[index];
+        Time.timeScale = 0 ;
     }
 
     void Update()
@@ -29,14 +29,6 @@ public class dialog : MonoBehaviour
 
     }
 
-    IEnumerator Type()
-    {
-        foreach(char letter in sentences[index].ToCharArray())
-        {
-            textDisplay.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
-        }
-    }
 
     public void NextSentence()
     {
@@ -45,14 +37,14 @@ public class dialog : MonoBehaviour
         if(index < sentences.Length - 1)
         {
             index++;
-            textDisplay.text = "";
-            StartCoroutine(Type());
+            textDisplay.text = sentences[index];
         }
         else
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
             animator.SetBool("IsOpen",false);
+            Time.timeScale = 1;
         }
     }
 }

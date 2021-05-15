@@ -10,7 +10,7 @@ public class player : MonoBehaviour
     public Rigidbody2D rb;
     public int hp = 0;
     public int max_hp = 0;
-    public GameObject bulletPrefab;
+    
     public Image hp_bar;
     
     float horizontalMove = 0f;
@@ -31,32 +31,38 @@ public class player : MonoBehaviour
     void Update()
     { 
         horizontalMove = Input.GetAxisRaw("Horizontal") * speed;
-        if(Input.GetButton("right"))
+        if(Input.GetButton("right") && Time.timeScale == 1)
         {
             rb.velocity = new Vector2(speed,rb.velocity.y);
+            
         }
-        if(Input.GetButton("left") )
+        if(Input.GetButton("left") && Time.timeScale == 1)
         {
             rb.velocity = new Vector2(-speed,rb.velocity.y);
+            
         }
-        ani.SetFloat("speed",Mathf.Abs(horizontalMove));
+            
+        if(Time.timeScale == 1)
+            ani.SetFloat("speed",Mathf.Abs(horizontalMove));
 
-        if (Input.GetKeyDown(KeyCode.Space) && rb.velocity.y == 0)
+                
+        
+        if (Input.GetKeyDown(KeyCode.W) && rb.velocity.y == 0 && Time.timeScale == 1)
         {
            
             rb.AddForce(transform.up * jumpSpeed, ForceMode2D.Impulse);
             ani.SetBool("isJumping", true);
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.W))
         {
             ani.SetBool("isJumping", false);
         }
 
-        if(horizontalMove < 0)
+        if(horizontalMove < 0 && Time.timeScale == 1)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
-        else if(horizontalMove > 0)
+        else if(horizontalMove > 0 && Time.timeScale == 1)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
@@ -69,13 +75,13 @@ public class player : MonoBehaviour
     }
         
     
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "enemy")
-        {
-            hp -= 1;
-        }
-    }
+    // void OnCollisionEnter2D(Collision2D col)
+    // {
+    //     if (col.gameObject.tag == "enemy")
+    //     {
+    //         hp -= 1;
+    //     }
+    // }
 
     
     void OnTriggerEnter2D(Collider2D other)
