@@ -11,6 +11,9 @@ public class player : MonoBehaviour
     public int hp = 0;
     public int max_hp = 0;
     
+    
+    
+    
     public Image hp_bar;
     
     float horizontalMove = 0f;
@@ -30,6 +33,15 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
+        if(hp > max_hp)
+        {
+            hp = max_hp;
+        }
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            attack();
+        }
+
         horizontalMove = Input.GetAxisRaw("Horizontal") * speed;
         if(Input.GetButton("right") && Time.timeScale == 1)
         {
@@ -75,13 +87,6 @@ public class player : MonoBehaviour
     }
         
     
-    // void OnCollisionEnter2D(Collision2D col)
-    // {
-    //     if (col.gameObject.tag == "enemy")
-    //     {
-    //         hp -= 1;
-    //     }
-    // }
 
     
     void OnTriggerEnter2D(Collider2D other)
@@ -90,8 +95,15 @@ public class player : MonoBehaviour
         {
             hp -= 1;
             Destroy(other.gameObject);
-        }
+        }      
     }  
+
+    void attack()
+    {
+        ani.SetTrigger("Attack");
+
+    }
+
 
 
 }

@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
-    int hp = 0;
+    public int hp = 0;
     public int max_hp = 0;
     public GameObject hp_bar;
     public GameObject BulletPrefab;
+
+    public player player;
 
     public float span = 0.5f,delta = 0;
 
@@ -26,6 +28,7 @@ public class enemy : MonoBehaviour
         if(hp <= 0)
         {
             Destroy(this.gameObject);
+            player.hp += 3;
         }
         float percent = ((float)hp / (float)max_hp);
         hp_bar.transform.localScale = new Vector3(percent, hp_bar.transform.localScale.y, hp_bar.transform.localScale.z);
@@ -36,16 +39,16 @@ public class enemy : MonoBehaviour
             Instantiate(BulletPrefab,this.transform.position,Quaternion.identity);         
         }
         
- 
+
 
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Bullet")
+        if(other.gameObject.CompareTag("sword") && Input.GetKeyDown(KeyCode.Space))
         {
             hp -= 1;
-            Destroy(other.gameObject);
         }
-    }
+        
+    }  
 }

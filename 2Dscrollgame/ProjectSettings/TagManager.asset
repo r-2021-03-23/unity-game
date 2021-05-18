@@ -9,11 +9,12 @@ TagManager:
   - Bullet
   - enemyBomb
   - Manager
+  - sword
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - enemies
   - Water
   - UI
   - 
@@ -43,6 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 815010227
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -60,4 +64,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 22793707
+    locked: 0
+  - name: CARDS
+    uniqueID: 2736308075
     locked: 0
