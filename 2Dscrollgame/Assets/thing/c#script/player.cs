@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -95,6 +96,10 @@ public class player : MonoBehaviour
         {
             hp -= 1;
             Destroy(other.gameObject);
+        }
+        if(other.gameObject.CompareTag("cardGame"))
+        {
+            SceneManager.LoadScene("level1Card");
         }      
     }  
 

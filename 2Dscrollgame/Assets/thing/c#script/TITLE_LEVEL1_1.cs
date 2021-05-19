@@ -13,15 +13,7 @@ public class TITLE_LEVEL1_1: MonoBehaviour
     }
     public void GameStart()
     {
-        SceneManager.LoadScene("UI level");
-    }
-    public void BackButton()
-    {
-        SceneManager.LoadScene("gameStart");
-    }
-    public void gamelevel1SIMPLE()
-    {
         SceneManager.LoadScene("game-level1SIMPLE");
-        
     }
+    
 }
