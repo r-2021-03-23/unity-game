@@ -2,16 +2,19 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class CardGameManager : MonoBehaviour {
 
     public Text text;
+
+    public GameObject button;
+    int x=0;
     private const int winCardCouples = 6;
-    private int curCardCouples = 0;
+    public int curCardCouples = 0;
     private bool canPlayerClick = true;
 
     public Sprite BackSprite;
-    
+ 
     public Sprite[] FrontSprites;
 
     public GameObject CardPre;
@@ -72,8 +75,11 @@ public class CardGameManager : MonoBehaviour {
             if(curCardCouples < 6)
                 StartCoroutine(TimeTake());
         }
+        if(x == 0 && secondsleft == 0)
+        {
+            text.text = "please restart game. (PRESS PAUSE AND MENU)";
+        }
         
-       
     }
 
     private void CardOnClick(card_level1simple1 card)
@@ -95,6 +101,8 @@ public class CardGameManager : MonoBehaviour {
 
     IEnumerator JugdeTwoCards()
     {
+        x=1;
+        x++;
         //获取到两张卡牌对象
         card_level1simple1 card1 = FaceCards[0];
         card_level1simple1 card2 = FaceCards[1];
@@ -110,8 +118,9 @@ public class CardGameManager : MonoBehaviour {
             if (curCardCouples == winCardCouples && secondsleft > 0)
             {
                 //此处可以弹出游戏成功等字样的UI，同学们可以自由设定
-                text.text = "you win";
-                
+                text.text = "you win! go to next level";
+                 yield return new WaitForSeconds(5f);
+                 SceneManager.LoadScene("game-level1NORMAL");              
             }
         }
         else
@@ -123,6 +132,12 @@ public class CardGameManager : MonoBehaviour {
             card2.SetRecover();
         }
 
+        if(secondsleft == 0 && curCardCouples < 6)
+        {
+            text.text = "you lose! can't to next level please restart";
+             yield return new WaitForSeconds(3f);
+             SceneManager.LoadScene("game-level1SIMPLE");
+        }
         FaceCards = new List<card_level1simple1>();
         canPlayerClick = true;
     }

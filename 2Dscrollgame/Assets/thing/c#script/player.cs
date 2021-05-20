@@ -9,13 +9,14 @@ public class player : MonoBehaviour
     
     public Animator ani;
     public Rigidbody2D rb;
-    public int hp = 0;
-    public int max_hp = 0;
+    public int hp = 10;
+    public int max_hp = 10;
     
     
     
     
     public Image hp_bar;
+
     
     float horizontalMove = 0f;
     float speed = 3f;
@@ -26,9 +27,7 @@ public class player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
-        max_hp = 10;
-        hp = max_hp;
-        
+        max_hp = 10;      
     }
 
     // Update is called once per frame
@@ -84,7 +83,6 @@ public class player : MonoBehaviour
 
         hp_bar.transform.localScale = new Vector3((float)hp / (float)max_hp, 1, transform.localScale.z);
 
-        
     }
         
     
