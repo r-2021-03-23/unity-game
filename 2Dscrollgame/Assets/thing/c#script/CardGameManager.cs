@@ -7,8 +7,8 @@ public class CardGameManager : MonoBehaviour {
 
     public Text text;
 
-    public GameObject button;
-    int x=0;
+    
+    public static int x=0,f=0;
     private const int winCardCouples = 6;
     public int curCardCouples = 0;
     private bool canPlayerClick = true;
@@ -75,7 +75,7 @@ public class CardGameManager : MonoBehaviour {
             if(curCardCouples < 6)
                 StartCoroutine(TimeTake());
         }
-        if(x == 0 && secondsleft == 0)
+        if(x > 0 && secondsleft == 0)
         {
             text.text = "please restart game. (PRESS PAUSE AND MENU)";
         }
@@ -120,7 +120,8 @@ public class CardGameManager : MonoBehaviour {
                 //此处可以弹出游戏成功等字样的UI，同学们可以自由设定
                 text.text = "you win! go to next level";
                  yield return new WaitForSeconds(5f);
-                 SceneManager.LoadScene("game-level1NORMAL");              
+                 SceneManager.LoadScene("UILevel");
+                 f = 1;             
             }
         }
         else

@@ -9,10 +9,8 @@ public class player : MonoBehaviour
     
     public Animator ani;
     public Rigidbody2D rb;
-    public int hp = 10;
+    public static int hp = 10;
     public int max_hp = 10;
-    
-    
     
     
     public Image hp_bar;
@@ -27,7 +25,7 @@ public class player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
-        max_hp = 10;      
+             
     }
 
     // Update is called once per frame
@@ -47,8 +45,9 @@ public class player : MonoBehaviour
         {
             rb.velocity = new Vector2(speed,rb.velocity.y);
             
+            
         }
-        if(Input.GetButton("left") && Time.timeScale == 1)
+        if(Input.GetButton("left") && Time.timeScale == 1 )
         {
             rb.velocity = new Vector2(-speed,rb.velocity.y);
             
@@ -59,15 +58,17 @@ public class player : MonoBehaviour
 
                 
         
-        if (Input.GetKeyDown(KeyCode.W) && rb.velocity.y == 0 && Time.timeScale == 1)
+        if (Input.GetKeyDown(KeyCode.W) && rb.velocity.y == 0 && Time.timeScale == 1 )
         {
            
             rb.AddForce(transform.up * jumpSpeed, ForceMode2D.Impulse);
             ani.SetBool("isJumping", true);
+            
         }
         if (Input.GetKeyUp(KeyCode.W))
         {
             ani.SetBool("isJumping", false);
+                      
         }
 
         if(horizontalMove < 0 && Time.timeScale == 1)
@@ -82,7 +83,7 @@ public class player : MonoBehaviour
 
 
         hp_bar.transform.localScale = new Vector3((float)hp / (float)max_hp, 1, transform.localScale.z);
-
+        
     }
         
     
@@ -98,7 +99,8 @@ public class player : MonoBehaviour
         if(other.gameObject.CompareTag("cardGame"))
         {
             SceneManager.LoadScene("level1Card");
-        }      
+        }
+  
     }  
 
     void attack()
@@ -108,5 +110,5 @@ public class player : MonoBehaviour
     }
 
 
-
+    
 }
