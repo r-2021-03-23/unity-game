@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
-    public int hp = 0;
-    public int max_hp = 0;
+    public int hp = 5;
+    public int max_hp = 5;
     public GameObject hp_bar;
     public GameObject BulletPrefab;
 
@@ -17,8 +17,7 @@ public class enemy : MonoBehaviour
     void Start()
     {
         max_hp = 5;
-        hp = max_hp;
-        
+        hp = max_hp;   
     }
 
     // Update is called once per frame
@@ -43,12 +42,4 @@ public class enemy : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.CompareTag("sword") && Input.GetKeyDown(KeyCode.Space))
-        {
-            hp -= 1;
-        }
-        
-    }  
 }

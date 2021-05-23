@@ -11,11 +11,14 @@ public class player : MonoBehaviour
     public Rigidbody2D rb;
     public static int hp = 10;
     public int max_hp = 10;
-    
-    
+
+    public GameObject gameOver;
+    public GameObject pauseButton;
     public Image hp_bar;
 
-    
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public LayerMask enemyLayers;
     float horizontalMove = 0f;
     float speed = 3f;
     float jumpSpeed = 10f;
@@ -25,7 +28,6 @@ public class player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
-             
     }
 
     // Update is called once per frame
@@ -80,6 +82,13 @@ public class player : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
 
+        if(hp == 0)
+        {
+            Time.timeScale = 0;
+            gameOver.SetActive(true);
+            pauseButton.SetActive(false);
+            hp = 10;
+        }
 
 
         hp_bar.transform.localScale = new Vector3((float)hp / (float)max_hp, 1, transform.localScale.z);
@@ -100,15 +109,36 @@ public class player : MonoBehaviour
         {
             SceneManager.LoadScene("level1Card");
         }
-  
+
     }  
 
     void attack()
     {
         ani.SetTrigger("Attack");
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position,attackRange,enemyLayers);
 
+        foreach(Collider2D enemy in hitEnemies)
+        {
+           enemy.GetComponent<enemy>().hp -= 1 ;
+        }
     }
 
+    void OnDrawGizmosSelected()
+    {
+        if(attackPoint == null)
+        {
+            return;
+        }
+        Gizmos.DrawWireSphere(attackPoint.position,attackRange);
+    }
 
-    
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.CompareTag("ground"))
+        {
+            Time.timeScale = 0;
+            gameOver.SetActive(true);
+            pauseButton.SetActive(false);
+        }
+    }
 }
