@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3038467958367654984}
   - component: {fileID: 6882362126007783808}
   m_Layer: 0
-  m_Name: "enemy\u6A39\u7CBE"
+  m_Name: "\u6A39\u679D"
   m_TagString: enemyBomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63091a03eed5cc8408a90e75f9a39ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 2
+  timer: 0.5
 --- !u!61 &6882362126007783808
 BoxCollider2D:
   m_ObjectHideFlags: 0

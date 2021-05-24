@@ -26,7 +26,7 @@ public class enemy : MonoBehaviour
         this.delta += Time.deltaTime;
         if(hp <= 0)
         {
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
             player.hp += 3;
         }
         float percent = ((float)hp / (float)max_hp);
