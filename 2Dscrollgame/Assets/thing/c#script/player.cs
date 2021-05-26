@@ -109,7 +109,10 @@ public class player : MonoBehaviour
         {
             SceneManager.LoadScene("level1Card");
         }
-
+        if(other.gameObject.CompareTag("mazeGame"))
+        {
+            SceneManager.LoadScene("level1Maze");
+        }
     }  
 
     void attack()

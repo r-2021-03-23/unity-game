@@ -439,12 +439,12 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.1
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!95 &89585176
 Animator:
@@ -2777,8 +2777,8 @@ GameObject:
   - component: {fileID: 576727299}
   - component: {fileID: 576727298}
   m_Layer: 0
-  m_Name: cardGame
-  m_TagString: cardGame
+  m_Name: maze
+  m_TagString: mazeGame
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5209,7 +5209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8784399675386946544, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -173.83
+      value: -173.78
       objectReference: {fileID: 0}
     - target: {fileID: 8784399675386946544, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5436,11 +5436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7740418806362408968, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -471.5
+      value: -471.55
       objectReference: {fileID: 0}
     - target: {fileID: 7740418806362408968, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -169.75
+      value: -169.89
       objectReference: {fileID: 0}
     - target: {fileID: 7740418806362408968, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
       propertyPath: m_LocalPosition.z

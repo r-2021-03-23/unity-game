@@ -44,5 +44,16 @@ public class TITLE_LEVEL1_1: MonoBehaviour
         }
     }
 
+    public void level1_hard()
+    {
+        if(mazeGameManager.m == 1)
+        {
+            SceneManager.LoadScene("game-level1hard");
+        }
+        else
+        {
+            text.SetActive(true);
+        }
+    }
 
 }

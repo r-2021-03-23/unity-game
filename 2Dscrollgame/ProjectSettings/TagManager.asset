@@ -11,6 +11,9 @@ TagManager:
   - Manager
   - sword
   - cardGame
+  - wall
+  - apple
+  - mazeGame
   layers:
   - Default
   - TransparentFX
