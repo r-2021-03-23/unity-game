@@ -37,9 +37,14 @@ public class enemy : MonoBehaviour
             this.delta = 0;
             Instantiate(BulletPrefab,this.transform.position,Quaternion.identity);         
         }
-        
-
-
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("playerBullet"))
+        {   
+            hp -= 1;
+            Destroy(other.gameObject); 
+        }
+    }
 }

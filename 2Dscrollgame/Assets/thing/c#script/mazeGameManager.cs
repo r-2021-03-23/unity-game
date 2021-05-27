@@ -7,13 +7,14 @@ public class mazeGameManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    public string nextScene,stayScene;
     public GameObject textDisplay;
 
     public GameObject pause;
     public GameObject button,button1;
     public static int m=0;
     public Text text;
-    public Actor actor;
+    public mazeActor actor;
     public int minutesleft = 2;
     public int secondsleft = 0;
 
@@ -38,22 +39,24 @@ public class mazeGameManager : MonoBehaviour
             button.SetActive(true);
             pause.SetActive(false);
             m = 1;
+            Time.timeScale = 0;
         }
         if(secondsleft == 0 && actor.Qty_Pickup > 0)
         {
             text.text = "you lose ! stay at this level";
             button1.SetActive(true);
             pause.SetActive(false);
+            Time.timeScale = 0;
         }
     }
 
     public void buttonClick()
     {
-        SceneManager.LoadScene("UILevel");
+        SceneManager.LoadScene(nextScene);
     }
     public void button1Click()
     {
-        SceneManager.LoadScene("game-level1Normal");
+        SceneManager.LoadScene(stayScene);
     }
     IEnumerator TimeTake()
     {

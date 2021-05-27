@@ -21,7 +21,7 @@ public class dialog_center : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Mathf.Abs(player.transform.localPosition.x - enemy.transform.localPosition.x) < 3)
+        if(Mathf.Abs(player.transform.localPosition.x - enemy.transform.localPosition.x) < 4 && Mathf.Abs(player.transform.localPosition.y - enemy.transform.localPosition.y) < 0.25)
         {
             animator.SetBool("IsOpen",true);
             textDisplay.text = sentences[index];

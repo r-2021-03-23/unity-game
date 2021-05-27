@@ -130,7 +130,7 @@ public class CardGameManager : MonoBehaviour {
             card2.SetRecover();
         }
 
-        if(secondsleft == 0 && curCardCouples <= 6)
+        if(secondsleft == 0 && curCardCouples < 6)
         {
             CardPre.SetActive(false);
             text.text = "you lose! can't to next level please restart(wait 3 seconds)";

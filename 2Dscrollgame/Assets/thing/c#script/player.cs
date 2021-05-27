@@ -12,13 +12,14 @@ public class player : MonoBehaviour
     public static int hp = 10;
     public int max_hp = 10;
 
+    public GameObject BulletPrefab;
     public GameObject gameOver;
     public GameObject pauseButton;
     public Image hp_bar;
 
-    public Transform attackPoint;
-    public float attackRange = 0.5f;
-    public LayerMask enemyLayers;
+    
+   
+   
     float horizontalMove = 0f;
     float speed = 3f;
     float jumpSpeed = 10f;
@@ -117,23 +118,10 @@ public class player : MonoBehaviour
 
     void attack()
     {
-        ani.SetTrigger("Attack");
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position,attackRange,enemyLayers);
-
-        foreach(Collider2D enemy in hitEnemies)
-        {
-           enemy.GetComponent<enemy>().hp -= 1 ;
-        }
+        Instantiate(BulletPrefab,this.transform.position+new Vector3(1,0,0),Quaternion.identity); 
     }
 
-    void OnDrawGizmosSelected()
-    {
-        if(attackPoint == null)
-        {
-            return;
-        }
-        Gizmos.DrawWireSphere(attackPoint.position,attackRange);
-    }
+
 
     void OnCollisionEnter2D(Collision2D col)
     {

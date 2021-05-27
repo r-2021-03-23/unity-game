@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Actor : MonoBehaviour
+public class mazeActor : MonoBehaviour
 {
     public float speed = 5f;
 
