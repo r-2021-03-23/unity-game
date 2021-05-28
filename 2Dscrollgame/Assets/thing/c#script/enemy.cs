@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
-    public int hp = 5;
-    public int max_hp = 5;
+    private int hp;
+    public int max_hp=10;
     public GameObject hp_bar;
     public GameObject BulletPrefab;
 
@@ -16,7 +16,7 @@ public class enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        max_hp = 5;
+        
         hp = max_hp;   
     }
 

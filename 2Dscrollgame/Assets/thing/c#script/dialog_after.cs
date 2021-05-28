@@ -2,28 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class dialog : MonoBehaviour
+public class dialog_after : MonoBehaviour
 {
-    // Start is called before the first frame update
     public Text textDisplay;
     public string[] sentences;
     private int index;
-    
+   
+    public GameObject enemy;
+
+    public GameObject dialogBox;
     public GameObject continueButton;
 
     public Animator animator;
 
     void Start()
     {
-        textDisplay.text = sentences[index];
-        Time.timeScale = 0 ;
+        animator.SetBool("IsOpen",false);
     }
 
     void Update()
     {    
-        if(textDisplay.text == sentences[index])
+        if(enemy.activeSelf == false)
         {
-            continueButton.SetActive(true);
+            animator.SetBool("IsOpen",true);
+            textDisplay.text = sentences[index];
+            Time.timeScale = 0;
+        }
+
+        if(index == sentences.Length-1)
+        {
+            continueButton.SetActive(false);
+            animator.SetBool("IsOpen",false);
+            Time.timeScale = 1;
         }
 
     }

@@ -15,6 +15,7 @@ TagManager:
   - apple
   - mazeGame
   - playerBullet
+  - floor
   layers:
   - Default
   - TransparentFX

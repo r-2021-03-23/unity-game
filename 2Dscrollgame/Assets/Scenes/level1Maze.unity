@@ -1325,7 +1325,7 @@ MonoBehaviour:
   text: {fileID: 960284141}
   actor: {fileID: 381092008}
   minutesleft: 0
-  secondsleft: 30
+  secondsleft: 45
   takingAway: 0
 --- !u!4 &1055075870
 Transform:

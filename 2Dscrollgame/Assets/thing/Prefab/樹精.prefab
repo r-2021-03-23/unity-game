@@ -84,12 +84,16 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1785521393947230596, guid: 4fb08b015aea07643832c91ddd62ee49, type: 3}
+      propertyPath: max_hp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1785521393947230596, guid: 4fb08b015aea07643832c91ddd62ee49, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1785521393947230597, guid: 4fb08b015aea07643832c91ddd62ee49, type: 3}
       propertyPath: m_Name
-      value: enemy (1)
+      value: "\u6A39\u7CBE"
       objectReference: {fileID: 0}
     - target: {fileID: 1785521393947230597, guid: 4fb08b015aea07643832c91ddd62ee49, type: 3}
       propertyPath: m_Layer

@@ -12,6 +12,8 @@ public class player : MonoBehaviour
     public static int hp = 10;
     public int max_hp = 10;
 
+    public static int x=0;
+
     public GameObject BulletPrefab;
     public GameObject gameOver;
     public GameObject pauseButton;
@@ -130,6 +132,10 @@ public class player : MonoBehaviour
             Time.timeScale = 0;
             gameOver.SetActive(true);
             pauseButton.SetActive(false);
+        }
+        if(col.gameObject.CompareTag("floor"))
+        {
+            x=1;
         }
     }
 }

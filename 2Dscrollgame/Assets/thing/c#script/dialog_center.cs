@@ -8,6 +8,7 @@ public class dialog_center : MonoBehaviour
     public string[] sentences;
     private int index;
 
+    public double x = 5 ,y = 0.25;
     public GameObject continueButton;
     public player player;
     public enemy enemy;
@@ -21,7 +22,9 @@ public class dialog_center : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Mathf.Abs(player.transform.localPosition.x - enemy.transform.localPosition.x) < 4 && Mathf.Abs(player.transform.localPosition.y - enemy.transform.localPosition.y) < 0.25)
+        // Debug.Log("x"+Mathf.Abs(player.transform.localPosition.x - enemy.transform.localPosition.x));
+        // Debug.Log("y"+Mathf.Abs(player.transform.localPosition.y - enemy.transform.localPosition.y));
+        if(Mathf.Abs(player.transform.localPosition.x - enemy.transform.localPosition.x) < x && Mathf.Abs(player.transform.localPosition.y - enemy.transform.localPosition.y) < y && player.x == 1)
         {
             animator.SetBool("IsOpen",true);
             textDisplay.text = sentences[index];
