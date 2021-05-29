@@ -6,6 +6,8 @@ public class enemy : MonoBehaviour
 {
     private int hp;
     public int max_hp=10;
+
+  
     public GameObject hp_bar;
     public GameObject BulletPrefab;
 

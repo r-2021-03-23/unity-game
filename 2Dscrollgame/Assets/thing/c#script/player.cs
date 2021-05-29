@@ -138,4 +138,12 @@ public class player : MonoBehaviour
             x=1;
         }
     }
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        if(col.gameObject.CompareTag("floor"))
+        {
+            x=0;
+        }
+    }
 }

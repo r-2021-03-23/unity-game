@@ -81,7 +81,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1785521393947230596, guid: 4fb08b015aea07643832c91ddd62ee49, type: 3}
       propertyPath: span
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1785521393947230596, guid: 4fb08b015aea07643832c91ddd62ee49, type: 3}
       propertyPath: max_hp
