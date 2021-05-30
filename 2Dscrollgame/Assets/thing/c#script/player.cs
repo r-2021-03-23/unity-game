@@ -110,11 +110,15 @@ public class player : MonoBehaviour
         }
         if(other.gameObject.CompareTag("cardGame"))
         {
-            SceneManager.LoadScene("level1Card");
+            SceneManager.LoadScene("level1Card_start");
         }
         if(other.gameObject.CompareTag("mazeGame"))
         {
-            SceneManager.LoadScene("level1Maze");
+            SceneManager.LoadScene("level1Maze_start");
+        }
+        if(other.gameObject.CompareTag("snakeGame"))
+        {
+            SceneManager.LoadScene("level1Snake_start");
         }
     }  
 

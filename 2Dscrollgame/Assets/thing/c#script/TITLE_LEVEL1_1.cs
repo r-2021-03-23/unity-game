@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class TITLE_LEVEL1_1: MonoBehaviour
 {
     public GameObject text;
-    CardGameManager f;
+    
 
     void start()
     {
@@ -49,6 +49,18 @@ public class TITLE_LEVEL1_1: MonoBehaviour
         if(mazeGameManager.m == 1)
         {
             SceneManager.LoadScene("game-level1hard");
+        }
+        else
+        {
+            text.SetActive(true);
+        }
+    }
+
+    public void level2_simple()
+    {
+        if(snakeGame_snake.s == 1)
+        {
+            SceneManager.LoadScene("game-level2simple");
         }
         else
         {

@@ -367,7 +367,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 184749187}
-        m_TargetAssemblyTypeName: PAUSEMENU_LEVEL1SIMPLE, Assembly-CSharp
+        m_TargetAssemblyTypeName: PAUSEMENU_dialogBox, Assembly-CSharp
         m_MethodName: clickMenu
         m_Mode: 1
         m_Arguments:
@@ -3091,13 +3091,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 184749185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9d4262bb3939794ab1c1b0ca140d5e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 00daa910463724c44bdf1bdb08a441bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pause: {fileID: 1863629131}
-  index: 3
-  dialog: {fileID: 865480517}
-  dialogBox: {fileID: 1215158060}
+  dialogBox: {fileID: 523357419}
 --- !u!1 &186861387
 GameObject:
   m_ObjectHideFlags: 0
@@ -3384,7 +3382,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 184749187}
-        m_TargetAssemblyTypeName: PAUSEMENU_LEVEL1SIMPLE, Assembly-CSharp
+        m_TargetAssemblyTypeName: PAUSEMENU_dialogBox, Assembly-CSharp
         m_MethodName: clickResume
         m_Mode: 1
         m_Arguments:
@@ -3523,6 +3521,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8784399675386946544, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
   m_PrefabInstance: {fileID: 1920980620}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &523357419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1729292205401690714, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
+  m_PrefabInstance: {fileID: 1350890609}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &543855168
 GameObject:
@@ -3967,17 +3970,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834559154}
   m_CullTransparentMesh: 1
---- !u!114 &865480517 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1729292206095999383, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
-  m_PrefabInstance: {fileID: 1350890609}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2035e38bff338ba469ef4b8ff7ac61ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &900558898 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8784399675386946544, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
@@ -4179,11 +4171,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106245267}
   m_CullTransparentMesh: 1
---- !u!1 &1215158060 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1729292205401690714, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
-  m_PrefabInstance: {fileID: 1350890609}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1256425642
 GameObject:
   m_ObjectHideFlags: 0
@@ -5411,7 +5398,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 184749187}
-        m_TargetAssemblyTypeName: PAUSEMENU_LEVEL1SIMPLE, Assembly-CSharp
+        m_TargetAssemblyTypeName: PAUSEMENU_dialogBox, Assembly-CSharp
         m_MethodName: clickPaused
         m_Mode: 1
         m_Arguments:

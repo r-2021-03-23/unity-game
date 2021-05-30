@@ -16,6 +16,9 @@ TagManager:
   - mazeGame
   - playerBullet
   - floor
+  - food
+  - obstacle
+  - snakeGame
   layers:
   - Default
   - TransparentFX
