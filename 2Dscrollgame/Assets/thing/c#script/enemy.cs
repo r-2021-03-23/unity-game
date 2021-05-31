@@ -11,6 +11,7 @@ public class enemy : MonoBehaviour
     public GameObject hp_bar;
     public GameObject BulletPrefab;
 
+    public Animator dialog;
     public player player;
 
     public float span = 0.5f,delta = 0;
@@ -33,12 +34,16 @@ public class enemy : MonoBehaviour
         }
         float percent = ((float)hp / (float)max_hp);
         hp_bar.transform.localScale = new Vector3(percent, hp_bar.transform.localScale.y, hp_bar.transform.localScale.z);
-            
-        if(this.delta > this.span)
+
+        if(dialog.GetBool("IsOpen") == false)
         {
-            this.delta = 0;
-            Instantiate(BulletPrefab,this.transform.position,Quaternion.identity);         
-        }
+            if(this.delta > this.span)
+            {
+                this.delta = 0;
+                Instantiate(BulletPrefab,this.transform.position,Quaternion.identity);         
+            }
+        }   
+     
     }
 
     void OnTriggerEnter2D(Collider2D other)

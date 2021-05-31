@@ -516,6 +516,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108643858}
   m_CullTransparentMesh: 1
+--- !u!95 &363373705 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3580507273101381365, guid: f93e4e733789aab4dafb209f17e828c4, type: 3}
+  m_PrefabInstance: {fileID: 975651013}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &371008683
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +707,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8784399676315522874, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 641418630}
     - target: {fileID: 8784399676315522874, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: player
       value: 
@@ -1514,6 +1523,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8784399676315522874, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 363373705}
+    - target: {fileID: 8784399676315522874, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 397535839}
@@ -2125,6 +2138,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8784399676315522874, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 641418630}
     - target: {fileID: 8784399676315522874, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: player
       value: 
@@ -3118,7 +3135,7 @@ GameObject:
   - component: {fileID: 2051672580}
   - component: {fileID: 2051672579}
   m_Layer: 5
-  m_Name: STOP
+  m_Name: pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6246,7 +6263,7 @@ PrefabInstance:
     - target: {fileID: 6180581900451601778, guid: e39d7c0f56a9fc14d8fef5b20293022d, type: 3}
       propertyPath: pauseButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2051672578}
     - target: {fileID: 6180581900451601779, guid: e39d7c0f56a9fc14d8fef5b20293022d, type: 3}
       propertyPath: m_RootOrder
       value: 0

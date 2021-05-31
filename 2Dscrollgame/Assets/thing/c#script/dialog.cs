@@ -18,7 +18,7 @@ public class dialog : MonoBehaviour
     void Start()
     {
         textDisplay.text = sentences[index];
-        Time.timeScale = 0;
+        Time.timeScale = 0f;
     }
 
     void Update()
@@ -27,7 +27,7 @@ public class dialog : MonoBehaviour
         {
             continueButton.SetActive(true);
         }
-        if(animator.GetBool("IsOpen"))
+        if(animator.GetBool("IsOpen") == true)
         {
             pauseButton.SetActive(false);
         }
@@ -47,13 +47,14 @@ public class dialog : MonoBehaviour
         {
             index++;
             textDisplay.text = sentences[index];
+            
         }
         else
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
             animator.SetBool("IsOpen",false);
-            Time.timeScale = 1;
+            Time.timeScale = 1f;
         
         }
     }

@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5948581210761920461
 RectTransform:
   m_ObjectHideFlags: 0
@@ -480,9 +480,11 @@ MonoBehaviour:
   - 1515
   - 1221
   - 
+  index: 0
   x: 5
   y: 0.25
   continueButton: {fileID: 5948581210761920460}
+  pauseButton: {fileID: 0}
   player: {fileID: 0}
   enemy: {fileID: 0}
   animator: {fileID: 5948581212169474667}

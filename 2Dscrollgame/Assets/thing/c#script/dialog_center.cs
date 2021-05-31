@@ -25,7 +25,7 @@ public class dialog_center : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Debug.Log("x"+Mathf.Abs(player.transform.localPosition.x - enemy.transform.localPosition.x));
+        Debug.Log("x"+Mathf.Abs(player.transform.localPosition.x - enemy.transform.localPosition.x));
         // Debug.Log("y"+Mathf.Abs(player.transform.localPosition.y - enemy.transform.localPosition.y));
         if(Mathf.Abs(player.transform.localPosition.x - enemy.transform.localPosition.x) < x && Mathf.Abs(player.transform.localPosition.y - enemy.transform.localPosition.y) < y && player.x == 1)
         {
@@ -45,7 +45,7 @@ public class dialog_center : MonoBehaviour
         {
             continueButton.SetActive(true);
         }
-        if(animator.GetBool("IsOpen"))
+        if(animator.GetBool("IsOpen") == true)
         {
             pauseButton.SetActive(false);
         }
@@ -68,7 +68,7 @@ public class dialog_center : MonoBehaviour
             textDisplay.text = "";
             continueButton.SetActive(false);
             animator.SetBool("IsOpen",false);
-            Time.timeScale = 1;
+            
         }
     }
 }
