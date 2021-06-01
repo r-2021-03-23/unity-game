@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class CardGameManager : MonoBehaviour {
 
     public Text text;
-
+    
+    public GameObject Bu;
     
     public static int x=0,f=0;
     private const int winCardCouples = 6;
@@ -29,6 +30,8 @@ public class CardGameManager : MonoBehaviour {
     public bool takingAway;
    
     void Start () {
+        Bu.SetActive(false);
+        CardPre.SetActive(true);
         textDisplay.GetComponent<Text>().text = "0:" + secondsleft;
         CardObjs = new List<GameObject>();
         FaceCards = new List<card_level1simple1>();
@@ -79,7 +82,12 @@ public class CardGameManager : MonoBehaviour {
             text.text = "please restart game. (PRESS PAUSE AND MENU)";
             CardPre.SetActive(false);
         }
-        
+        if(secondsleft == 0 && curCardCouples < 6)
+        {
+            CardPre.SetActive(false);
+            text.text = "you lose! can't to next level please restart";
+            Bu.SetActive(true);
+        }
     }
 
     private void CardOnClick(card_level1simple1 card)
@@ -149,5 +157,10 @@ public class CardGameManager : MonoBehaviour {
         secondsleft -= 1;
         textDisplay.GetComponent<Text>().text = "0:" + secondsleft;
         takingAway = false;
+    }
+
+    public void clickBack()
+    {
+        SceneManager.LoadScene("game-level1simple");
     }
 }

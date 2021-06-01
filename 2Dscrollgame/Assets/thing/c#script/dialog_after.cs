@@ -8,7 +8,7 @@ public class dialog_after : MonoBehaviour
     public string[] sentences;
     private int index;
    
-    public GameObject pauseButton;
+    public Button pb;
  
     public GameObject enemy;
 
@@ -20,7 +20,7 @@ public class dialog_after : MonoBehaviour
     void Start()
     {
         animator.SetBool("IsOpen",false);
-
+        
     }
 
     void Update()
@@ -29,27 +29,26 @@ public class dialog_after : MonoBehaviour
         {
             animator.SetBool("IsOpen",true);
             textDisplay.text = sentences[index];
-            Time.timeScale = 0;
-            
         }
         if(index == sentences.Length-1)
         {
             continueButton.SetActive(false);
             animator.SetBool("IsOpen",false);
-            Time.timeScale = 1;
         }
         if(textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
         }
         
-        if(animator.GetBool("IsOpen"))
+        if(animator.GetBool("IsOpen") == true)
         {
-            pauseButton.SetActive(false);
+            pb.GetComponent<Button>().interactable = false;
+            Time.timeScale = 0;
         }
         else
         {
-            pauseButton.SetActive(true);
+            pb.GetComponent<Button>().interactable = true;
+            Time.timeScale = 1; 
         }
     }
 
@@ -69,7 +68,6 @@ public class dialog_after : MonoBehaviour
             continueButton.SetActive(false);
             animator.SetBool("IsOpen",false);
             Time.timeScale = 1;
-            pauseButton.SetActive(true);
         }
     }
 }

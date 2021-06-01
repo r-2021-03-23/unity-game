@@ -11,7 +11,7 @@ public class dialog_center : MonoBehaviour
     public double x = 5 ,y = 0.25;
     public GameObject continueButton;
 
-    public GameObject pauseButton;
+    public GameObject pb;
     public player player;
     public enemy enemy;
     public Animator animator;
@@ -19,14 +19,13 @@ public class dialog_center : MonoBehaviour
     void Start()
     {
         animator.SetBool("IsOpen",false);
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("x"+Mathf.Abs(player.transform.localPosition.x - enemy.transform.localPosition.x));
-        Debug.Log("y"+Mathf.Abs(player.transform.localPosition.y - enemy.transform.localPosition.y));
+        // Debug.Log("x"+Mathf.Abs(player.transform.localPosition.x - enemy.transform.localPosition.x));
+        // Debug.Log("y"+Mathf.Abs(player.transform.localPosition.y - enemy.transform.localPosition.y));
         if(Mathf.Abs(player.transform.localPosition.x - enemy.transform.localPosition.x) < x && Mathf.Abs(player.transform.localPosition.y - enemy.transform.localPosition.y) < y && player.x == 1)
         {
             
@@ -47,12 +46,17 @@ public class dialog_center : MonoBehaviour
         }
         if(animator.GetBool("IsOpen") == true)
         {
-            pauseButton.SetActive(false);
+                pb.GetComponent<Button>().enabled = false;
+                Time.timeScale = 0;
+
         }
         else
         {
-            pauseButton.SetActive(true);
+           
+           pb.GetComponent<Button>().enabled = true;
+           Time.timeScale = 1;
         }
+
     } 
 
     public void NextSentence()
@@ -68,7 +72,7 @@ public class dialog_center : MonoBehaviour
             textDisplay.text = "";
             continueButton.SetActive(false);
             animator.SetBool("IsOpen",false);
-            
+           
         }
     }
 }

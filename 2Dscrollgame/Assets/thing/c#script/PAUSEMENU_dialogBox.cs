@@ -12,7 +12,6 @@ public class PAUSEMENU_dialogBox : MonoBehaviour
     void Start()
     {
         gameObject.SetActive(false);
-        
     }
 
     // Update is called once per frame

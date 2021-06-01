@@ -19,7 +19,7 @@ public class player : MonoBehaviour
     public GameObject pauseButton;
     public Image hp_bar;
 
-    
+    public Animator[] animators;
    
    
     float horizontalMove = 0f;
@@ -36,6 +36,23 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
+        for(int i =0;i<animators.Length;i++)
+        {
+            if(animators[i].GetBool("IsOpen") == true)
+            {
+                if(i==0)
+                {
+                    this.gameObject.GetComponent<Animator>().enabled = false;
+                    this.transform.position = new Vector3(-10,-2,0);  
+                }
+
+            }
+            else
+            {
+                this.gameObject.GetComponent<Animator>().enabled = true;
+                
+            }
+        }
         if(hp > max_hp)
         {
             hp = max_hp;
@@ -76,7 +93,7 @@ public class player : MonoBehaviour
                       
         }
 
-        if(horizontalMove < 0 && Time.timeScale == 1)
+        if(horizontalMove < 0 && Time.timeScale == 1 )
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
@@ -91,6 +108,10 @@ public class player : MonoBehaviour
             gameOver.SetActive(true);
             pauseButton.SetActive(false);
             hp = 10;
+        }
+        else
+        {
+            Time.timeScale = 1;
         }
 
 

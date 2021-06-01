@@ -9,12 +9,18 @@ public class CardPauseMenu : MonoBehaviour
     
     public GameObject pause;
     public GameObject button;
- 
+
+    
+    void Update()
+    {
+        
+    }
     void Start()
     {
         gameObject.SetActive(false);
         pause.SetActive(true);
         button.SetActive(true);
+        
     }
     public void clickPaused()
     {
@@ -36,4 +42,5 @@ public class CardPauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene("gameStart");
     }
+
 }

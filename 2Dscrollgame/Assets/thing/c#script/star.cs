@@ -22,6 +22,10 @@ public class star : MonoBehaviour
         if(mazeGameManager.m == 1)
         {
             images[1].color = Color.yellow;
+        }
+        if(snakeGame_snake.s ==1)
+        {
+            images[2].color = Color.yellow;
         }    
     }
 

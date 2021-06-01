@@ -9,16 +9,16 @@ public class dialog : MonoBehaviour
     public  string[] sentences;
     public int index;
     
-    public GameObject pauseButton;
+    public GameObject pb;
 
     public GameObject continueButton;
 
     public Animator animator;
 
+
     void Start()
     {
         textDisplay.text = sentences[index];
-        Time.timeScale = 0f;
     }
 
     void Update()
@@ -29,13 +29,15 @@ public class dialog : MonoBehaviour
         }
         if(animator.GetBool("IsOpen") == true)
         {
-            pauseButton.SetActive(false);
+            pb.SetActive(false); 
+            Time.timeScale = 0f;
         }
-        else
+        if(animator.GetBool("IsOpen") == false)
         {
-            pauseButton.SetActive(true);
+            pb.SetActive(true);
+            Time.timeScale = 1f;
         }
-
+        
     }
 
 
@@ -54,7 +56,6 @@ public class dialog : MonoBehaviour
             textDisplay.text = "";
             continueButton.SetActive(false);
             animator.SetBool("IsOpen",false);
-            Time.timeScale = 1f;
         
         }
     }

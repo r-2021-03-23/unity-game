@@ -122,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5948581212290206435}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: dialog_center, Assembly-CSharp
         m_MethodName: NextSentence
         m_Mode: 1
@@ -440,7 +440,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5948581212290206434}
-  - component: {fileID: 5948581212290206435}
   m_Layer: 0
   m_Name: DialogManager
   m_TagString: Untagged
@@ -462,29 +461,3 @@ Transform:
   m_Father: {fileID: 5948581212169474666}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5948581212290206435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5948581212290206437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6646e59c4bec1c445a25b0875cd40812, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textDisplay: {fileID: 5948581210965652640}
-  sentences:
-  - 1233
-  - 1515
-  - 1221
-  - 
-  index: 0
-  x: 5
-  y: 0.25
-  continueButton: {fileID: 5948581210761920460}
-  pauseButton: {fileID: 0}
-  player: {fileID: 0}
-  enemy: {fileID: 0}
-  animator: {fileID: 5948581212169474667}
