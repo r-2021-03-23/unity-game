@@ -68,7 +68,7 @@ public class snakeGame_snake : MonoBehaviour
     {
         Transform segement = Instantiate(this.segementPrefab);
         segement.position = _segements[_segements.Count - 1].position;
-
+                                             
         _segements.Add(segement);
     }
 

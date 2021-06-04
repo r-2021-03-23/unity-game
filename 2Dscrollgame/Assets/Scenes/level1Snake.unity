@@ -416,7 +416,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 873593941}
-        m_TargetAssemblyTypeName: resumeMenu_maze, Assembly-CSharp
+        m_TargetAssemblyTypeName: snake_pause, Assembly-CSharp
         m_MethodName: clickPaused
         m_Mode: 1
         m_Arguments:
@@ -705,7 +705,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 873593941}
-        m_TargetAssemblyTypeName: resumeMenu_maze, Assembly-CSharp
+        m_TargetAssemblyTypeName: snake_pause, Assembly-CSharp
         m_MethodName: clickResume
         m_Mode: 1
         m_Arguments:
@@ -802,7 +802,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 873593939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad5e50e1c87525a47bc8aa3762972878, type: 3}
+  m_Script: {fileID: 11500000, guid: cc35c090801feae4cafbbf195393e583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pause: {fileID: 601629607}
@@ -1036,7 +1036,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 873593941}
-        m_TargetAssemblyTypeName: resumeMenu_maze, Assembly-CSharp
+        m_TargetAssemblyTypeName: snake_pause, Assembly-CSharp
         m_MethodName: clickMenu
         m_Mode: 1
         m_Arguments:

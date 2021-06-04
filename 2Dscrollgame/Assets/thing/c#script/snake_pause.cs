@@ -2,48 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class PAUSEMENU_dialogBox : MonoBehaviour
+public class snake_pause : MonoBehaviour
 {
-    public GameObject pause;
-
-    private int x;
-    
     // Start is called before the first frame update
+   public GameObject pause;
+    
+ 
     void Start()
     {
         gameObject.SetActive(false);
+        pause.SetActive(true);
+        
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(x == 0)
-        {
-            Time.timeScale = 0f;
-        }
-        else
-        {
-            Time.timeScale = 1f;
-        }
-    }
-
     public void clickPaused()
-    {   
-        gameObject.SetActive(true);
+    {
+        Time.timeScale = 0;
         pause.SetActive(false);
-        Time.timeScale = 0f;
-        x = 0;
+        gameObject.SetActive(true);
+       
     }
 
     public void clickResume()
     {
+        Time.timeScale = 0.06f;
         gameObject.SetActive(false);
         pause.SetActive(true);
-        Time.timeScale = 1f;  
-        x=1;    
+        
     }
+
     public void clickMenu()
     {
         SceneManager.LoadScene("gameStart");

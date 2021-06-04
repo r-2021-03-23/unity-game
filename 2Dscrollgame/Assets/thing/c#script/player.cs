@@ -43,7 +43,7 @@ public class player : MonoBehaviour
                 if(i==0)
                 {
                     this.gameObject.GetComponent<Animator>().enabled = false;
-                    this.transform.position = new Vector3(-10,-2,0);  
+                    this.transform.position = new Vector3(-15,-2,0);  
                 }
 
             }
