@@ -12,6 +12,7 @@ public class player : MonoBehaviour
     public static int hp = 10;
     public int max_hp = 10;
 
+    public static bool isGameOver;
     public static int x=0;
 
     public GameObject BulletPrefab;
@@ -154,9 +155,10 @@ public class player : MonoBehaviour
     {
         if(col.gameObject.CompareTag("ground"))
         {
-            Time.timeScale = 0;
+            isGameOver = true;
             gameOver.SetActive(true);
             pauseButton.SetActive(false);
+
         }
         if(col.gameObject.CompareTag("floor"))
         {

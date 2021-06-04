@@ -56,7 +56,10 @@ public class dialog_center : MonoBehaviour
            pb.GetComponent<Button>().enabled = true;
            Time.timeScale = 1;
         }
-
+        if(Input.GetKeyDown(KeyCode.Return))
+        {
+            NextSentence();
+        }
     } 
 
     public void NextSentence()

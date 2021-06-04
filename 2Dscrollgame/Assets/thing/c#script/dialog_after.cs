@@ -50,6 +50,10 @@ public class dialog_after : MonoBehaviour
             pb.GetComponent<Button>().interactable = true;
             Time.timeScale = 1; 
         }
+        if(Input.GetKeyDown(KeyCode.Return))
+        {
+            NextSentence();
+        }
     }
 
 

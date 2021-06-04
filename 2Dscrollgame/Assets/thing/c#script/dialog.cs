@@ -37,6 +37,10 @@ public class dialog : MonoBehaviour
             pb.SetActive(true);
             Time.timeScale = 1f;
         }
+        if(Input.GetKeyDown(KeyCode.Return))
+        {
+            NextSentence();
+        }
         
     }
 
