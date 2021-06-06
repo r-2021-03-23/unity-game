@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/gameStart.unity
     guid: 5614c1382ddbe7047affa0027860074b
   - enabled: 1
-    path: Assets/Scenes/UILevel.unity
+    path: Assets/Scenes/game-level1SIMPLE25.unity
     guid: 86a40fc1bd8099c4db01ea41effbb86b
   - enabled: 1
     path: Assets/Scenes/game-level1simple.unity
