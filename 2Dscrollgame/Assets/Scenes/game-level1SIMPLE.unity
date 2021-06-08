@@ -3349,7 +3349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos1: {fileID: 568105256}
   pos2: {fileID: 363873270}
-  speed: 0.5
+  speed: 1
   startPos: {fileID: 568105256}
 --- !u!19719996 &1872426348
 TilemapCollider2D:
@@ -4310,7 +4310,7 @@ GameObject:
   - component: {fileID: 2087481817}
   - component: {fileID: 2087481818}
   m_Layer: 0
-  m_Name: edge(1) (1)
+  m_Name: 'edge(2) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
