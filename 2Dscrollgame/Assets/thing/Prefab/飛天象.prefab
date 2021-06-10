@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 3141139542608102390}
   - component: {fileID: 3229525877232410577}
   - component: {fileID: 4413969862530651321}
+  - component: {fileID: 7282258062835078781}
   m_Layer: 0
   m_Name: "\u98DB\u5929\u8C61"
   m_TagString: Untagged
@@ -265,6 +266,7 @@ MonoBehaviour:
   max_hp: 10
   hp_bar: {fileID: 6725194989111202459}
   BulletPrefab: {fileID: 5096290482238257386, guid: 33b2f7035dd71784993e478361f7a295, type: 3}
+  dialog: {fileID: 0}
   player: {fileID: 0}
   span: 2
   delta: 0
@@ -294,3 +296,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.2608223, y: 2.8106804}
   m_EdgeRadius: 0
+--- !u!114 &7282258062835078781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7152365884687882250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15364ef19f0594c498e504e50c9ffca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos1: {fileID: 0}
+  pos2: {fileID: 0}
+  speed: 0
+  startPos: {fileID: 0}
