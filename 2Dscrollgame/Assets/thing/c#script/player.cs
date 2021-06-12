@@ -44,7 +44,7 @@ public class player : MonoBehaviour
                 if(i==0)
                 {
                     this.gameObject.GetComponent<Animator>().enabled = false;
-                    this.transform.position = new Vector3(-15,-2,0);  
+                    this.transform.position = new Vector3(-13,-1,0);  
                 }
 
             }
@@ -117,7 +117,7 @@ public class player : MonoBehaviour
 
 
         hp_bar.transform.localScale = new Vector3((float)hp / (float)max_hp, 1, transform.localScale.z);
-        
+
     }
         
     
@@ -158,7 +158,6 @@ public class player : MonoBehaviour
             isGameOver = true;
             gameOver.SetActive(true);
             pauseButton.SetActive(false);
-
         }
         if(col.gameObject.CompareTag("floor"))
         {
