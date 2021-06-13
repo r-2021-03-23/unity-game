@@ -115,9 +115,7 @@ public class player : MonoBehaviour
             Time.timeScale = 1;
         }
 
-
         hp_bar.transform.localScale = new Vector3((float)hp / (float)max_hp, 1, transform.localScale.z);
-
     }
         
     
