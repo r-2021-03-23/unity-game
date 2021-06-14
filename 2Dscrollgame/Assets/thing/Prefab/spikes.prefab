@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8124639237860841126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.42, y: -5.52, z: 37.6152}
+  m_LocalPosition: {x: -0.42, y: -5.479, z: 37.6152}
   m_LocalScale: {x: 1, y: 1.4242344, z: 1}
   m_Children: []
   m_Father: {fileID: 8124639239119446463}
@@ -256,7 +256,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8124639239119446463}
   - component: {fileID: 8124639239119446460}
-  - component: {fileID: 5575605042498055425}
+  - component: {fileID: 1546312512858313572}
+  - component: {fileID: 7329001155080869260}
   m_Layer: 0
   m_Name: spikes
   m_TagString: Untagged
@@ -293,8 +294,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e2c82032afb6342998cbc3781722ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!68 &5575605042498055425
-EdgeCollider2D:
+  animator: {fileID: 0}
+--- !u!1839735485 &1546312512858313572
+Tilemap:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124639239119446462}
+  m_Enabled: 1
+  m_Tiles: {}
+  m_AnimatedTiles: {}
+  m_TileAssetArray: []
+  m_TileSpriteArray: []
+  m_TileMatrixArray: []
+  m_TileColorArray: []
+  m_TileObjectToInstantiateArray: []
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0, z: 1}
+  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_TileOrientation: 0
+  m_TileOrientationMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+--- !u!19719996 &7329001155080869260
+TilemapCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -307,16 +347,5 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -1.0320123, y: -6.3149786}
-  - {x: -0.3835113, y: -5.561457}
-  - {x: -0.022166133, y: -6.186667}
-  - {x: 0.353894, y: -5.4086094}
-  - {x: 0.9589002, y: -6.2103944}
-  - {x: 1.4601355, y: -5.474176}
-  - {x: 2.0634725, y: -6.3596683}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001

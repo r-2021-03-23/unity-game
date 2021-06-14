@@ -19,6 +19,7 @@ TagManager:
   - food
   - obstacle
   - snakeGame
+  - spike
   layers:
   - Default
   - TransparentFX

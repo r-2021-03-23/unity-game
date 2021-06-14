@@ -140,7 +140,9 @@ public class player : MonoBehaviour
         {
             SceneManager.LoadScene("level1Snake_start");
         }
+
     }  
+    
 
     void attack()
     {
@@ -161,6 +163,12 @@ public class player : MonoBehaviour
         {
             x=1;
         }
+        if(col.gameObject.CompareTag("spike"))
+        {
+            hp -= 1;
+            rb.AddForce(transform.up * jumpSpeed, ForceMode2D.Impulse);
+            ani.SetBool("isJumping", true);
+        }
     }
 
     void OnCollisionExit2D(Collision2D col)
@@ -168,6 +176,10 @@ public class player : MonoBehaviour
         if(col.gameObject.CompareTag("floor"))
         {
             x=0;
+        }
+        if(col.gameObject.CompareTag("spike"))
+        {
+            ani.SetBool("isJumping", false);
         }
     }
 }

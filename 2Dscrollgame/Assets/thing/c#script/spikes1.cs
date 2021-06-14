@@ -3,20 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class spikes1 : MonoBehaviour
-{
+{   
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Repeat",0,5);
-        InvokeRepeating("repeat",0,3);
+        InvokeRepeating("Up",1,6);
+        InvokeRepeating("Down",1,8);
     }
 
-    void Repeat()
+    void Up()
     {
-        this.gameObject.SetActive(false);
+        animator.SetBool("state",true);
     }
-    void repeat()
+    void Down()
     {
-        this.gameObject.SetActive(true);
+        animator.SetBool("state",false);
     }
 }
