@@ -13,6 +13,7 @@ public class player : MonoBehaviour
     public int max_hp = 10;
 
     public static bool isGameOver;
+    bool isGround;
     public static int x=0;
 
     public GameObject BulletPrefab;
@@ -25,7 +26,7 @@ public class player : MonoBehaviour
    
     float horizontalMove = 0f;
     float speed = 3f;
-    float jumpSpeed = 10f;
+    float jumpSpeed = 10f,hurtSpeed = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -81,7 +82,7 @@ public class player : MonoBehaviour
 
                 
         
-        if (Input.GetKeyDown(KeyCode.W) && rb.velocity.y == 0 && Time.timeScale == 1 )
+        if (Input.GetKeyDown(KeyCode.W) && isGround == true && Time.timeScale == 1 )
         {
            
             rb.AddForce(transform.up * jumpSpeed, ForceMode2D.Impulse);
@@ -140,7 +141,7 @@ public class player : MonoBehaviour
         {
             SceneManager.LoadScene("level1Snake_start");
         }
-
+ 
     }  
     
 
@@ -166,9 +167,13 @@ public class player : MonoBehaviour
         if(col.gameObject.CompareTag("spike"))
         {
             hp -= 1;
-            rb.AddForce(transform.up * jumpSpeed, ForceMode2D.Impulse);
+            rb.AddForce(transform.up * hurtSpeed, ForceMode2D.Impulse);
             ani.SetBool("isJumping", true);
         }
+        if(col.gameObject.CompareTag("floor") || col.gameObject.CompareTag("mainfloor"))
+        {
+            isGround = true;
+        }      
     }
 
     void OnCollisionExit2D(Collision2D col)
@@ -180,6 +185,10 @@ public class player : MonoBehaviour
         if(col.gameObject.CompareTag("spike"))
         {
             ani.SetBool("isJumping", false);
+        }
+        if(col.gameObject.CompareTag("floor") || col.gameObject.CompareTag("mainfloor"))
+        {
+            isGround = false;
         }
     }
 }
