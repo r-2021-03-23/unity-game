@@ -8,7 +8,7 @@ public class woodRoll : MonoBehaviour
     // Start is called before the first frame update
     public Rigidbody2D rb;
 
-    public int force = -30;
+    public int force = -300;
     public GameObject prefab;
     Vector3 pos;
     void Start()
@@ -29,7 +29,7 @@ public class woodRoll : MonoBehaviour
             this.delta = 0;
             GameObject g = Instantiate(prefab,pos,Quaternion.identity);
             g.name = "wooden";
-            g.GetComponent<Rigidbody2D>().mass = 10;
+            g.GetComponent<Rigidbody2D>().mass = 50;
             Destroy(this.gameObject);
         }
     }
