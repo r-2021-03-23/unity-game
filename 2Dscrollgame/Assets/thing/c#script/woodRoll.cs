@@ -16,6 +16,6 @@ public class woodRoll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.AddForce()
+       
     }
 }
