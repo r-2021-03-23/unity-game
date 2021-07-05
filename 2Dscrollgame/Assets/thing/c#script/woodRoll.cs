@@ -29,7 +29,7 @@ public class woodRoll : MonoBehaviour
             this.delta = 0;
             GameObject g = Instantiate(prefab,pos,Quaternion.identity);
             g.name = "wooden";
-            g.GetComponent<Rigidbody2D>().mass = 50;
+            g.GetComponent<Rigidbody2D>().mass = 150;
             Destroy(this.gameObject);
         }
     }
