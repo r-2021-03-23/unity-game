@@ -7521,7 +7521,7 @@ PrefabInstance:
     - target: {fileID: 8784399676315522874, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1923753383}
     - target: {fileID: 8784399676315522875, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: m_Name
       value: "\u6A39\u7CBE(2)"
@@ -8558,6 +8558,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3580507273222116986, guid: f93e4e733789aab4dafb209f17e828c4, type: 3}
+      propertyPath: p
+      value: 
+      objectReference: {fileID: 1923753383}
+    - target: {fileID: 3580507273222116986, guid: f93e4e733789aab4dafb209f17e828c4, type: 3}
       propertyPath: pb
       value: 
       objectReference: {fileID: 56615245}
@@ -9018,6 +9022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: allspikes
       objectReference: {fileID: 0}
+    - target: {fileID: 6535687784726463560, guid: 5bae605d83bf1f04389f69559f0156d6, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6535687784726463561, guid: 5bae605d83bf1f04389f69559f0156d6, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -9061,6 +9069,10 @@ PrefabInstance:
     - target: {fileID: 6535687784726463561, guid: 5bae605d83bf1f04389f69559f0156d6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535687785383612612, guid: 5bae605d83bf1f04389f69559f0156d6, type: 3}
+      propertyPath: m_TagString
+      value: spike
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bae605d83bf1f04389f69559f0156d6, type: 3}

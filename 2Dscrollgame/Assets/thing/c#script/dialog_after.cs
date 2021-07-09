@@ -11,11 +11,13 @@ public class dialog_after : MonoBehaviour
     public Button pb;
  
     public GameObject enemy;
-
+    public player p;
     public GameObject dialogBox;
     public GameObject continueButton;
 
     public Animator animator;
+
+    Vector3 y;
 
     void Start()
     {
@@ -29,6 +31,7 @@ public class dialog_after : MonoBehaviour
         {
             animator.SetBool("IsOpen",true);
             textDisplay.text = sentences[index];
+            Time.timeScale = 0;
         }
         if(index == sentences.Length-1)
         {
@@ -43,12 +46,13 @@ public class dialog_after : MonoBehaviour
         if(animator.GetBool("IsOpen") == true)
         {
             pb.GetComponent<Button>().interactable = false;
-            Time.timeScale = 0;
+            p.transform.localPosition = y;
         }
         else
         {
+            y = p.transform.localPosition;
             pb.GetComponent<Button>().interactable = true;
-            Time.timeScale = 1; 
+            Time.timeScale = 1;
         }
         if(Input.GetKeyDown(KeyCode.Return))
         {
