@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 81678832}
   m_Layer: 0
   m_Name: edge(2)
-  m_TagString: Untagged
+  m_TagString: mainfloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 131889260}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5935,7 +5935,7 @@ GameObject:
   - component: {fileID: 588099039}
   m_Layer: 0
   m_Name: edge(1)
-  m_TagString: Untagged
+  m_TagString: mainfloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6210,7 +6210,7 @@ GameObject:
   - component: {fileID: 692361841}
   m_Layer: 0
   m_Name: edge(3)
-  m_TagString: Untagged
+  m_TagString: mainfloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
