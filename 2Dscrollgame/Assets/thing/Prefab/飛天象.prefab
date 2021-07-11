@@ -175,9 +175,10 @@ GameObject:
   m_Component:
   - component: {fileID: 15020993616433950}
   - component: {fileID: 3141139542608102390}
-  - component: {fileID: 3229525877232410577}
   - component: {fileID: 4413969862530651321}
   - component: {fileID: 7282258062835078781}
+  - component: {fileID: 2772452406426737592}
+  - component: {fileID: 7109322930874609749}
   m_Layer: 0
   m_Name: "\u98DB\u5929\u8C61"
   m_TagString: Untagged
@@ -251,25 +252,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3229525877232410577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7152365884687882250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7aaa495fda2ff7418a3a0c1db29bf29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  max_hp: 10
-  hp_bar: {fileID: 6725194989111202459}
-  BulletPrefab: {fileID: 5096290482238257386, guid: 33b2f7035dd71784993e478361f7a295, type: 3}
-  dialog: {fileID: 0}
-  player: {fileID: 0}
-  span: 2
-  delta: 0
 --- !u!61 &4413969862530651321
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -312,3 +294,41 @@ MonoBehaviour:
   pos2: {fileID: 0}
   speed: 0
   startPos: {fileID: 0}
+--- !u!114 &2772452406426737592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7152365884687882250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7aaa495fda2ff7418a3a0c1db29bf29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max_hp: 10
+  hp_bar: {fileID: 2236425050176195769}
+  BulletPrefab: {fileID: 8832574951675263274, guid: 8985e603df4a98c45bfc0da0d4e2b721, type: 3}
+  dialog: {fileID: 0}
+  player: {fileID: 0}
+  span: 0.5
+  delta: 0
+--- !u!114 &7109322930874609749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7152365884687882250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7aaa495fda2ff7418a3a0c1db29bf29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max_hp: 10
+  hp_bar: {fileID: 0}
+  BulletPrefab: {fileID: 0}
+  dialog: {fileID: 0}
+  player: {fileID: 0}
+  span: 0.5
+  delta: 0

@@ -692,7 +692,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 796508465}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &302801490
 SpriteRenderer:
@@ -1361,8 +1361,8 @@ EdgeCollider2D:
   - {x: -16.035423, y: -7.7641726}
   - {x: 39.115562, y: -7.960408}
   - {x: 147.72125, y: -8.186499}
-  - {x: 143.58778, y: -8.084483}
-  - {x: 143.4501, y: 34.26158}
+  - {x: 238.5229, y: -8.782802}
+  - {x: 238.21387, y: 31.947088}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -6188,13 +6188,13 @@ Transform:
   m_LocalPosition: {x: 481.71426, y: 172.08347, z: -3.8612714}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 899517481}
   - {fileID: 241122244}
   - {fileID: 611530832}
-  - {fileID: 899517481}
   - {fileID: 1003733259}
   - {fileID: 1701988489}
-  - {fileID: 1122427547}
   - {fileID: 302801489}
+  - {fileID: 1122427547}
   - {fileID: 2060226595}
   - {fileID: 1400012328}
   - {fileID: 1994366273}
@@ -6234,7 +6234,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 796508465}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &899517482
 MonoBehaviour:
