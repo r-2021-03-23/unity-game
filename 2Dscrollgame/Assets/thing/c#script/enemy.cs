@@ -16,11 +16,12 @@ public class enemy : MonoBehaviour
 
     public float span = 0.5f,delta = 0;
 
+
+
     // Start is called before the first frame update
     void Start()
-    {
-        
-        hp = max_hp;   
+    { 
+        hp = max_hp;
     }
 
     // Update is called once per frame
@@ -43,7 +44,11 @@ public class enemy : MonoBehaviour
                 Instantiate(BulletPrefab,this.transform.position,Quaternion.identity);         
             }
         }   
-     
+
+
+        
+
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
