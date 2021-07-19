@@ -22,6 +22,7 @@ TagManager:
   - spike
   - mainfloor
   - woodRoll
+  - healthPot
   layers:
   - Default
   - TransparentFX

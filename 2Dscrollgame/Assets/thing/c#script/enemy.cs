@@ -16,22 +16,31 @@ public class enemy : MonoBehaviour
 
     public float span = 0.5f,delta = 0;
 
+    public GameObject pot;
+
 
 
     // Start is called before the first frame update
     void Start()
     { 
         hp = max_hp;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         this.delta += Time.deltaTime;
+        if(hp > 0)
+        {
+            pot.SetActive(false);
+        }
         if(hp <= 0)
         {
             this.gameObject.SetActive(false);
-            player.hp += 3;
+            pot.SetActive(true);
+            
+            
         }
         float percent = ((float)hp / (float)max_hp);
         hp_bar.transform.localScale = new Vector3(percent, hp_bar.transform.localScale.y, hp_bar.transform.localScale.z);

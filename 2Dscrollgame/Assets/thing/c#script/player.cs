@@ -141,7 +141,7 @@ public class player : MonoBehaviour
         {
             SceneManager.LoadScene("level1Snake_start");
         }
- 
+
     }  
     
 
@@ -173,6 +173,11 @@ public class player : MonoBehaviour
         if(col.gameObject.CompareTag("floor") || col.gameObject.CompareTag("mainfloor"))
         {
             isGround = true;
+        } 
+        if(col.gameObject.CompareTag("healthPot"))
+        {
+            hp += 3;
+            col.gameObject.SetActive(false);
         }      
     }
 
