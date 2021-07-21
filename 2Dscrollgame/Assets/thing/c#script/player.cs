@@ -9,8 +9,8 @@ public class player : MonoBehaviour
     
     public Animator ani;
     public Rigidbody2D rb;
-    public static int hp = 10;
-    public int max_hp = 10;
+    public static float hp = 10;
+    public float max_hp = 10;
 
     public static bool isGameOver;
     bool isGround;
@@ -21,6 +21,7 @@ public class player : MonoBehaviour
     public GameObject pauseButton;
     public Image hp_bar;
 
+    
     public Animator[] animators;
    
    
@@ -115,8 +116,12 @@ public class player : MonoBehaviour
         {
             Time.timeScale = 1;
         }
+        if(gameOver.activeSelf == true)
+        {
+            hp = 10;
+        }
+        hp_bar.transform.localScale = new Vector3((float)hp / (float)max_hp, 1, transform.localScale.z);     
 
-        hp_bar.transform.localScale = new Vector3((float)hp / (float)max_hp, 1, transform.localScale.z);
     }
         
     
@@ -128,6 +133,12 @@ public class player : MonoBehaviour
         {
             hp -= 1;
             Destroy(other.gameObject);
+        }
+        if(other.gameObject.CompareTag("enemyBomb1"))
+        {
+            Destroy(other.gameObject);
+            hp -= 1;
+
         }
         if(other.gameObject.CompareTag("cardGame"))
         {
@@ -147,7 +158,7 @@ public class player : MonoBehaviour
 
     void attack()
     {
-        Instantiate(BulletPrefab,this.transform.position+new Vector3(1,0,0),Quaternion.identity); 
+        Instantiate(BulletPrefab,this.transform.position+new Vector3(0,0,0),Quaternion.identity); 
     }
 
 
@@ -195,5 +206,10 @@ public class player : MonoBehaviour
         {
             isGround = false;
         }
+    }
+
+    IEnumerator waitOneSecond()
+    {
+        yield return new WaitForSeconds(1f); 
     }
 }

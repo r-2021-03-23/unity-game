@@ -23,6 +23,7 @@ TagManager:
   - mainfloor
   - woodRoll
   - healthPot
+  - enemyBomb1
   layers:
   - Default
   - TransparentFX

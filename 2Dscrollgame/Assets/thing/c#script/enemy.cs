@@ -7,7 +7,7 @@ public class enemy : MonoBehaviour
     private int hp;
     public int max_hp=10;
 
-  
+    int  r;
     public GameObject hp_bar;
     public GameObject BulletPrefab;
 
@@ -16,7 +16,7 @@ public class enemy : MonoBehaviour
 
     public float span = 0.5f,delta = 0;
 
-    public GameObject pot;
+    public GameObject potPrefab;
 
 
 
@@ -31,16 +31,15 @@ public class enemy : MonoBehaviour
     void Update()
     {
         this.delta += Time.deltaTime;
-        if(hp > 0)
-        {
-            pot.SetActive(false);
-        }
+
         if(hp <= 0)
         {
             this.gameObject.SetActive(false);
-            pot.SetActive(true);
-            
-            
+            r = Random.Range (0,2);
+            if(r == 0)
+            {
+                Instantiate(potPrefab,this.transform.position+new Vector3(0,0,0),Quaternion.identity);  
+            }   
         }
         float percent = ((float)hp / (float)max_hp);
         hp_bar.transform.localScale = new Vector3(percent, hp_bar.transform.localScale.y, hp_bar.transform.localScale.z);

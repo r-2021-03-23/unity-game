@@ -5593,6 +5593,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7976428303955269010, guid: e39d7c0f56a9fc14d8fef5b20293022d, type: 3}
+      propertyPath: Hurt
+      value: 
+      objectReference: {fileID: 7957778854810145059, guid: c66ea4dc333af7641bfdfb3f5db022ff, type: 3}
+    - target: {fileID: 7976428303955269010, guid: e39d7c0f56a9fc14d8fef5b20293022d, type: 3}
+      propertyPath: hurt
+      value: 
+      objectReference: {fileID: 3558832866483554148, guid: c66ea4dc333af7641bfdfb3f5db022ff, type: 3}
+    - target: {fileID: 7976428303955269010, guid: e39d7c0f56a9fc14d8fef5b20293022d, type: 3}
       propertyPath: hp_bar
       value: 
       objectReference: {fileID: 964836334}
@@ -5600,6 +5608,10 @@ PrefabInstance:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 254734910}
+    - target: {fileID: 7976428303955269010, guid: e39d7c0f56a9fc14d8fef5b20293022d, type: 3}
+      propertyPath: HealthBar
+      value: 
+      objectReference: {fileID: 964836333}
     - target: {fileID: 7976428303955269010, guid: e39d7c0f56a9fc14d8fef5b20293022d, type: 3}
       propertyPath: pauseButton
       value: 
@@ -6005,6 +6017,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1923753383}
+    - target: {fileID: 5531019634117696725, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
+      propertyPath: potPrefab
+      value: 
+      objectReference: {fileID: 7416861999699971942, guid: cda93980e6147e64798eefabebeda657, type: 3}
     - target: {fileID: 5981739472217634618, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
       propertyPath: m_Size.x
       value: 1.9179688
@@ -6468,6 +6484,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\u4ED9\u4EBA\u638C(1)"
       objectReference: {fileID: 0}
+    - target: {fileID: 1234825704875536222, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5531019634117696725, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
       propertyPath: dialog
       value: 
@@ -6476,6 +6496,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1923753383}
+    - target: {fileID: 5531019634117696725, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
+      propertyPath: potPrefab
+      value: 
+      objectReference: {fileID: 7416861999699971942, guid: cda93980e6147e64798eefabebeda657, type: 3}
     - target: {fileID: 5981739472217634618, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
       propertyPath: m_Size.x
       value: 1.9179688
@@ -7414,7 +7438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8679245, g: 0.09416164, b: 0.09416164, a: 1}
+  m_Color: {r: 0.8867924, g: 0.09620863, b: 0.09620863, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7894,6 +7918,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1923753383}
+    - target: {fileID: 8784399676315522874, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
+      propertyPath: potPrefab
+      value: 
+      objectReference: {fileID: 7416861999699971942, guid: cda93980e6147e64798eefabebeda657, type: 3}
     - target: {fileID: 8784399676315522875, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: m_Name
       value: "\u6A39\u7CBE(3)"
@@ -7990,6 +8018,10 @@ PrefabInstance:
       propertyPath: startPos
       value: 
       objectReference: {fileID: 1529899309}
+    - target: {fileID: 8784399676315522874, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
+      propertyPath: potPrefab
+      value: 
+      objectReference: {fileID: 7416861999699971942, guid: cda93980e6147e64798eefabebeda657, type: 3}
     - target: {fileID: 8784399676315522875, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: m_Name
       value: "\u6A39\u7CBE(2)"
@@ -8380,7 +8412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2772452406426737592, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
       propertyPath: span
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2772452406426737592, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
       propertyPath: dialog
@@ -8390,6 +8422,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1923753383}
+    - target: {fileID: 2772452406426737592, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
+      propertyPath: potPrefab
+      value: 
+      objectReference: {fileID: 7416861999699971942, guid: cda93980e6147e64798eefabebeda657, type: 3}
     - target: {fileID: 7152365884687882250, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
       propertyPath: m_Name
       value: "\u98DB\u5929\u8C61(2)"
@@ -9642,7 +9678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2772452406426737592, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
       propertyPath: span
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2772452406426737592, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
       propertyPath: dialog
@@ -9652,6 +9688,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1923753383}
+    - target: {fileID: 2772452406426737592, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
+      propertyPath: potPrefab
+      value: 
+      objectReference: {fileID: 7416861999699971942, guid: cda93980e6147e64798eefabebeda657, type: 3}
     - target: {fileID: 7109322930874609749, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
       propertyPath: dialog
       value: 
@@ -9820,6 +9860,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1923753383}
+    - target: {fileID: 8784399676315522874, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
+      propertyPath: potPrefab
+      value: 
+      objectReference: {fileID: 7416861999699971942, guid: cda93980e6147e64798eefabebeda657, type: 3}
     - target: {fileID: 8784399676315522875, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: m_Name
       value: "\u6A39\u7CBE(1)"
