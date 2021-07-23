@@ -19,7 +19,7 @@ public class player : MonoBehaviour
     public GameObject BulletPrefab;
     public GameObject gameOver;
     public GameObject pauseButton;
-    public Image hp_bar;
+    public Image hp_bar,hurt;
 
     
     public Animator[] animators;
@@ -120,7 +120,15 @@ public class player : MonoBehaviour
         {
             hp = 10;
         }
-        hp_bar.transform.localScale = new Vector3((float)hp / (float)max_hp, 1, transform.localScale.z);     
+        hp_bar.fillAmount = hp/max_hp;
+        if(hurt.fillAmount > hp_bar.fillAmount)
+        {
+            hurt.fillAmount -= 0.001f;
+        }
+        else
+        {
+            hurt.fillAmount = hp_bar.fillAmount;
+        }
 
     }
         
