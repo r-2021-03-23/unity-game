@@ -21,7 +21,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2833133799105858917, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
       propertyPath: m_Name
-      value: "hp(\u4ED91)"
+      value: "hp(\u6F22\u5821)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596354217262698845, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.3148088
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596354217262698845, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.1250904
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596354217262698845, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.501
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596354217262698845, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.692
       objectReference: {fileID: 0}
     - target: {fileID: 5531019634117696725, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
       propertyPath: hp
