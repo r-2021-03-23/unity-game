@@ -25,7 +25,7 @@ public class dialog_center : MonoBehaviour
     void Update()
     {
         // Debug.Log("x"+Mathf.Abs(player.transform.localPosition.x - enemy.transform.localPosition.x));
-        // Debug.Log("y"+Mathf.Abs(player.transform.localPosition.y - enemy.transform.localPosition.y));s
+        // Debug.Log("y"+Mathf.Abs(player.transform.localPosition.y - enemy.transform.localPosition.y));
         if(Mathf.Abs(player.transform.localPosition.x - enemy.transform.localPosition.x) < x && Mathf.Abs(player.transform.localPosition.y - enemy.transform.localPosition.y) < y && player.x == 1)
         {
             
