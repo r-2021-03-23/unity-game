@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class enemy : MonoBehaviour
 {
     private int hp;
@@ -18,7 +18,9 @@ public class enemy : MonoBehaviour
 
     public GameObject potPrefab;
 
+    public Image rageValue,release;
 
+    public GameObject gameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -53,8 +55,18 @@ public class enemy : MonoBehaviour
             }
         }   
 
-
-        
+        if(release.fillAmount > rageValue.fillAmount)
+        {
+            release.fillAmount -= 0.01f;
+        }
+        else
+        {
+            release.fillAmount = rageValue.fillAmount;
+        }
+        if(gameOver.activeSelf == true)
+        {
+            rageValue.fillAmount = 0f;
+        }
 
 
     }
@@ -64,7 +76,8 @@ public class enemy : MonoBehaviour
         if(other.gameObject.CompareTag("playerBullet"))
         {   
             hp -= 1;
-            Destroy(other.gameObject); 
+            Destroy(other.gameObject);
+            rageValue.fillAmount += 0.1f;
         }
     }
 }
