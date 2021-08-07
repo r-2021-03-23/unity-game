@@ -216,8 +216,5 @@ public class player : MonoBehaviour
         }
     }
 
-    IEnumerator waitOneSecond()
-    {
-        yield return new WaitForSeconds(1f); 
-    }
+
 }
