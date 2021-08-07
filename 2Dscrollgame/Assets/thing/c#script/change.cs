@@ -25,90 +25,80 @@ public class change : MonoBehaviour
             {
                 player.SetActive(false);
                 skill.SetActive(true);
-                Invoke("wait",5f);
-                cam1.SetActive(false);
-                cam2.SetActive(true);
+                Invoke("wait",2f);
+                
                 Invoke("camera1",2f);
             }
             if(enemy.rageV == 0.2f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
-                Invoke("wait",5f);
-                cam1.SetActive(false);
-                cam2.SetActive(true);
+                Invoke("wait",2f);
+                
                 Invoke("camera1",3f);
             }
              if(enemy.rageV == 0.3f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
-                Invoke("wait",5f);
-                cam1.SetActive(false);
-                cam2.SetActive(true);
+                Invoke("wait",2f);
+                
                 Invoke("camera1",5f);
             } 
             if(enemy.rageV == 0.4f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
-                Invoke("wait",5f);
-                cam1.SetActive(false);
-                cam2.SetActive(true);
+                Invoke("wait",2f);
+               
                 Invoke("camera1",7f); 
             } 
             if(enemy.rageV == 0.5f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
-                Invoke("wait",5f);
-                cam1.SetActive(false);
-                cam2.SetActive(true);
+                Invoke("wait",2f);
+                
                 Invoke("camera1",9f);
             } 
             if(enemy.rageV == 0.6f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
-                Invoke("wait",5f);
-                cam1.SetActive(false);
-                cam2.SetActive(true);
+                Invoke("wait",2f);
+                
                 Invoke("camera1",11f);
             } 
             if(enemy.rageV == 0.7f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
-                Invoke("wait",5f);
-                cam1.SetActive(false);
-                cam2.SetActive(true);
+                Invoke("wait",2f);
+                
                 Invoke("camera1",13f);
             } 
             if(enemy.rageV == 0.8f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
-                Invoke("wait",5f);
-                cam1.SetActive(false);
-                cam2.SetActive(true);
+                Invoke("wait",2f);
+    
                 Invoke("camera1",15f);
             } 
             if(enemy.rageV == 0.9f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
-                Invoke("wait",5f);
-                cam1.SetActive(false);
-                cam2.SetActive(true);
+                Invoke("wait",2f);
+ 
                 Invoke("camera1",17f);
             } 
             if(enemy.rageV == 1f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
-                Invoke("wait",5f);
-                cam1.SetActive(false);
-                cam2.SetActive(true);
+                Invoke("wait",2f);
+
                 Invoke("camera1",19f);
             } 
         }
@@ -124,6 +114,7 @@ public class change : MonoBehaviour
 
     void wait()
     {
-
+        cam1.SetActive(false);
+        cam2.SetActive(true);
     }
 }
