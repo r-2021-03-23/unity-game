@@ -22,7 +22,6 @@ public class enemy : MonoBehaviour
 
     public static float rageV;
 
-    public GameObject gameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -56,27 +55,8 @@ public class enemy : MonoBehaviour
                 Instantiate(BulletPrefab,this.transform.position,Quaternion.identity);         
             }
         }   
-        rageV = rageValue.fillAmount;
-        if(release.fillAmount > rageValue.fillAmount)
-        {
-            release.fillAmount -= 0.01f;
-        }
-        else
-        {
-            release.fillAmount = rageValue.fillAmount;
-        }
-        if(gameOver.activeSelf == true)
-        {
-            rageValue.fillAmount = 0f;
-        }
 
-        if(Input.GetKeyDown(KeyCode.V))
-        {
-            if(rageV >= 0.1f)
-            {
-                rageValue.fillAmount = 0f;
-            }
-        }
+  
 
     }
 
@@ -87,6 +67,11 @@ public class enemy : MonoBehaviour
             hp -= 1;
             Destroy(other.gameObject);
             rageValue.fillAmount += 0.1f;
+        }
+        if(other.gameObject.CompareTag("skill"))
+        {
+            hp -= 1;
+            Destroy(other.gameObject);
         }
     }
 }
