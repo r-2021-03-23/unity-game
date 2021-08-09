@@ -436,7 +436,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b76a77361d8bb41c6819207d6240586f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1210508720413382922, guid: c66ea4dc333af7641bfdfb3f5db022ff, type: 3}
+  moveSpeed: 5
+  cam: {fileID: 0}
+  rb: {fileID: 0}
 --- !u!1 &47416175
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,6 +2340,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam1: {fileID: 371008683}
   cam2: {fileID: 974197882}
+  player: {fileID: 0}
+  skill: {fileID: 0}
 --- !u!1 &568105255
 GameObject:
   m_ObjectHideFlags: 0
