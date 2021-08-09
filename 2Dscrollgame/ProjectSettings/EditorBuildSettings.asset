@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/UILEVEL.unity
     guid: 86a40fc1bd8099c4db01ea41effbb86b
   - enabled: 1
-    path: Assets/Scenes/game-level1simple.unity
+    path: Assets/Scenes/game-level1-simple.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/level1Card_start.unity
@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/level1Card.unity
     guid: cc316181a011d1844bdf4349eaf1c1ee
   - enabled: 1
-    path: Assets/Scenes/game-level1normal.unity
+    path: Assets/Scenes/game-level1-normal.unity
     guid: d9b257f9f126e844387ebdf1ba0a18ce
   - enabled: 1
     path: Assets/Scenes/level1Maze_start.unity
@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/level1Maze.unity
     guid: affb78dcd84210c4b8f367b58158b9df
   - enabled: 1
-    path: Assets/Scenes/game-level1hard.unity
+    path: Assets/Scenes/game-level1-hard.unity
     guid: b11d6f4e4c507b345a2323e8671347ca
   - enabled: 1
     path: Assets/Scenes/level1Snake_start.unity
@@ -39,7 +39,7 @@ EditorBuildSettings:
     path: Assets/Scenes/level1Snake.unity
     guid: 0fb02fe2337f6de4cb0f9fe3d9f27ebb
   - enabled: 1
-    path: Assets/Scenes/game-level2simple.unity
+    path: Assets/Scenes/game-level2-simple.unity
     guid: 8bd365ac82bf72947aef10c276f1c61e
   - enabled: 1
     path: Assets/Scenes/level3Maze.unity
