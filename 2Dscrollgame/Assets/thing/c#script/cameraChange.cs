@@ -43,81 +43,72 @@ public class cameraChange : MonoBehaviour
                 player.SetActive(false);
                 skill.SetActive(true);
                 Invoke("camera2",2f);
-                player.SetActive(true);
-                skill.SetActive(false);
-                Invoke("camera1",3f);
+                Invoke("wait",7f);
+                Invoke("camera1",12f);
             }
             if(rageValue.rageV== 0.3f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
                 Invoke("camera2",2f);
-                player.SetActive(true);
-                skill.SetActive(false);
-                Invoke("camera1",3f);
+                Invoke("wait",8f);
+                Invoke("camera1",14f);
             }
             if(rageValue.rageV == 0.4f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
                 Invoke("camera2",2f);
-                player.SetActive(true);
-                skill.SetActive(false);
-                Invoke("camera1",3f);
+                Invoke("wait",10f);
+                Invoke("camera1",18f);
             }
             if(rageValue.rageV == 0.5f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
                 Invoke("camera2",2f);
-                player.SetActive(true);
-                skill.SetActive(false);
-                Invoke("camera1",3f);
+                Invoke("wait",12f);
+                Invoke("camera1",24f);
             }
             if(rageValue.rageV == 0.6f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
                 Invoke("camera2",2f);
-                player.SetActive(true);
-                skill.SetActive(false);
-                Invoke("camera1",3f);
+                Invoke("wait",13f);
+                Invoke("camera1",26f);
             }
             if(rageValue.rageV == 0.7f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
                 Invoke("camera2",2f);
-                player.SetActive(true);
-                skill.SetActive(false);
-                Invoke("camera1",3f);                
+                Invoke("wait",15f);
+                Invoke("camera1",28f);                
             }
             if(rageValue.rageV == 0.8f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
                 Invoke("camera2",2f);
-                player.SetActive(true);
-                skill.SetActive(false);
-                Invoke("camera1",3f);                
+                Invoke("wait",17f);
+                Invoke("camera1",30f);                
             }
             if(rageValue.rageV == 0.9f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
                 Invoke("camera2",2f);
-                player.SetActive(true);
-                skill.SetActive(false);
-                Invoke("camera1",3f);                
+                Invoke("wait",19f);
+                Invoke("camera1",32f);                
             }
             if(rageValue.rageV == 1.0f)
             {
                 player.SetActive(false);
                 skill.SetActive(true);
                 Invoke("camera2",2f);
-
-                
-                Invoke("camera1",3f);
+                Invoke("wait",21f);
+                Invoke("camera1",35f);
             }
         }
     }
