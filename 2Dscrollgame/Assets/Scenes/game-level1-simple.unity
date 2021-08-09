@@ -402,6 +402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 18938379}
+  - component: {fileID: 18938380}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -2373,10 +2374,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74e3f8e0fc364444ea766f23034a4fd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam1: {fileID: 371008683}
-  cam2: {fileID: 974197882}
-  player: {fileID: 0}
-  skill: {fileID: 0}
+  vcam1: {fileID: 371008684}
+  vcam2: {fileID: 974197884}
+  player: {fileID: 940591342}
+  skill: {fileID: 1362044507}
 --- !u!1 &568105255
 GameObject:
   m_ObjectHideFlags: 0
