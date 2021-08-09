@@ -70,7 +70,7 @@ public class enemy : MonoBehaviour
         }
         if(other.gameObject.CompareTag("skill"))
         {
-            hp -= 1;
+            hp -= 5;
             Destroy(other.gameObject);
         }
     }

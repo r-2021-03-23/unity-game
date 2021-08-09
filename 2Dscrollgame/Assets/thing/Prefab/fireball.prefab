@@ -45,7 +45,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1535759724050158697, guid: 65ce54443612ab849bbe4edbce4397ab, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: skill
       objectReference: {fileID: 0}
     - target: {fileID: 1535759724050158699, guid: 65ce54443612ab849bbe4edbce4397ab, type: 3}
       propertyPath: m_RootOrder
