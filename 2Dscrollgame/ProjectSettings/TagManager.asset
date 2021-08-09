@@ -24,7 +24,6 @@ TagManager:
   - woodRoll
   - healthPot
   - enemyBomb1
-  - skill
   layers:
   - Default
   - TransparentFX
