@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!61 &7742944986169057300
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4100850130415239650}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0094593465, y: -0.37231112}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.50000006, y: 0.6740047}
+    oldSize: {x: 1.7, y: 2.3}
+    newSize: {x: 6.65, y: 3.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.84905213, y: 1.4590778}
+  m_EdgeRadius: 0
 --- !u!114 &-8993911672712220484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45,11 +71,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1535759724050158697, guid: 65ce54443612ab849bbe4edbce4397ab, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: skill
       objectReference: {fileID: 0}
     - target: {fileID: 1535759724050158699, guid: 65ce54443612ab849bbe4edbce4397ab, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535759724050158699, guid: 65ce54443612ab849bbe4edbce4397ab, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535759724050158699, guid: 65ce54443612ab849bbe4edbce4397ab, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1535759724050158699, guid: 65ce54443612ab849bbe4edbce4397ab, type: 3}
       propertyPath: m_LocalPosition.x
