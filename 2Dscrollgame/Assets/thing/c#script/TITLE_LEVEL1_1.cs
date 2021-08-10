@@ -29,14 +29,14 @@ public class TITLE_LEVEL1_1: MonoBehaviour
     }
     public void level1_simple()
     {
-        SceneManager.LoadScene("game-level1simple");
+        SceneManager.LoadScene("game-level1-simple");
     }
 
     public void level1_normal()
     {
         if( CardGameManager.f == 1)
         {
-            SceneManager.LoadScene("game-level1normal");
+            SceneManager.LoadScene("game-level1-normal");
         }
         else
         {
@@ -48,7 +48,7 @@ public class TITLE_LEVEL1_1: MonoBehaviour
     {
         if(mazeGameManager.m == 1)
         {
-            SceneManager.LoadScene("game-level1hard");
+            SceneManager.LoadScene("game-level1-hard");
         }
         else
         {
@@ -60,7 +60,7 @@ public class TITLE_LEVEL1_1: MonoBehaviour
     {
         if(snakeGame_snake.s == 1)
         {
-            SceneManager.LoadScene("game-level2simple");
+            SceneManager.LoadScene("game-level2-simple");
         }
         else
         {
