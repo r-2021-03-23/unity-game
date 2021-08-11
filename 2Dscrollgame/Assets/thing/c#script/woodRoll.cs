@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class woodRoll : MonoBehaviour
 {
-    public float span = 10f,delta = 0;
+    public float span = 15f,delta = 0;
     // Start is called before the first frame update
     public Rigidbody2D rb;
 
@@ -31,6 +31,7 @@ public class woodRoll : MonoBehaviour
             g.GetComponent<Rigidbody2D>().AddForce(new Vector3(force,0,0));
             g.name = "wooden";
             g.GetComponent<Rigidbody2D>().mass = 10;
+            g.GetComponent<woodRoll>().span = 10f;
             Destroy(this.gameObject);
         }
     }
