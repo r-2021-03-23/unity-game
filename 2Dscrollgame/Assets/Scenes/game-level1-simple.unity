@@ -3018,7 +3018,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974197882}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -475.02, y: -166.23, z: -6.1387286}
+  m_LocalPosition: {x: -475.28, y: -165.6, z: -6.1387286}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1369008876}
@@ -3041,7 +3041,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 11
+  m_Priority: 17
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 1362044508}
   m_Follow: {fileID: 1362044508}
@@ -3183,6 +3183,10 @@ PrefabInstance:
       propertyPath: sentences.Array.data[0]
       value: "\u738B\u5B50 : \u53EF\u60E1\uFF0C\u4E00\u5B9A\u8981\u76E1\u5FEB\u6551\u56DE\u516C\u4E3B\u624D\u884C\u3002"
       objectReference: {fileID: 0}
+    - target: {fileID: 3580507273575091540, guid: f93e4e733789aab4dafb209f17e828c4, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 4354939788093cf4eb6731f970cd1c09, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f93e4e733789aab4dafb209f17e828c4, type: 3}
 --- !u!1 &1040188400
@@ -4859,7 +4863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0.26, y: -6.6299915, z: -10}
+  m_FollowOffset: {x: 0, y: -6, z: -10}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -4990,7 +4994,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 4354939788093cf4eb6731f970cd1c09, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -6409,6 +6413,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 2.622
       objectReference: {fileID: 0}
+    - target: {fileID: 5948581211971572170, guid: 996ac584662d8514fb964e1f2cd58862, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 4354939788093cf4eb6731f970cd1c09, type: 3}
     - target: {fileID: 5948581212169474666, guid: 996ac584662d8514fb964e1f2cd58862, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -10774,6 +10782,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -49.6
       objectReference: {fileID: 0}
+    - target: {fileID: 1729292204898055435, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 4354939788093cf4eb6731f970cd1c09, type: 3}
     - target: {fileID: 1729292205259501386, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_SizeDelta.y
       value: 89.3604
