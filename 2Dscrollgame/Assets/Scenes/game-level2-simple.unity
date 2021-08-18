@@ -7148,7 +7148,7 @@ MonoBehaviour:
   startPos: {fileID: 293965501}
   pos1: {fileID: 293965501}
   pos2: {fileID: 347237777}
-  ani: {fileID: 1505494896}
+  ani: {fileID: 2092487224}
   speed: 1
 --- !u!1 &1538185147 stripped
 GameObject:

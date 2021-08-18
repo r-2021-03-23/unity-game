@@ -1939,25 +1939,11 @@ MonoBehaviour:
   pos2: {fileID: 281673897}
   ani: {fileID: 632412152}
   speed: 1
---- !u!95 &632412152
+--- !u!95 &632412152 stripped
 Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7152898785215937123, guid: 093c080b54b5383479edb93fb8963058, type: 3}
+  m_PrefabInstance: {fileID: 478500681}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632412147}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2faa126fde8aa6a43aefbb600ae3cb4d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &673948747
 GameObject:
   m_ObjectHideFlags: 0
