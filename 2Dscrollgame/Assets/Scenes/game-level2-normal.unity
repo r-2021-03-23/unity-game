@@ -2199,7 +2199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809094506}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 53.81, y: -0.61, z: 14.549089}
+  m_LocalPosition: {x: 53.81, y: 0.72, z: 14.549089}
   m_LocalScale: {x: 0.6, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 579893610}
@@ -2486,7 +2486,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984137054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 49.06, y: -0.61, z: 14.549089}
+  m_LocalPosition: {x: 49.06, y: 0.63, z: 14.549089}
   m_LocalScale: {x: 0.6, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 579893610}
@@ -2813,7 +2813,7 @@ MonoBehaviour:
   startPos: {fileID: 984137055}
   pos1: {fileID: 984137055}
   pos2: {fileID: 809094507}
-  ani: {fileID: 0}
+  ani: {fileID: 1220598387}
   speed: 1
 --- !u!1001 &1112495411
 PrefabInstance:
@@ -3273,8 +3273,27 @@ MonoBehaviour:
   startPos: {fileID: 1188430244}
   pos1: {fileID: 1188430244}
   pos2: {fileID: 1590678987}
-  ani: {fileID: 0}
+  ani: {fileID: 1220598387}
   speed: 1
+--- !u!95 &1220598387
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220598382}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e864d6f21b287fe4c84aac4dd4445fd7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1222250951 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1321025517712774564, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
@@ -3321,7 +3340,7 @@ MonoBehaviour:
   startPos: {fileID: 532075268}
   pos1: {fileID: 532075268}
   pos2: {fileID: 449365984}
-  ani: {fileID: 0}
+  ani: {fileID: 1220598387}
   speed: 1
 --- !u!1 &1227658973
 GameObject:
@@ -3929,7 +3948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rageValues: {fileID: 1347374044}
   release: {fileID: 1347374046}
-  gameOver: {fileID: 0}
+  gameOver: {fileID: 1657558297}
 --- !u!1001 &1354998646
 PrefabInstance:
   m_ObjectHideFlags: 0
