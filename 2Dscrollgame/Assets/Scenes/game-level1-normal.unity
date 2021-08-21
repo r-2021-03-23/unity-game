@@ -4972,7 +4972,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1468138504917656000, guid: 95c6dfab813e0a44d866805228545335, type: 3}
       propertyPath: span
-      value: 4.75
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1468138504917656000, guid: 95c6dfab813e0a44d866805228545335, type: 3}
       propertyPath: force
@@ -4984,7 +4984,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1468138504917656003, guid: 95c6dfab813e0a44d866805228545335, type: 3}
       propertyPath: m_Mass
-      value: 10
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468138504917656003, guid: 95c6dfab813e0a44d866805228545335, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1468138504917656060, guid: 95c6dfab813e0a44d866805228545335, type: 3}
       propertyPath: m_RootOrder
