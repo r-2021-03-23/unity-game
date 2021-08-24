@@ -107,14 +107,14 @@ public class player : MonoBehaviour
 
         if(hp == 0)
         {
-            Time.timeScale = 0;
+            Time.timeScale = 0f;
             gameOver.SetActive(true);
             pauseButton.SetActive(false);
             hp = 10;
         }
         else
         {
-            Time.timeScale = 1;
+            Time.timeScale = 1f;
         }
         if(gameOver.activeSelf == true)
         {
