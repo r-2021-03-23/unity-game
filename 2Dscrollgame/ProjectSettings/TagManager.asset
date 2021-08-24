@@ -25,6 +25,7 @@ TagManager:
   - healthPot
   - enemyBomb1
   - skill
+  - crackFloor
   layers:
   - Default
   - TransparentFX

@@ -19,7 +19,11 @@ public class floorCracked : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        ani.SetBool("stand",true);
+        if(col.gameObject.CompareTag("Player"))
+        {
+            ani.SetBool("stand",true);
+        }
+        
     }
 
 }
