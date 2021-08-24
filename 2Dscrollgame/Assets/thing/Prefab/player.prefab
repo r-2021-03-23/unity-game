@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7976428303955269010}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,6 +171,7 @@ MonoBehaviour:
   gameOver: {fileID: 0}
   pauseButton: {fileID: 0}
   hp_bar: {fileID: 0}
+  hurt: {fileID: 0}
   animators:
   - {fileID: 0}
   - {fileID: 0}
