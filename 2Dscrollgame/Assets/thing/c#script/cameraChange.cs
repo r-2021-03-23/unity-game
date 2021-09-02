@@ -9,7 +9,7 @@ public class cameraChange : MonoBehaviour
     public GameObject player,skill,time_left,time_left_back;
     
     public Image time_left_img;
-    public float timecount,timeset,F;
+    public float timecount,timeset;
     // Start is called before the first frame update
     void Start()
     {
