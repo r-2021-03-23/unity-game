@@ -9828,7 +9828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3585465737579781170, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3585465737579781170, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
@@ -15343,7 +15343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8784399676315522876, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
