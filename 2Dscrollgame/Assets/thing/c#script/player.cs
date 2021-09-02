@@ -17,6 +17,7 @@ public class player : MonoBehaviour
     public static int x=0;
 
     public GameObject BulletPrefab;
+    
     public GameObject gameOver;
     public GameObject pauseButton;
     public Image hp_bar,hurt;
@@ -59,10 +60,6 @@ public class player : MonoBehaviour
         if(hp > max_hp)
         {
             hp = max_hp;
-        }
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            attack();
         }
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * speed;
@@ -163,14 +160,6 @@ public class player : MonoBehaviour
 
     }  
     
-
-    void attack()
-    {
-        Instantiate(BulletPrefab,this.transform.position+new Vector3(0,0,0),Quaternion.identity); 
-    }
-
-
-
     void OnCollisionEnter2D(Collision2D col)
     {
         if(col.gameObject.CompareTag("ground"))
@@ -217,4 +206,8 @@ public class player : MonoBehaviour
     }
 
 
+    public void attack()
+    {
+        Instantiate(BulletPrefab,this.transform.position+new Vector3(0,0,0),Quaternion.identity); 
+    }
 }

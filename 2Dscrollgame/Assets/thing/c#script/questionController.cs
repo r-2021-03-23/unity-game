@@ -8,8 +8,8 @@ public class questionController : MonoBehaviour
 
     public Text text;
 
+    public bool clicked=false;
     public int a = 0;
-    public bool isAnswer;
     public Image image;
     public Button[] button;
     // Start is called before the first frame update
@@ -30,13 +30,15 @@ public class questionController : MonoBehaviour
             button[2].enabled = false;
             button[3].enabled = false;
         }
+
     } 
     public void MouseDown()
     {        
-            if(isAnswer == true)
+            if(GetComponent<isAnswer>().isAnswer1 == true)
             {
                 this.image.color = Color.green;
                 text.text = "Correct!";
+                clicked = true;
             }
             else
             {

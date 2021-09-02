@@ -26,5 +26,6 @@ public class questionHandler : MonoBehaviour
             SceneManager.LoadScene(r+13);
         }
 
+
     }  
 }
