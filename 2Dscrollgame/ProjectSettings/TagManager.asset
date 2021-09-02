@@ -26,6 +26,8 @@ TagManager:
   - enemyBomb1
   - skill
   - crackFloor
+  - answer
+  - "\u984C\u76EE"
   layers:
   - Default
   - TransparentFX
