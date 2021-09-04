@@ -13630,7 +13630,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1468138504917656000, guid: 95c6dfab813e0a44d866805228545335, type: 3}
       propertyPath: span
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1468138504917656000, guid: 95c6dfab813e0a44d866805228545335, type: 3}
       propertyPath: force
