@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class questionHandler : MonoBehaviour
 {
     public static int r;
-    public bool through1,through2,through3;
+    public static bool through1,through2,through3;
     // Start is called before the first frame update
     void Start()
     {
