@@ -7,10 +7,13 @@ using UnityEngine.SceneManagement;
 public class showInfo : MonoBehaviour
 {
     public Text text;
+
+    int r;
    
     // Start is called before the first frame update
     void Start()
-    {
+    {  
+        r = questionHandler.r;
     }
 
     // Update is called once per frame
@@ -20,22 +23,22 @@ public class showInfo : MonoBehaviour
        if(GetComponent<playerBulletSpeedAndLength>().x == 4)
         {
             text.text = "射速已達上限";
-            Invoke("wait",8f);
+            Invoke("wait",5f);
         }
         else if(GetComponent<playerBulletSpeedAndLength>().x == 3)
         {
             text.text = "射速增加";
-            Invoke("wait",8f);
+            Invoke("wait",5f);
         }
         else if(GetComponent<playerBulletSpeedAndLength>().x == 2)
         {
             text.text = "射程已達上限";
-            Invoke("wait",8f);
+            Invoke("wait",5f);
         }
         else if(GetComponent<playerBulletSpeedAndLength>().x == 1)
         {
             text.text = "射程增加";
-            Invoke("wait",8f);
+            Invoke("wait",5f);
         }
         else
         {
@@ -45,7 +48,7 @@ public class showInfo : MonoBehaviour
 
     void wait()
     {
-        SceneManager.LoadScene(sceneHis.sceneHistory.Count - 1);
+        SceneManager.UnloadSceneAsync(r+11);
     }
 
 

@@ -27,7 +27,8 @@ TagManager:
   - skill
   - crackFloor
   - answer
-  - "\u984C\u76EE"
+  - "\u984C\u76EE1-1"
+  - "\u984C\u76EE1-2"
   layers:
   - Default
   - TransparentFX

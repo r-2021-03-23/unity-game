@@ -19,15 +19,7 @@ public class sceneHis : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-  
+        
     }
 
-    public void changeScene()
-    {
-        if (sceneHistory.Count >= 2)  
-        {
-            sceneHistory.RemoveAt(sceneHistory.Count -1);
-            SceneManager.LoadScene(sceneHistory[sceneHistory.Count -1]);
-        }
-    }
 }
