@@ -43,7 +43,7 @@ public class playerBulletSpeedAndLength : MonoBehaviour
                     playerBullet.Length += 1f;     
                 }
             }
-            else
+            if(r==1)
             {
                 if(delta < 0.1f)
                 {

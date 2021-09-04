@@ -7931,7 +7931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: {fileID: 56615244}
-  sceneName: game-level1hard
+  sceneName: game-level1-hard
 --- !u!1001 &256490239
 PrefabInstance:
   m_ObjectHideFlags: 0

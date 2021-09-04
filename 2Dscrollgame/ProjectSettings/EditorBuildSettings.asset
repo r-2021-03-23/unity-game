@@ -6,44 +6,38 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/gameStart.unity
+    path: Assets/Scenes/game/gameStart.unity
     guid: 5614c1382ddbe7047affa0027860074b
   - enabled: 1
-    path: Assets/Scenes/UILEVEL.unity
+    path: Assets/Scenes/game/UILEVEL.unity
     guid: 86a40fc1bd8099c4db01ea41effbb86b
   - enabled: 1
-    path: Assets/Scenes/game-level1-simple.unity
+    path: Assets/Scenes/game/game-level1-simple.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/level1Card_start.unity
-    guid: 46344e6916341384d8ef222338903eac
-  - enabled: 1
-    path: Assets/Scenes/level1Card.unity
-    guid: cc316181a011d1844bdf4349eaf1c1ee
-  - enabled: 1
-    path: Assets/Scenes/game-level1-normal.unity
+    path: Assets/Scenes/game/game-level1-normal.unity
     guid: d9b257f9f126e844387ebdf1ba0a18ce
   - enabled: 1
-    path: Assets/Scenes/level1Maze_start.unity
-    guid: 3697e5d870c8ecc4aa96349911bd6e66
-  - enabled: 1
-    path: Assets/Scenes/level1Maze.unity
-    guid: affb78dcd84210c4b8f367b58158b9df
-  - enabled: 1
-    path: Assets/Scenes/game-level1-hard.unity
+    path: Assets/Scenes/game/game-level1-hard.unity
     guid: b11d6f4e4c507b345a2323e8671347ca
   - enabled: 1
-    path: Assets/Scenes/level1Snake_start.unity
-    guid: b9f2e495a730b6341bf92e70d77aac3d
-  - enabled: 1
-    path: Assets/Scenes/level1Snake.unity
-    guid: 0fb02fe2337f6de4cb0f9fe3d9f27ebb
-  - enabled: 1
-    path: Assets/Scenes/game-level2-simple.unity
+    path: Assets/Scenes/game/game-level2-simple.unity
     guid: 8bd365ac82bf72947aef10c276f1c61e
   - enabled: 1
-    path: Assets/Scenes/level3Maze.unity
-    guid: 910cce187d9a79f4a8ecb9bf6b3b6341
+    path: Assets/Scenes/game/game-level2-normal.unity
+    guid: 1707bd2e9b4a53a489dd1e93a286a6d0
+  - enabled: 1
+    path: Assets/Scenes/game/game-level2-hard.unity
+    guid: 41b74dfc22f68304bbb63d9f8739ad5b
+  - enabled: 1
+    path: Assets/Scenes/game/game-level3-simple.unity
+    guid: 557e404f5c82bf94ebd35bd8bc5d1793
+  - enabled: 1
+    path: Assets/Scenes/game/game-level3-normal.unity
+    guid: 8d044e432a3e6a9479bf74eef621d659
+  - enabled: 1
+    path: Assets/Scenes/game/game-level3-hard.unity
+    guid: cfd90f1ac85bfd1409af5c28e9fdbe25
   - enabled: 1
     path: "Assets/Scenes/\u984C\u76EE/\u984C\u76EE1.unity"
     guid: f6c5c917a003218468e06710c71c2bc2

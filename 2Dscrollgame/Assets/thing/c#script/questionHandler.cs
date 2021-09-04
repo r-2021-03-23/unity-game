@@ -22,8 +22,8 @@ public class questionHandler : MonoBehaviour
     {
         if(other.gameObject.CompareTag("題目"))
         {
-            r = Random.Range (0,5);
-            SceneManager.LoadScene(r+13);
+            r = Random.Range (0,1);
+            SceneManager.LoadScene(r+11);
         }
 
 

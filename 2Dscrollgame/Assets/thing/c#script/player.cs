@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
-    
+  
+
     public Animator ani;
     public Rigidbody2D rb;
     public static float hp = 10;
