@@ -9,6 +9,8 @@ public class questionController : MonoBehaviour
     public Text text;
 
     public bool clicked=false;
+    
+    public static int answerCorrect = 0;
     public int a = 0;
     public Image image;
     public Button[] button;
@@ -39,11 +41,13 @@ public class questionController : MonoBehaviour
                 this.image.color = Color.green;
                 text.text = "Correct!";
                 clicked = true;
+                answerCorrect = 2;
             }
             else
             {
                 this.image.color = Color.red;
                 text.text = "false...";
+                answerCorrect = 1;
             }
         a = 1;    
     }

@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class questionHandler : MonoBehaviour
 {
-    public static int r;
-    public static bool through1,through2,through3;
+    public static int r,x;
+    public static bool[] through = {false,false,false};
     // Start is called before the first frame update
     void Start()
     {
@@ -21,19 +21,21 @@ public class questionHandler : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("題目1-1") && through1 == false)
+        if(other.gameObject.CompareTag("題目1-1") && through[0] == false)
         {
-            r = Random.Range (0,1);
+            r = Random.Range (0,25);
 
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
-            through1 = true;
+            through[0] = true;
+            x = 0;
         }
-        if(other.gameObject.CompareTag("題目1-2") && through2 == false)
+        if(other.gameObject.CompareTag("題目1-2") && through[1] == false)
         {
-            r = Random.Range (0,1);
+            r = Random.Range (0,25);
 
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
-            through2 = true;
+            through[1] = true;
+            x = 1;
         }
 
 

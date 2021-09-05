@@ -40,10 +40,11 @@ public class showInfo : MonoBehaviour
             text.text = "射程增加";
             Invoke("wait",5f);
         }
-        else
+        else if(GetComponent<playerBulletSpeedAndLength>().x == 5)
         {
-            text.text = " ";
+            Invoke("wait",5f);
         }
+      
     }
 
     void wait()

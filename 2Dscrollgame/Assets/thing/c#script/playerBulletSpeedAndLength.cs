@@ -31,34 +31,38 @@ public class playerBulletSpeedAndLength : MonoBehaviour
             if(r==0)
             {
                 
-                if(playerBullet.Length > 3)
+                if(playerBullet.Length > 1.5)
                 {//text.text = "射程已達上限";
                     x = 2;
-                    playerBullet.Length = 3;
+                    playerBullet.Length = 1.5f;
                 }
                 else
                 {   
                     //text.text = "射程增加";
                     x = 1;
-                    playerBullet.Length += 1f;     
+                    playerBullet.Length += 0.1f;     
                 }
             }
             if(r==1)
             {
-                if(delta < 0.1f)
+                if(span < 0.1f)
                 {
                     //text.text = "射速已達上限";
                     x = 4;
-                    delta = 0.1f;
+                    span = 0.1f;
                 }
                 else
                 {   //text.text = "射速增加";
                     x = 3;
-                    delta -= 1f;
+                    span -= 0.5f;
                     
                 }
             }
             y=0;
+        }
+        if(GetComponent<isAnswer>().isAnswer1 == false)
+        {
+            x=5;
         }
  
     }

@@ -15,18 +15,27 @@ public class star : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(CardGameManager.f == 1)
+        for(int i = 0;i<images.Length;i++)
         {
-            images[0].color = Color.yellow;
+            if(questionController.answerCorrect == 2)
+            {
+                if(questionHandler.through[questionHandler.x] == true)
+                {
+                    images[questionHandler.x].color = Color.green;
+                }
+               
+                
+            }
+            if(questionController.answerCorrect == 1)
+            {
+                if(questionHandler.through[questionHandler.x] == true)
+                {
+                    images[questionHandler.x].color = Color.red;
+                }
+            }
         }
-        if(mazeGameManager.m == 1)
-        {
-            images[1].color = Color.yellow;
-        }
-        if(snakeGame_snake.s ==1)
-        {
-            images[2].color = Color.yellow;
-        }    
+   
     }
+
 
 }
