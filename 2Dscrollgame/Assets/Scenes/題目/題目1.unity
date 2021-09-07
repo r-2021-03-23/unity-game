@@ -565,7 +565,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1958726908}
-  clicked: 0
   a: 0
   image: {fileID: 587736569}
   button:
@@ -623,9 +622,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 587736566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99ac60a7991d28644aea3a7bc336e554, type: 3}
+  m_Script: {fileID: 11500000, guid: dc28193bb5c37b8439a4be4a6371924f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clicked: 0
 --- !u!1 &820706805
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,7 +935,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1958726908}
-  clicked: 0
   a: 0
   image: {fileID: 1360146625}
   button:
@@ -993,9 +992,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1360146622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99ac60a7991d28644aea3a7bc336e554, type: 3}
+  m_Script: {fileID: 11500000, guid: dc28193bb5c37b8439a4be4a6371924f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clicked: 0
 --- !u!1 &1474156212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,7 +1305,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1958726908}
-  clicked: 0
   a: 0
   image: {fileID: 1551836315}
   button:
@@ -1363,9 +1362,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1551836312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99ac60a7991d28644aea3a7bc336e554, type: 3}
+  m_Script: {fileID: 11500000, guid: dc28193bb5c37b8439a4be4a6371924f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clicked: 0
 --- !u!1 &1754729367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,7 +1517,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1958726908}
-  clicked: 0
   a: 0
   image: {fileID: 1754729370}
   button:
@@ -1575,9 +1574,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1754729367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99ac60a7991d28644aea3a7bc336e554, type: 3}
+  m_Script: {fileID: 11500000, guid: dc28193bb5c37b8439a4be4a6371924f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clicked: 0
 --- !u!1 &1777132405
 GameObject:
   m_ObjectHideFlags: 0

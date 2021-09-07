@@ -5,7 +5,7 @@ using UnityEngine;
 public class playerBulletSpeedAndLength : MonoBehaviour
 {
     public  int r=0,x=0,y=1; 
-    public static float delta = 0f,span = 3f;
+    public static float delta = 0f,span = 1.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,7 @@ public class playerBulletSpeedAndLength : MonoBehaviour
             }     
         }
         
-        if(GetComponent<isAnswer>().isAnswer1 == true && GetComponent<questionController>().clicked == true && y == 1)
+        if(GetComponent<isAnswer>().isAnswer1 == true && GetComponent<isClicked>().clicked == true && y == 1)
         {
             r = Random.Range(0,2);
             if(r==0)
@@ -60,7 +60,7 @@ public class playerBulletSpeedAndLength : MonoBehaviour
             }
             y=0;
         }
-        if(GetComponent<isAnswer>().isAnswer1 == false)
+        if(GetComponent<isAnswer>().isAnswer1 == false && GetComponent<isClicked>().clicked == true)
         {
             x=5;
         }

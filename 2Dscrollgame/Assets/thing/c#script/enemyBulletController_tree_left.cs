@@ -17,7 +17,7 @@ public class enemyBulletController_tree_left : MonoBehaviour
     // Update is called once per frame
     void Update()
     {        
-        this.transform.position += new Vector3(-0.3f * Time.deltaTime * 60, 0, 0);
+        this.transform.position += new Vector3(-0.2f * Time.deltaTime * 60, 0, 0);
         timer -= Time.deltaTime;
         if(timer <= 0)
         {

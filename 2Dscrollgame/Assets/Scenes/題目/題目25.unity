@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 159279877}
   - component: {fileID: 159279876}
   - component: {fileID: 159279875}
+  - component: {fileID: 159279878}
   m_Layer: 5
   m_Name: 'Button B '
   m_TagString: Untagged
@@ -215,7 +216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 596690901}
-  clicked: 0
   a: 0
   image: {fileID: 159279872}
   button:
@@ -322,6 +322,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAnswer1: 1
+--- !u!114 &159279878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159279869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc28193bb5c37b8439a4be4a6371924f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clicked: 0
 --- !u!1 &263927395
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +351,7 @@ GameObject:
   - component: {fileID: 263927403}
   - component: {fileID: 263927402}
   - component: {fileID: 263927401}
+  - component: {fileID: 263927404}
   m_Layer: 5
   m_Name: Button C
   m_TagString: Untagged
@@ -414,7 +428,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 596690901}
-  clicked: 0
   a: 0
   image: {fileID: 263927398}
   button:
@@ -521,6 +534,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAnswer1: 0
+--- !u!114 &263927404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263927395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc28193bb5c37b8439a4be4a6371924f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clicked: 0
 --- !u!1 &286151723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1061,7 @@ GameObject:
   - component: {fileID: 1087910983}
   - component: {fileID: 1087910982}
   - component: {fileID: 1087910981}
+  - component: {fileID: 1087910984}
   m_Layer: 5
   m_Name: Button A
   m_TagString: Untagged
@@ -1111,7 +1138,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 596690901}
-  clicked: 0
   a: 0
   image: {fileID: 1087910978}
   button:
@@ -1218,6 +1244,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAnswer1: 0
+--- !u!114 &1087910984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087910975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc28193bb5c37b8439a4be4a6371924f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clicked: 0
 --- !u!1 &1406567917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1612,6 +1651,7 @@ GameObject:
   - component: {fileID: 1975519171}
   - component: {fileID: 1975519170}
   - component: {fileID: 1975519169}
+  - component: {fileID: 1975519172}
   m_Layer: 5
   m_Name: Button D
   m_TagString: Untagged
@@ -1652,7 +1692,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 596690901}
-  clicked: 0
   a: 0
   image: {fileID: 1975519167}
   button:
@@ -1795,3 +1834,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAnswer1: 0
+--- !u!114 &1975519172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975519163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc28193bb5c37b8439a4be4a6371924f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clicked: 0
