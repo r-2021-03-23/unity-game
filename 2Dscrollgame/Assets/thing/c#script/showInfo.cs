@@ -8,18 +8,21 @@ public class showInfo : MonoBehaviour
 {
     public Text text;
 
-    int r;
+     
+    
+     public static int a,r;   
    
     // Start is called before the first frame update
     void Start()
     {  
-        r = questionHandler.r;
+        r = player.r;
+    
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+       a = 0; 
        if(GetComponent<playerBulletSpeedAndLength>().x == 4)
         {
             text.text = "射速已達上限";
@@ -50,6 +53,7 @@ public class showInfo : MonoBehaviour
     void wait()
     {
         SceneManager.UnloadSceneAsync(r+11);
+        Time.timeScale = 0f;
     }
 
 

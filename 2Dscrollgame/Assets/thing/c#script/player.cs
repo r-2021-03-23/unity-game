@@ -26,10 +26,17 @@ public class player : MonoBehaviour
     
     public Animator[] animators;
    
+
    
     float horizontalMove = 0f;
     float speed = 3f;
     float jumpSpeed = 10f,hurtSpeed = 5f;
+
+
+    public static int r,y;
+    
+    int a;
+    public static bool[] through = {false,false,false};
 
     // Start is called before the first frame update
     void Start()
@@ -128,7 +135,8 @@ public class player : MonoBehaviour
             hurt.fillAmount = hp_bar.fillAmount;
         }
 
-    }
+
+}
         
     
 
@@ -146,19 +154,23 @@ public class player : MonoBehaviour
             hp -= 1;
 
         }
-        if(other.gameObject.CompareTag("cardGame"))
+        if(other.gameObject.CompareTag("題目1-1") && through[0] == false)
         {
-            SceneManager.LoadScene("level1Card_start");
-        }
-        if(other.gameObject.CompareTag("mazeGame"))
-        {
-            SceneManager.LoadScene("level1Maze_start");
-        }
-        if(other.gameObject.CompareTag("snakeGame"))
-        {
-            SceneManager.LoadScene("level1Snake_start");
+            r = Random.Range (0,25);
+
+            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            through[0] = true;
+            y = 0;
         }
 
+        if(other.gameObject.CompareTag("題目1-2") && through[1] == false)
+        {
+            r = Random.Range (0,25);
+
+            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            through[1] = true;
+            y = 1;
+        }
     }  
     
     void OnCollisionEnter2D(Collision2D col)
@@ -187,7 +199,7 @@ public class player : MonoBehaviour
         {
             hp += 3;
             col.gameObject.SetActive(false);
-        }      
+        } 
     }
 
     void OnCollisionExit2D(Collision2D col)
@@ -211,4 +223,5 @@ public class player : MonoBehaviour
     {
         Instantiate(BulletPrefab,this.transform.position+new Vector3(0,0,0),Quaternion.identity); 
     }
+    
 }
