@@ -35,6 +35,7 @@ public class player : MonoBehaviour
 
     public static int r,y;
     
+    public Vector2[] dir;
     int a;
     public static bool[] through = {false,false,false};
 
@@ -161,6 +162,7 @@ public class player : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[0] = true;
             y = 0;
+            rb.MovePosition(dir[0]);
         }
 
         if(other.gameObject.CompareTag("題目1-2") && through[1] == false)
@@ -170,6 +172,25 @@ public class player : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[1] = true;
             y = 1;
+            rb.MovePosition(dir[1]);
+        }
+        if(other.gameObject.CompareTag("題目2-1") && through[2] == false)
+        {
+            r = Random.Range (0,25);
+
+            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            through[1] = true;
+            y = 1;
+            rb.MovePosition(dir[2]);
+        }
+        if(other.gameObject.CompareTag("題目2-2") && through[3] == false)
+        {
+            r = Random.Range (0,25);
+
+            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            through[1] = true;
+            y = 1;
+            rb.MovePosition(dir[3]);
         }
     }  
     

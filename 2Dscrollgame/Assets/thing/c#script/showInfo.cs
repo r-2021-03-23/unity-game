@@ -53,7 +53,6 @@ public class showInfo : MonoBehaviour
     void wait()
     {
         SceneManager.UnloadSceneAsync(r+11);
-        Time.timeScale = 0f;
     }
 
 
