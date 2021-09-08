@@ -15,7 +15,7 @@ public class showInfo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {  
-        r = player.r;
+        r = QuestionThrough.r;
     
     }
 

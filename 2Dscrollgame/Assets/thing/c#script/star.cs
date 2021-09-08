@@ -19,18 +19,18 @@ public class star : MonoBehaviour
         {
             if(questionController.answerCorrect == 2)
             {
-                if(player.through[player.y] == true)
+                if(GetComponent<QuestionThrough>().through[QuestionThrough.y] == true)
                 {
-                    images[player.y].color = Color.green;
+                    images[QuestionThrough.y].color = Color.green;
                 }
                
                 
             }
             if(questionController.answerCorrect == 1)
             {
-                if(player.through[player.y] == true)
+                if(GetComponent<QuestionThrough>().through[QuestionThrough.y] == true)
                 {
-                    images[player.y].color = Color.red;
+                    images[QuestionThrough.y].color = Color.red;
                 }
             }
         }

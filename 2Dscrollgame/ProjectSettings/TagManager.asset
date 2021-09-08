@@ -27,10 +27,10 @@ TagManager:
   - skill
   - crackFloor
   - answer
-  - "\u984C\u76EE1-1"
-  - "\u984C\u76EE1-2"
-  - "\u984C\u76EE"
   - "\u4E0B\u4E00\u95DC"
+  - "\u984C\u76EE-1"
+  - "\u984C\u76EE-2"
+  - "\u984C\u76EE-3"
   layers:
   - Default
   - TransparentFX
