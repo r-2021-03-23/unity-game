@@ -1963,8 +1963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f498b3f59fb9e7f4196f7008c84948dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dir: []
-  through: 0000
   rb: {fileID: 1354998649}
 --- !u!114 &594821965
 MonoBehaviour:
@@ -3124,7 +3122,7 @@ GameObject:
   - component: {fileID: 1125325874}
   m_Layer: 0
   m_Name: "\u984C\u76EE5 -3"
-  m_TagString: "\u984C\u76EE-3"
+  m_TagString: "\u984C\u76EE5-3"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4506,11 +4504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f498b3f59fb9e7f4196f7008c84948dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dir:
-  - {x: -3, y: 10}
-  - {x: 50, y: 0}
-  - {x: 100, y: 0}
-  through: 000000
   rb: {fileID: 0}
 --- !u!1 &1355319446
 GameObject:
@@ -5512,7 +5505,7 @@ GameObject:
   - component: {fileID: 1824806317}
   m_Layer: 0
   m_Name: "\u984C\u76EE5 -2"
-  m_TagString: "\u984C\u76EE-2"
+  m_TagString: "\u984C\u76EE5-2"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11376,7 +11369,7 @@ GameObject:
   - component: {fileID: 2136891729}
   m_Layer: 0
   m_Name: "\u984C\u76EE5-1"
-  m_TagString: "\u984C\u76EE-1"
+  m_TagString: "\u984C\u76EE5-1"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

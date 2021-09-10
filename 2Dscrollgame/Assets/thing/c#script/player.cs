@@ -13,6 +13,8 @@ public class player : MonoBehaviour
 
     public static bool isGameOver;
     bool isGround;
+    
+    
     public static int x=0;
 
     public GameObject BulletPrefab;
@@ -24,7 +26,7 @@ public class player : MonoBehaviour
     
     public Animator[] animators;
    
-
+    public static bool CanPlay = true;
    
     float horizontalMove = 0f;
     float speed = 3f;
@@ -64,13 +66,13 @@ public class player : MonoBehaviour
         }
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * speed;
-        if(Input.GetButton("right") && Time.timeScale == 1)
+        if(Input.GetButton("right") && Time.timeScale == 1 && CanPlay == true)
         {
             rb.velocity = new Vector2(speed,rb.velocity.y);
             
             
         }
-        if(Input.GetButton("left") && Time.timeScale == 1 )
+        if(Input.GetButton("left") && Time.timeScale == 1 && CanPlay == true)
         {
             rb.velocity = new Vector2(-speed,rb.velocity.y);
             
@@ -81,7 +83,7 @@ public class player : MonoBehaviour
 
                 
         
-        if (Input.GetKeyDown(KeyCode.W) && isGround == true && Time.timeScale == 1 )
+        if (Input.GetKeyDown(KeyCode.W) && isGround == true && Time.timeScale == 1 && CanPlay == true)
         {
            
             rb.AddForce(transform.up * jumpSpeed, ForceMode2D.Impulse);
@@ -128,7 +130,17 @@ public class player : MonoBehaviour
             hurt.fillAmount = hp_bar.fillAmount;
         }
 
+        if (CanPlay == false)
+        {
+            speed = 0f;
+            jumpSpeed = 0f;
+        }
 
+        if (CanPlay == true)
+        {
+            speed = 3f;
+            jumpSpeed = 10f;
+        }
 }
         
     
@@ -147,7 +159,10 @@ public class player : MonoBehaviour
             hp -= 1;
 
         }
- 
+        if(other.gameObject.CompareTag("下一關"))
+        {
+            GetComponent<loadLevel>().LoadLevel();
+        }
     }  
     
     void OnCollisionEnter2D(Collision2D col)

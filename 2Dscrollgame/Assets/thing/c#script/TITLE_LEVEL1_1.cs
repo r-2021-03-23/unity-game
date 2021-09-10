@@ -28,6 +28,9 @@ public class TITLE_LEVEL1_1: MonoBehaviour
         SceneManager.LoadScene("GameStart");
     }
     
-
+    public void level1_1()
+    {
+        SceneManager.LoadScene("game-level1-simple");
+    }
 
 }

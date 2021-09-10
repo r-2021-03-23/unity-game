@@ -8943,10 +8943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f498b3f59fb9e7f4196f7008c84948dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dir:
-  - {x: -7, y: 10}
-  - {x: 50, y: 12}
-  through: 0000
   rb: {fileID: 1487065071}
 --- !u!50 &1487065071 stripped
 Rigidbody2D:
@@ -9094,8 +9090,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f498b3f59fb9e7f4196f7008c84948dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dir: []
-  through: 0000
   rb: {fileID: 0}
 --- !u!1 &1536301519
 GameObject:
@@ -10180,7 +10174,7 @@ GameObject:
   - component: {fileID: 1873987392}
   m_Layer: 0
   m_Name: "\u984C\u76EE2-1"
-  m_TagString: "\u984C\u76EE-1"
+  m_TagString: "\u984C\u76EE2-1"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10827,7 +10821,7 @@ GameObject:
   - component: {fileID: 1971350616}
   m_Layer: 0
   m_Name: "\u984C\u76EE2-2"
-  m_TagString: "\u984C\u76EE-2"
+  m_TagString: "\u984C\u76EE2-2"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
