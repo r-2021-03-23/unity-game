@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class QuestionThrough : MonoBehaviour
 {
-    public static bool[] through = {false,false};
+    public static bool[] through = {false,false,false,false,false,false,false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
     public static int r,y;
     
     public Rigidbody2D rb;
