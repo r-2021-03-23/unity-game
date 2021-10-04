@@ -53,6 +53,7 @@ public class showInfo : MonoBehaviour
     void wait()
     {
         SceneManager.UnloadSceneAsync(r+11);
+        player.CanPlay = true;
     }
 
 

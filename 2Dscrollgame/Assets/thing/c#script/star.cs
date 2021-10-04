@@ -19,7 +19,7 @@ public class star : MonoBehaviour
         {
             if(questionController.answerCorrect == 2)
             {
-                if(GetComponent<QuestionThrough>().through[QuestionThrough.y] == true)
+                if(QuestionThrough.through[QuestionThrough.y] == true)
                 {
                     images[QuestionThrough.y].color = Color.green;
                 }
@@ -28,7 +28,7 @@ public class star : MonoBehaviour
             }
             if(questionController.answerCorrect == 1)
             {
-                if(GetComponent<QuestionThrough>().through[QuestionThrough.y] == true)
+                if(QuestionThrough.through[QuestionThrough.y] == true)
                 {
                     images[QuestionThrough.y].color = Color.red;
                 }

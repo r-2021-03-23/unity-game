@@ -882,7 +882,7 @@ GameObject:
   - component: {fileID: 342800772}
   m_Layer: 0
   m_Name: "\u984C\u76EE3 -2"
-  m_TagString: "\u984C\u76EE-2"
+  m_TagString: "\u984C\u76EE3-2"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12167,7 +12167,7 @@ GameObject:
   - component: {fileID: 1303419545}
   m_Layer: 0
   m_Name: "\u984C\u76EE3-1"
-  m_TagString: "\u984C\u76EE-1"
+  m_TagString: "\u984C\u76EE3-1"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13869,10 +13869,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f498b3f59fb9e7f4196f7008c84948dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dir:
-  - {x: 10, y: 30}
-  - {x: 10, y: 100}
-  through: 0000
   rb: {fileID: 1612871817}
 --- !u!1 &1651950712
 GameObject:
@@ -15114,8 +15110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f498b3f59fb9e7f4196f7008c84948dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dir: []
-  through: 0000
   rb: {fileID: 1612871817}
 --- !u!114 &1996849879
 MonoBehaviour:

@@ -3215,11 +3215,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f498b3f59fb9e7f4196f7008c84948dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dir:
-  - {x: 30, y: 12}
-  - {x: 80, y: 12}
   through: 0000
   rb: {fileID: 509795139}
+--- !u!114 &940591350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940591342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc19f84f25e1cbf41bb2f1a2c9836e6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: UILEVEL
 --- !u!1 &974197882
 GameObject:
   m_ObjectHideFlags: 0
@@ -5682,7 +5692,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523874857}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -444.66, y: -173.72, z: 0}
+  m_LocalPosition: {x: -492.59, y: -173.32, z: 0}
   m_LocalScale: {x: 2, y: 2.2958724, z: 1}
   m_Children: []
   m_Father: {fileID: 38072127}
@@ -6065,7 +6075,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f498b3f59fb9e7f4196f7008c84948dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dir: []
   through: 0000
   rb: {fileID: 509795139}
 --- !u!114 &1732643174
@@ -6956,7 +6965,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.010159045, y: 0.1262396}
@@ -7031,7 +7040,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928817752}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -325.92, y: -173.57, z: 3.8612714}
+  m_LocalPosition: {x: -474.99, y: -173.67, z: 3.8612714}
   m_LocalScale: {x: 2.1291, y: 1.9706, z: 1}
   m_Children: []
   m_Father: {fileID: 461282025}
