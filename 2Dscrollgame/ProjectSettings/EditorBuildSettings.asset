@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/game/game-level1-normal.unity
     guid: d9b257f9f126e844387ebdf1ba0a18ce
   - enabled: 1
-    path: Assets/Scenes/game/game-level-hard.unity
-    guid: 531ffc293fee22d428f3cf7ed797f388
+    path: Assets/Scenes/game/game-level1-hard.unity
+    guid: a57aab75c604ba54692c243e006c01b7
   - enabled: 1
     path: Assets/Scenes/game/game-level2-simple.unity
     guid: 8bd365ac82bf72947aef10c276f1c61e
@@ -113,4 +113,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/\u984C\u76EE/\u984C\u76EE25.unity"
     guid: 85e0eb47a6e7f324583c580b8dd4f7bf
+  - enabled: 0
+    path: Assets/Scenes/game/game-level-hard.unity
+    guid: 531ffc293fee22d428f3cf7ed797f388
   m_configObjects: {}
