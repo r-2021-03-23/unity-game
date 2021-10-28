@@ -40,14 +40,16 @@ public class questionController : MonoBehaviour
                 GetComponent<isClicked>().clicked = true;
                 answerCorrect = 2;
             }
-            else
+            else 
             {
                 this.image.color = Color.red;
                 text.text = "false...";
                 GetComponent<isClicked>().clicked = true;
                 answerCorrect = 1;
             }
-        a = 1;    
+
+            
+       a = 1;    
     }
 
 }

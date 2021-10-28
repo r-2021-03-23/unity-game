@@ -33,6 +33,13 @@ public class star : MonoBehaviour
                     images[QuestionThrough.y].color = Color.red;
                 }
             }
+            if(questionController.answerCorrect == 0)
+            {
+                if (QuestionThrough.through[QuestionThrough.y] == true)
+                {
+                    images[QuestionThrough.y].color = Color.red;
+                }
+            }
         }
    
     }
