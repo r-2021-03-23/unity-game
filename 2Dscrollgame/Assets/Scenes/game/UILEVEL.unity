@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 21709835}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 643288119}
+        m_TargetAssemblyTypeName: TITLE_LEVEL1_1, Assembly-CSharp
+        m_MethodName: level3_1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &21709835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,7 +504,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 142423683}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 643288119}
+        m_TargetAssemblyTypeName: TITLE_LEVEL1_1, Assembly-CSharp
+        m_MethodName: level2_3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &142423683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,7 +819,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 518769007}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 643288119}
+        m_TargetAssemblyTypeName: TITLE_LEVEL1_1, Assembly-CSharp
+        m_MethodName: level3_3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &518769007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1609,7 +1645,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1189161949}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 643288119}
+        m_TargetAssemblyTypeName: TITLE_LEVEL1_1, Assembly-CSharp
+        m_MethodName: level3_2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1189161949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1992,7 +2040,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 643288119}
         m_TargetAssemblyTypeName: TITLE_LEVEL1_1, Assembly-CSharp
-        m_MethodName: level1_normal
+        m_MethodName: level1_2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2145,7 +2193,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 643288119}
         m_TargetAssemblyTypeName: TITLE_LEVEL1_1, Assembly-CSharp
-        m_MethodName: level2_simple
+        m_MethodName: level2_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2724,7 +2772,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 643288119}
         m_TargetAssemblyTypeName: TITLE_LEVEL1_1, Assembly-CSharp
-        m_MethodName: level1_hard
+        m_MethodName: level1_3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2874,7 +2922,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2090427589}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 643288119}
+        m_TargetAssemblyTypeName: TITLE_LEVEL1_1, Assembly-CSharp
+        m_MethodName: level2_2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2090427589
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15,8 +15,9 @@ public class player : MonoBehaviour
     bool isGround;
     
     
-    public static int x=0;
+    public static int x=0,xy = 0;
 
+    
     public GameObject BulletPrefab;
     
     public GameObject gameOver;
@@ -159,8 +160,50 @@ public class player : MonoBehaviour
             hp -= 1;
 
         }
-        if(other.gameObject.CompareTag("下一關"))
+        if(other.gameObject.CompareTag("下一關1"))
         {
+            xy = 2;
+            GetComponent<loadLevel>().LoadLevel();
+        }
+        if(other.gameObject.CompareTag("下一關2"))
+        {
+            xy = 3;
+            GetComponent<loadLevel>().LoadLevel();
+        }
+        if(other.gameObject.CompareTag("下一關3"))
+        {
+             xy = 4;
+            GetComponent<loadLevel>().LoadLevel();
+        }
+        if(other.gameObject.CompareTag("下一關4"))
+        {
+             xy = 5;
+            GetComponent<loadLevel>().LoadLevel();
+        }
+        if(other.gameObject.CompareTag("下一關5"))
+        { 
+            xy = 6;
+            GetComponent<loadLevel>().LoadLevel();
+        }
+        if(other.gameObject.CompareTag("下一關6"))
+        {
+             xy = 7;
+            GetComponent<loadLevel>().LoadLevel();
+        }
+        if(other.gameObject.CompareTag("下一關7"))
+        {
+             xy = 8;
+            
+            GetComponent<loadLevel>().LoadLevel();
+        }
+        if(other.gameObject.CompareTag("下一關8"))
+        {
+            xy = 9;
+            GetComponent<loadLevel>().LoadLevel();
+        }
+        if(other.gameObject.CompareTag("下一關9"))
+        {
+            xy = 10;
             GetComponent<loadLevel>().LoadLevel();
         }
     }  
