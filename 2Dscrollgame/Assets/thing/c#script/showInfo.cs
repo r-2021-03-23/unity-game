@@ -47,6 +47,10 @@ public class showInfo : MonoBehaviour
         {
             Invoke("wait",5f);
         }
+        else if(GetComponent<playerBulletSpeedAndLength>().x == 6)
+        {
+             Invoke("wait",5f);
+        }
       
     }
 

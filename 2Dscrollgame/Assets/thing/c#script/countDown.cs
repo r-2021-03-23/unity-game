@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class countDown : MonoBehaviour
 {
-    public int setTime = 20;
+    public static int setTime =20;
     public Text countdown,TimesUp;
     public static int r;
     public bool start = true;
@@ -16,6 +16,7 @@ public class countDown : MonoBehaviour
          
          co = StartCoroutine(count());
          r = QuestionThrough.r;
+        setTime =20;
     }
 
     // Update is called once per frame

@@ -64,6 +64,9 @@ public class playerBulletSpeedAndLength : MonoBehaviour
         {
             x=5;
         }
- 
+        if(GetComponent<isClicked>().clicked == false && countDown.setTime == 0)
+        {
+            x = 6;
+        }
     }
 }

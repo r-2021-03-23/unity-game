@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class QuestionThrough : MonoBehaviour
 {
     public static bool[] through = {false,false,false,false,false,false,false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
-    public static int r,y;
+    public static int r,y,x;
     
     public Rigidbody2D rb;
     // Start is called before the first frame update
@@ -23,11 +23,12 @@ public class QuestionThrough : MonoBehaviour
     {
         if(other.gameObject.CompareTag("題目-1") && through[0] == false)
         {
-            r = Random.Range (0,2);
+            r = Random.Range (0,30);
 
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[0] = true;
             y = 0;
+            x = 0;
             player.CanPlay = false;
         }
 
@@ -38,6 +39,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[1] = true;
             y = 1;
+            x = 1;
             player.CanPlay = false;
         }
         if(other.gameObject.CompareTag("題目2-1") && through[2] == false)
@@ -47,6 +49,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[2] = true;
             y = 0;
+            x = 2;
             player.CanPlay = false;
         }
 
@@ -57,6 +60,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[3] = true;
             y = 1;
+            x = 3;
             player.CanPlay = false;
         }
         if(other.gameObject.CompareTag("題目3-1") && through[4] == false)
@@ -66,6 +70,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[4] = true;
             y = 0;
+            x = 4;
             player.CanPlay = false;
         }
 
@@ -76,6 +81,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[5] = true;
             y = 1;
+            x = 5;
             player.CanPlay = false;
         }
         if(other.gameObject.CompareTag("題目4-1") && through[6] == false)
@@ -85,6 +91,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[6] = true;
             y = 0;
+            x = 6;
             player.CanPlay = false;
         }
 
@@ -95,6 +102,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[7] = true;
             y = 1;
+            x = 7;
             player.CanPlay = false;
         }
         if(other.gameObject.CompareTag("題目4-3") && through[8] == false)
@@ -104,6 +112,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[8] = true;
             y = 2;
+            x = 8;
             player.CanPlay = false;
         }
         if(other.gameObject.CompareTag("題目5-1") && through[9] == false)
@@ -113,6 +122,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[9] = true;
             y = 0;
+            x = 9;
             player.CanPlay = false;
         }
 
@@ -123,6 +133,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[10] = true;
             y = 1;
+            x = 10;
             player.CanPlay = false;
         }
         if(other.gameObject.CompareTag("題目5-3") && through[11] == false)
@@ -132,6 +143,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[11] = true;
             y = 2;
+            x = 11;
             player.CanPlay = false;
         }
         if(other.gameObject.CompareTag("題目6-1") && through[12] == false)
@@ -141,6 +153,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[12] = true;
             y = 0;
+            x = 12;
             player.CanPlay = false;
         }
 
@@ -151,6 +164,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[13] = true;
             y = 1;
+            x = 13;
             player.CanPlay = false;
         }
         if(other.gameObject.CompareTag("題目6-3") && through[14] == false)
@@ -160,6 +174,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[14] = true;
             y = 2;
+            x = 14;
             player.CanPlay = false;
         }
         if(other.gameObject.CompareTag("題目7-1") && through[15] == false)
@@ -169,6 +184,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[15] = true;
             y = 0;
+            x = 15;
             player.CanPlay = false;
         }
 
@@ -179,6 +195,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[16] = true;
             y = 1;
+            x = 16;
             player.CanPlay = false;
         }
         if(other.gameObject.CompareTag("題目7-3") && through[17] == false)
@@ -188,6 +205,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[17] = true;
             y = 2;
+            x = 17;
             player.CanPlay = false;
         }       
         if(other.gameObject.CompareTag("題目8-1") && through[18] == false)
@@ -197,6 +215,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[18] = true;
             y = 0;
+            x = 18;
             player.CanPlay = false;
         }
 
@@ -207,6 +226,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[19] = true;
             y = 1;
+            x = 19;
             player.CanPlay = false;
         }
         if(other.gameObject.CompareTag("題目8-3") && through[20] == false)
@@ -216,6 +236,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[20] = true;
             y = 2;
+            x = 20;
             player.CanPlay = false;
         }
         if(other.gameObject.CompareTag("題目9-1") && through[21] == false)
@@ -225,6 +246,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[21] = true;
             y = 0;
+            x = 21;
             player.CanPlay = false;
         }
 
@@ -235,6 +257,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[22] = true;
             y = 1;
+            x = 22;
             player.CanPlay = false;
         }
         if(other.gameObject.CompareTag("題目9-3") && through[23] == false)
@@ -244,6 +267,7 @@ public class QuestionThrough : MonoBehaviour
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[23] = true;
             y = 2;
+            x = 23;
             player.CanPlay = false;
         }  
     }
