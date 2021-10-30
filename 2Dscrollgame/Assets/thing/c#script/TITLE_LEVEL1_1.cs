@@ -35,37 +35,98 @@ public class TITLE_LEVEL1_1: MonoBehaviour
 
     public void level1_2()
     {
-        SceneManager.LoadScene("game-level1-normal");
+        if(player.xy >= 2)
+        {
+             SceneManager.LoadScene("game-level1-normal");
+        }
+        else
+        {
+            text.SetActive(true);
+        }
     }
 
     public void level1_3()
     {
-        SceneManager.LoadScene("game-level1-hard");
+        if(player.xy >= 3)
+        {
+            SceneManager.LoadScene("game-level1-hard");
+        }
+        else
+        {
+            text.SetActive(true);
+        }
     }
 
     public void level2_1()
     {
-        SceneManager.LoadScene("game-level1-simple");
+        if(player.xy >= 4)
+        {
+            SceneManager.LoadScene("game-level2-simple");
+        }
+        else
+        {
+            text.SetActive(true);
+        }
     }
 
     public void level2_2()
     {
-        SceneManager.LoadScene("game-level2-normal");
+        if(player.xy >=5)
+        {
+            SceneManager.LoadScene("game-level2-normal");
+        }
+        else
+        {
+            text.SetActive(true);
+        }
+        
     }
     public void level2_3()
     {
-        SceneManager.LoadScene("game-level2-hard");
+        if(player.xy >= 6)
+        {
+             SceneManager.LoadScene("game-level2-hard");
+        }
+        else
+        {
+            text.SetActive(true);
+        }
+       
     }
     public void level3_1()
     {
-        SceneManager.LoadScene("game-level2-simple");
+        if(player.xy >= 7)
+        {
+            SceneManager.LoadScene("game-level2-simple");
+        }
+        else
+        {
+            text.SetActive(true);
+        }
+        
     }
     public void level3_2()
     {
-        SceneManager.LoadScene("game-level3-normal");
+        if(player.xy >= 8)
+        {
+            SceneManager.LoadScene("game-level3-normal");
+        }
+        else
+        {
+            text.SetActive(true);
+        }
+        
     }
     public void level3_3()
     {
-        SceneManager.LoadScene("game-level1-hard");
+        if(player.xy >= 9)
+        {
+           SceneManager.LoadScene("game-level1-hard");
+        }
+        else
+        {
+            text.SetActive(true);
+        }
+        
     }
 }
