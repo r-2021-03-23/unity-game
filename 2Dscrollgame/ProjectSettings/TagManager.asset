@@ -55,6 +55,15 @@ TagManager:
   - "\u984C\u76EE9-1"
   - "\u984C\u76EE9-2"
   - "\u984C\u76EE9-3"
+  - "\u4E0B\u4E00\u95DC1"
+  - "\u4E0B\u4E00\u95DC2"
+  - "\u4E0B\u4E00\u95DC3"
+  - "\u4E0B\u4E00\u95DC4"
+  - "\u4E0B\u4E00\u95DC5"
+  - "\u4E0B\u4E00\u95DC6"
+  - "\u4E0B\u4E00\u95DC7"
+  - "\u4E0B\u4E00\u95DC8"
+  - "\u4E0B\u4E00\u95DC9"
   layers:
   - Default
   - TransparentFX
