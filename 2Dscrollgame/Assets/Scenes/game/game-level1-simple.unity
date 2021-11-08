@@ -11380,16 +11380,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 47416179}
     m_Modifications:
     - target: {fileID: 1729292204425420741, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 187.2599
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729292204425420741, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 31.9189
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729292204425420741, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1729292204425420741, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 200.5
+      value: 196
       objectReference: {fileID: 0}
     - target: {fileID: 1729292204425420741, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -49.6
+      value: -47
       objectReference: {fileID: 0}
     - target: {fileID: 1729292204898055435, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_FontData.m_Font
@@ -11477,7 +11485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1729292205401690709, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.6306
+      value: -0.00005722
       objectReference: {fileID: 0}
     - target: {fileID: 1729292205401690709, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_AnchoredPosition.y

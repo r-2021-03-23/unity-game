@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3585465737579781170}
   m_Layer: 0
   m_Name: "\u4ED9\u4EBA\u638C"
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,6 +45,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -104,6 +105,9 @@ MonoBehaviour:
   player: {fileID: 0}
   span: 2
   delta: 0
+  potPrefab: {fileID: 0}
+  rageValue: {fileID: 0}
+  release: {fileID: 0}
 --- !u!61 &3585465737579781170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -173,6 +177,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -255,6 +260,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1

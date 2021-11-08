@@ -28,7 +28,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729292204425420746}
   m_LocalRotation: {x: -0.022704517, y: -0, z: -0, w: 0.9997422}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0675}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1729292204898055432}
@@ -37,8 +37,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -2.602, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 195, y: -37.999977}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 355.47488, y: -78.515045}
+  m_SizeDelta: {x: 211.0502, y: 42.6245}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1729292204425420742
 CanvasRenderer:
@@ -371,8 +371,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -126.10101}
-  m_SizeDelta: {x: 603.2612, y: 147.0527}
+  m_AnchoredPosition: {x: 34, y: -328}
+  m_SizeDelta: {x: 1005.1816, y: 248.3497}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1729292205401690711
 CanvasRenderer:
@@ -480,6 +480,7 @@ MonoBehaviour:
   - "\u738B\u5B50:\u53EF\u60E1\u7684\u7D2B\u5DD4\u8ECD\u5718\uFF0C\u6211\u8981\u60F3\u8FA6\u6CD5\u6551\u56DE\u516C\u4E3B\u3002"
   - "\u738B\u5B50:\u6211\u4E00\u5B9A\u8981\u6551\u56DE\u516C\u4E3B\u3002"
   - 
-  typingSpeed: 0.2
+  index: 0
+  pb: {fileID: 0}
   continueButton: {fileID: 1729292204425420746}
   animator: {fileID: 1729292205401690710}

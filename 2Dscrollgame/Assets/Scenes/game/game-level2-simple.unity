@@ -8703,7 +8703,7 @@ PrefabInstance:
     - target: {fileID: 1441707666834253116, guid: b36d4ced986f04ff7a91e0daea6ddbc8, type: 3}
       propertyPath: cam
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 902410108}
     - target: {fileID: 1441707666834253117, guid: b36d4ced986f04ff7a91e0daea6ddbc8, type: 3}
       propertyPath: firePoint
       value: 
