@@ -247,7 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   max_hp: 10
   hp_bar: {fileID: 0}
-  BulletPrefab: {fileID: 0}
+  BulletPrefab: {fileID: 6487392695016408204, guid: e4e5acc423296fb41b9950beff26243d, type: 3}
   dialog: {fileID: 0}
   player: {fileID: 0}
   span: 0.5
