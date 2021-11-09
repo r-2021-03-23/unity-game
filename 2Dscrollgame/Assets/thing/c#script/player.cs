@@ -66,36 +66,38 @@ public class player : MonoBehaviour
             hp = max_hp;
         }
 
-        horizontalMove = Input.GetAxisRaw("Horizontal") * speed;
-        if(Input.GetButton("right") && Time.timeScale == 1 && CanPlay == true)
+        horizontalMove = Input.GetAxis("Horizontal") * speed;
+       
+        
+        if(horizontalMove > 0 && Time.timeScale == 1 && CanPlay == true && horizontalMove > 0)
         {
             rb.velocity = new Vector2(speed,rb.velocity.y);
             
             
         }
-        if(Input.GetButton("left") && Time.timeScale == 1 && CanPlay == true)
+
+        if(horizontalMove < 0 && Time.timeScale == 1 && CanPlay == true && horizontalMove < 0)
         {
             rb.velocity = new Vector2(-speed,rb.velocity.y);
-            
         }
-            
+
+
         if(Time.timeScale == 1)
             ani.SetFloat("speed",Mathf.Abs(horizontalMove));
 
                 
         
-        if (Input.GetKeyDown(KeyCode.W) && isGround == true && Time.timeScale == 1 && CanPlay == true)
+        if (Input.GetButtonDown("Jump") && isGround == true && Time.timeScale == 1 && CanPlay == true)
         {
            
             rb.AddForce(transform.up * jumpSpeed, ForceMode2D.Impulse);
-            ani.SetBool("isJumping", true);
-            
+            ani.SetBool("isJumping", true); 
         }
-        if (Input.GetKeyUp(KeyCode.W))
+        if(Input.GetButtonUp("Jump"))
         {
-            ani.SetBool("isJumping", false);
-                      
+            ani.SetBool("isJumping", false); 
         }
+
 
         if(horizontalMove < 0 && Time.timeScale == 1 )
         {

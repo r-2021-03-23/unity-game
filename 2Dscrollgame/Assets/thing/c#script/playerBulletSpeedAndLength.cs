@@ -16,7 +16,7 @@ public class playerBulletSpeedAndLength : MonoBehaviour
     void Update()
     {
         delta += Time.deltaTime;
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetButton("Fire"))
         {
             if(delta > span)
             {
