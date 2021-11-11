@@ -56,7 +56,7 @@ public class dialog_center : MonoBehaviour
            pb.GetComponent<Button>().enabled = true;
            Time.timeScale = 1;
         }
-        if(Input.GetKeyDown(KeyCode.Return))
+        if(Input.GetKeyDown(KeyCode.Joystick1Button1) || Input.GetKeyDown(KeyCode.Return))
         {
             NextSentence();
         }

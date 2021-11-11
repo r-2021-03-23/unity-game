@@ -37,7 +37,7 @@ public class dialog : MonoBehaviour
             pb.SetActive(true);
             Time.timeScale = 1f;
         }
-        if(Input.GetKeyDown(KeyCode.Return))
+        if(Input.GetKeyDown(KeyCode.Joystick1Button1) || Input.GetKeyDown(KeyCode.Return))
         {
             NextSentence();
         }

@@ -87,13 +87,13 @@ public class player : MonoBehaviour
 
                 
         
-        if (Input.GetButtonDown("Jump") && isGround == true && Time.timeScale == 1 && CanPlay == true)
+        if (Input.GetKeyDown(KeyCode.Joystick1Button0) && isGround == true && Time.timeScale == 1 && CanPlay == true)
         {
            
             rb.AddForce(transform.up * jumpSpeed, ForceMode2D.Impulse);
             ani.SetBool("isJumping", true); 
         }
-        if(Input.GetButtonUp("Jump"))
+        if(Input.GetKeyUp(KeyCode.Joystick1Button0))
         {
             ani.SetBool("isJumping", false); 
         }
