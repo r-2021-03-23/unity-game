@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
-public class PAUSEMENU_dialogBox : MonoBehaviour
+
+public class pauseMenu1 : MonoBehaviour
 {
     public GameObject pause;
 
-   
     private int x;
     
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -28,22 +27,25 @@ public class PAUSEMENU_dialogBox : MonoBehaviour
         {
             Time.timeScale = 1f;
         }
-
+        if(Input.GetKeyDown(KeyCode.Joystick1Button9))
+        {
+            clickPaused();
+        }
     }
 
     public void clickPaused()
     {   
-        gameObject.SetActive(true);
+       
         pause.SetActive(false);
-        Time.timeScale = 0f;
+        
         x = 0;
     }
 
     public void clickResume()
     {
-        gameObject.SetActive(false);
+        
         pause.SetActive(true);
-        Time.timeScale = 1f;  
+          
         x=1;    
     }
     public void clickMenu()
