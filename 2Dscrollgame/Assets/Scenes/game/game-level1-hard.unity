@@ -1808,6 +1808,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 292317202}
     m_Modifications:
+    - target: {fileID: 1729292204425420741, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 186
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729292204425420741, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30
+      objectReference: {fileID: 0}
     - target: {fileID: 1729292204898055435, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
@@ -1850,11 +1858,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1729292205401690709, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4435575
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1729292205401690709, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4435575
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1729292205401690709, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_LocalScale.z
@@ -2552,8 +2560,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 990560609}
-        m_TargetAssemblyTypeName: PAUSEMENU_dialogBox, Assembly-CSharp
+      - m_Target: {fileID: 2047992544}
+        m_TargetAssemblyTypeName: pauseOut, Assembly-CSharp
         m_MethodName: clickResume
         m_Mode: 1
         m_Arguments:
@@ -3349,8 +3357,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 990560609}
-        m_TargetAssemblyTypeName: PAUSEMENU_dialogBox, Assembly-CSharp
+      - m_Target: {fileID: 2047992544}
+        m_TargetAssemblyTypeName: pauseOut, Assembly-CSharp
         m_MethodName: clickPaused
         m_Mode: 1
         m_Arguments:
@@ -3981,6 +3989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: {fileID: 900837034}
+  pauseMenu: {fileID: 990560607}
 --- !u!1 &991280783
 GameObject:
   m_ObjectHideFlags: 0
@@ -12389,8 +12398,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 990560609}
-        m_TargetAssemblyTypeName: PAUSEMENU_dialogBox, Assembly-CSharp
+      - m_Target: {fileID: 2047992544}
+        m_TargetAssemblyTypeName: pauseOut, Assembly-CSharp
         m_MethodName: clickMenu
         m_Mode: 1
         m_Arguments:
@@ -14661,6 +14670,14 @@ PrefabInstance:
       value: 147.0527
       objectReference: {fileID: 0}
     - target: {fileID: 5948581212169474666, guid: 996ac584662d8514fb964e1f2cd58862, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948581212169474666, guid: 996ac584662d8514fb964e1f2cd58862, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948581212169474666, guid: 996ac584662d8514fb964e1f2cd58862, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -15447,6 +15464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2047992542}
   - component: {fileID: 2047992543}
+  - component: {fileID: 2047992544}
   m_Layer: 0
   m_Name: 'gameScene '
   m_TagString: Untagged
@@ -15507,6 +15525,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ea4a9af4cf99d348a2f9bee19f17dc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2047992544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047992541}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfdcd6fbc750973408c3ebbb682f8c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pause: {fileID: 900837034}
+  pauseMenu: {fileID: 990560607}
 --- !u!1 &2048388750
 GameObject:
   m_ObjectHideFlags: 0

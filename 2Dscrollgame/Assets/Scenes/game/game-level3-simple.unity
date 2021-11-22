@@ -9990,6 +9990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: {fileID: 846755961}
+  pauseMenu: {fileID: 1616088914}
 --- !u!1 &1634303152
 GameObject:
   m_ObjectHideFlags: 0
