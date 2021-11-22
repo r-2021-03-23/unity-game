@@ -21,7 +21,7 @@ public class skyShooting : MonoBehaviour
     void Update()
     {
         delta += Time.deltaTime;
-        if( Input.GetMouseButtonDown(1)&& delta > span)
+        if(Input.GetMouseButtonDown(1)&& delta > span)
         {
             shoot();
             delta = 0f;
