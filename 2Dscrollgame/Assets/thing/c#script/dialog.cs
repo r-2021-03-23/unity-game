@@ -9,7 +9,7 @@ public class dialog : MonoBehaviour
     public  string[] sentences;
     public int index;
     
-    public GameObject pb;
+    
 
     public GameObject continueButton;
 
@@ -29,12 +29,12 @@ public class dialog : MonoBehaviour
         }
         if(animator.GetBool("IsOpen") == true)
         {
-            pb.SetActive(false); 
+            
             Time.timeScale = 0f;
         }
         if(animator.GetBool("IsOpen") == false)
         {
-            pb.SetActive(true);
+            
             Time.timeScale = 1f;
         }
         if(Input.GetKeyDown(KeyCode.Joystick1Button1) || Input.GetKeyDown(KeyCode.Return))

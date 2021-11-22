@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class pauseOut: MonoBehaviour
 {
-    public GameObject pause,pauseMenu;
+    public GameObject pause,pauseMenu,resume;
     
+    public GameObject[] things;
     public static bool isGamePaused = false;
     // Start is called before the first frame update
     void Start()
@@ -19,23 +20,27 @@ public class pauseOut: MonoBehaviour
         if(isGamePaused == true)
         {
             Time.timeScale = 0f;
+            for(int i = 0;i<things.Length;i++)
+            {
+                things[i].SetActive(false);
+            }
         }
         else
         {
             Time.timeScale = 1f;
+            for(int i = 0;i<things.Length;i++)
+            {
+                things[i].SetActive(true);
+            }
         }
-        if(Input.GetKeyDown(KeyCode.JoystickButton9))
+
+        if(Input.GetKeyDown(KeyCode.Joystick1Button5))
         {
-            if(isGamePaused)
-            {
-                clickPaused();
-                Time.timeScale = 0f;  
-            }
-            else
-            {
-                clickResume();
-                Time.timeScale = 1f;  
-            }
+            clickPaused();
+        }
+        if(Input.GetKeyDown(KeyCode.Joystick1Button7))
+        {
+            clickResume();
         }
     }
 
@@ -43,6 +48,7 @@ public class pauseOut: MonoBehaviour
     {   
         pauseMenu.SetActive(true);
         pause.SetActive(false);
+        resume.SetActive(true);
         isGamePaused = true;
     }
 
@@ -50,6 +56,7 @@ public class pauseOut: MonoBehaviour
     {
         pauseMenu.SetActive(false);
         pause.SetActive(true);
+        resume.SetActive(false);
         isGamePaused = false;  
     }
     public void clickMenu()

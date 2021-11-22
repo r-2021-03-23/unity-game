@@ -26,6 +26,14 @@ public class floorMove : MonoBehaviour
         {
             nextPos = pos1.position;
         }
-        transform.position = Vector3.MoveTowards(transform.position,nextPos,speed*Time.deltaTime);
+        if(Time.timeScale == 1f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position,nextPos,speed*Time.deltaTime);
+        }
+        else
+        {
+             transform.position = Vector3.MoveTowards(transform.position,transform.position,speed*Time.deltaTime);
+        }
+        
     }
 }
