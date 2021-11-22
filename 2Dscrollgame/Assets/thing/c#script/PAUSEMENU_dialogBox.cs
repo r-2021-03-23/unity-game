@@ -28,8 +28,7 @@ public class PAUSEMENU_dialogBox : MonoBehaviour
         {
             Time.timeScale = 1f;
         }
-  
-        
+
     }
 
     public void clickPaused()
