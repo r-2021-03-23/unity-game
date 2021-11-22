@@ -1726,6 +1726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 461282025}
   - component: {fileID: 461282026}
+  - component: {fileID: 461282027}
   m_Layer: 0
   m_Name: gameScene
   m_TagString: Untagged
@@ -1778,6 +1779,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ea4a9af4cf99d348a2f9bee19f17dc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &461282027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461282024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfdcd6fbc750973408c3ebbb682f8c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pause: {fileID: 1178202665}
+  pauseMenu: {fileID: 1369980997}
 --- !u!1 &479056802
 GameObject:
   m_ObjectHideFlags: 0
@@ -3200,7 +3215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 17469302}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &921269762
@@ -5277,6 +5292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: {fileID: 1178202665}
+  pauseMenu: {fileID: 1369980997}
 --- !u!1 &1382921587
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,6 +26,10 @@ public class countDown : MonoBehaviour
         {
             StopCoroutine(co);
         }
+        if(setTime == 0)
+        {
+            TimesUp.text = "答題時間到了!";
+        }
     }
     IEnumerator count()
     {
