@@ -27,7 +27,7 @@ public class pauseMenu1 : MonoBehaviour
         {
             Time.timeScale = 1f;
         }
-        if(Input.GetKeyDown(KeyCode.Joystick1Button9))
+        if(Input.GetButton("pause"))
         {
             clickPaused();
         }
