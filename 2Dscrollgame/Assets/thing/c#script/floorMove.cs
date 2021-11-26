@@ -9,6 +9,7 @@ public class floorMove : MonoBehaviour
     public float speed;
     public Transform startPos;
 
+
     Vector3 nextPos;
     void Start()
     {
@@ -26,14 +27,16 @@ public class floorMove : MonoBehaviour
         {
             nextPos = pos1.position;
         }
-        if(Time.timeScale == 1f)
+        if(pauseOut.isGamePaused == false)
         {
             transform.position = Vector3.MoveTowards(transform.position,nextPos,speed*Time.deltaTime);
+
         }
-        else
+        if(pauseOut.isGamePaused == true)
         {
-             transform.position = Vector3.MoveTowards(transform.position,transform.position,speed*Time.deltaTime);
+           transform.position = Vector3.MoveTowards(transform.position,transform.position,speed*Time.deltaTime);
         }
+        
         
     }
 }

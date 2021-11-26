@@ -23,7 +23,7 @@ public class QuestionThrough : MonoBehaviour
     {
         if(other.gameObject.CompareTag("題目-1") && through[0] == false)
         {
-            r = Random.Range (0,2);
+            r = Random.Range (0,30);
 
             SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
             through[0] = true;

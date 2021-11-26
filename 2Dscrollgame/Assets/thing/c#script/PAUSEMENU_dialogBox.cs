@@ -47,6 +47,7 @@ public class PAUSEMENU_dialogBox : MonoBehaviour
         pause.SetActive(false);
         resume.SetActive(true);
         isGamePaused = true;
+        Debug.Log("pause!");
     }
 
     public void clickResume()
@@ -54,7 +55,8 @@ public class PAUSEMENU_dialogBox : MonoBehaviour
         pauseMenu.SetActive(false);
         pause.SetActive(true);
         resume.SetActive(false); 
-        isGamePaused = false;   
+        isGamePaused = false;
+        Debug.Log("resume!");   
     }
     public void clickMenu()
     {
