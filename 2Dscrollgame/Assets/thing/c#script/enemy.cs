@@ -4,10 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class enemy : MonoBehaviour
 {
-    private int hp;
-    public int max_hp=10;
+    public static int hp;
+    public int  max_hp=10;
 
-    int  r;
     public GameObject hp_bar;
     public GameObject BulletPrefab;
 
@@ -15,8 +14,6 @@ public class enemy : MonoBehaviour
     public player player;
 
     public float span = 0.5f,delta = 0;
-
-    public GameObject potPrefab;
 
     public Image rageValue,release;
 
@@ -27,23 +24,18 @@ public class enemy : MonoBehaviour
     void Start()
     { 
         hp = max_hp;
-        
     }
 
     // Update is called once per frame
     void Update()
     {
         this.delta += Time.deltaTime;
-
-        if(hp <= 0)
-        {
-            this.gameObject.SetActive(false);
-            r = Random.Range (0,2);
-            if(r == 0)
-            {
-                Instantiate(potPrefab,this.transform.position+new Vector3(0,0,0),Quaternion.identity);  
-            }   
+        
+        if(hp <= 0) 
+        {   
+           this.transform.position = Vector3.zero;
         }
+
         float percent = ((float)hp / (float)max_hp);
         hp_bar.transform.localScale = new Vector3(percent, hp_bar.transform.localScale.y, hp_bar.transform.localScale.z);
 
@@ -74,4 +66,6 @@ public class enemy : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+
+
 }
