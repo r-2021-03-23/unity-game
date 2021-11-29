@@ -1,54 +1,28 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!162 &1
-EditorUserSettings:
-  m_ObjectHideFlags: 0
-  serializedVersion: 4
-  m_ConfigSettings:
-    RecentlyUsedScenePath-0:
-      value: 22424703114646680e0b0227036c58111b12572d2d25237d212c0b36eeb17930e3f532a7f234362820
-      flags: 0
-    RecentlyUsedScenePath-1:
-      value: 22424703114646680e0b0227036c58111b12572d2d25237d212c0b36eeb27930e3f532a7f234362820
-      flags: 0
-    RecentlyUsedScenePath-2:
-      value: 22424703114646680e0b0227036c58111b12572d2d25237d212c0b36eeb27936edf53be8eb742a323016f6
-      flags: 0
-    RecentlyUsedScenePath-3:
-      value: 22424703114646680e0b0227036c58111b12572d2d25237d212c0b36eeb37930e3f532a7f234362820
-      flags: 0
-    RecentlyUsedScenePath-4:
-      value: 22424703114646680e0b0227036c58111b12571f0504030608055326ece92021
-      flags: 0
-    RecentlyUsedScenePath-5:
-      value: 22424703114646680e0b0227036c58111b12572d2d25230339280f27acf53a31f6fe
-      flags: 0
-    RecentlyUsedScenePath-6:
-      value: 22424703114646680e0b0227036c58111b12572d2d25237d212c0b36eeb3792bebea26e5e2742a323016f6
-      flags: 0
-    RecentlyUsedScenePath-7:
-      value: 22424703114646680e0b0227036c58111b12572d2d25237d212c0b36eeb37936edf53be8eb742a323016f6
-      flags: 0
-    RecentlyUsedScenePath-8:
-      value: 22424703114646680e0b0227036c58111b12572d2d25237d212c0b36eeb17936edf53be8eb742a323016f6
-      flags: 0
-    RecentlyUsedScenePath-9:
-      value: 22424703114646680e0b0227036c58111b12572d2d25237d212c0b36eeb1792bebea26e5e2742a323016f6
-      flags: 0
-    UnityRemoteJoystickSource:
-      value: 2f5e570709
-      flags: 0
-    vcSharedLogLevel:
-      value: 0d5e400f0650
-      flags: 0
-  m_VCAutomaticAdd: 1
-  m_VCDebugCom: 0
-  m_VCDebugCmd: 0
-  m_VCDebugOut: 0
-  m_SemanticMergeMode: 2
-  m_VCShowFailedCheckout: 1
-  m_VCOverwriteFailedCheckoutAssets: 1
-  m_VCProjectOverlayIcons: 1
-  m_VCHierarchyOverlayIcons: 1
-  m_VCOtherOverlayIcons: 1
-  m_VCAllowAsyncUpdate: 1
+import neurolab as nl
+import numpy as np
+# Create train samples
+x = np.linspace(-7, 7, 20)
+y = np.sin(x) * 0.5
+size = len(x)
+inp = x.reshape(size, 1)
+tar = y.reshape(size, 1)
+# Create network with 2 layers and random initialized
+net = nl.net.newff([[-7, 7]], [5, 1])
+# Train network
+error = net.train(inp, tar, epochs = 500, show = 100, goal = 0.02)
+# Simulate network
+out = net.sim(inp)
+# Plot result
+import pylab as pl
+pl.subplot(211)
+pl.plot(error)
+pl.xlabel('Epoch number')
+pl.ylabel('error (default SSE)')
+x2 = np.linspace(-6.0, 6.0, 150)
+y2 = net.sim(x2.reshape(x2.size, 1)).reshape(x2.size)
+print(len(y2))
+y3 = out.reshape(size)
+pl.subplot(212)
+pl.plot(x2, y2, '-', x, y, '.', x, y3, 'p')
+pl.legend(['train target', 'net output'])
+pl.show()
