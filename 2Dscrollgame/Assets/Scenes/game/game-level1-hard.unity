@@ -902,6 +902,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1749559833}
+    - target: {fileID: 5531019634117696725, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1906967193}
     - target: {fileID: 5981739472217634618, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
       propertyPath: m_Size.x
       value: 1.9179688
@@ -1344,6 +1348,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1749559833}
+    - target: {fileID: 8784399676315522874, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1906967193}
     - target: {fileID: 8784399676315522875, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: m_Name
       value: "\u6A39\u7CBE(2)"
@@ -1799,6 +1807,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1749559833}
+    - target: {fileID: 2772452406426737592, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1906967193}
     - target: {fileID: 4413969862530651321, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -2278,6 +2290,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1749559833}
+    - target: {fileID: 8784399676315522874, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1906967193}
     - target: {fileID: 8784399676315522875, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: m_Name
       value: "\u6A39\u7CBE(4)"
@@ -2704,6 +2720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pause: {fileID: 794683771}
   pauseMenu: {fileID: 621697105}
+  resume: {fileID: 0}
 --- !u!1001 &623081900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2775,6 +2792,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1749559833}
+    - target: {fileID: 8784399676315522874, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1906967193}
     - target: {fileID: 8784399676315522875, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: m_Name
       value: "\u6A39\u7CBE(1)"
@@ -3172,6 +3193,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1749559833}
+    - target: {fileID: 5531019634117696725, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1906967193}
     - target: {fileID: 5981739472217634618, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
       propertyPath: m_Size.x
       value: 1.9179688
@@ -11085,6 +11110,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1749559833}
+    - target: {fileID: 2772452406426737592, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1906967193}
     - target: {fileID: 4413969862530651321, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -11563,6 +11592,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1749559833}
+    - target: {fileID: 5531019634117696725, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1906967193}
     - target: {fileID: 5981739472217634618, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
       propertyPath: m_Size.x
       value: 1.9179688
@@ -11926,6 +11959,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pause: {fileID: 794683771}
   pauseMenu: {fileID: 621697105}
+  resume: {fileID: 0}
+  things: []
 --- !u!114 &1254154599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12245,6 +12280,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1749559833}
+    - target: {fileID: 2772452406426737592, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1906967193}
     - target: {fileID: 4413969862530651321, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -13563,6 +13602,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1749559833}
+    - target: {fileID: 2772452406426737592, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1906967193}
     - target: {fileID: 4413969862530651321, guid: 18e202d1bab2c294fa4eb1e3d188fa09, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -13707,6 +13750,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1749559833}
+    - target: {fileID: 8784399676315522874, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1906967193}
     - target: {fileID: 8784399676315522875, guid: 07855eb28dd7ec9489dce010339b889c, type: 3}
       propertyPath: m_Name
       value: "\u6A39\u7CBE(3)"
@@ -14541,6 +14588,36 @@ Transform:
   - {fileID: 1293058085}
   m_Father: {fileID: 1006966134}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1906967193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1906967194}
+  m_Layer: 0
+  m_Name: enemydeadspot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1906967194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906967193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -80, y: -8.003908, z: -468.91644}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1914224558
 GameObject:
@@ -15614,6 +15691,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1749559833}
+    - target: {fileID: 5531019634117696725, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1906967193}
     - target: {fileID: 5981739472217634618, guid: 1141459ba73651f4baf3bdb3c78688bf, type: 3}
       propertyPath: m_Size.x
       value: 1.9179688

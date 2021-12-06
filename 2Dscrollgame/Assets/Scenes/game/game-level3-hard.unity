@@ -6470,6 +6470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pause: {fileID: 337654211}
   pauseMenu: {fileID: 81780658}
+  resume: {fileID: 0}
 --- !u!224 &81780660
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6523,6 +6524,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1619815680}
+    - target: {fileID: 3753083249866003565, guid: 6fab0551b596d5c459b952c07a48d027, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 730520178}
     - target: {fileID: 7903693266595084912, guid: 6fab0551b596d5c459b952c07a48d027, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -6758,6 +6763,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1619815680}
+    - target: {fileID: 1134597029933446981, guid: 9006f14bcec7e464884efc6d4d521ee9, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 730520178}
     - target: {fileID: 4138529723165299577, guid: 9006f14bcec7e464884efc6d4d521ee9, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -7513,6 +7522,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1619815680}
+    - target: {fileID: 3753083249866003565, guid: 6fab0551b596d5c459b952c07a48d027, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 730520178}
     - target: {fileID: 7903693266595084912, guid: 6fab0551b596d5c459b952c07a48d027, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -8997,6 +9010,36 @@ Transform:
   m_Father: {fileID: 1821102514}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &730520178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 730520179}
+  m_Layer: 0
+  m_Name: enemydeadspot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &730520179
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730520178}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -50, y: -8.003908, z: -468.91644}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &746877761 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1441707666834253113, guid: b36d4ced986f04ff7a91e0daea6ddbc8, type: 3}
@@ -9214,6 +9257,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1619815680}
+    - target: {fileID: 3753083249866003565, guid: 6fab0551b596d5c459b952c07a48d027, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 730520178}
     - target: {fileID: 7903693266595084912, guid: 6fab0551b596d5c459b952c07a48d027, type: 3}
       propertyPath: m_SortingLayer
       value: 5
@@ -9533,6 +9580,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1619815680}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 730520178}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
 --- !u!4 &984352250 stripped
@@ -9644,6 +9695,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1619815680}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 730520178}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
 --- !u!4 &986774662 stripped
@@ -9825,6 +9880,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1619815680}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 730520178}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
 --- !u!4 &1111761046 stripped
@@ -11076,6 +11135,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1619815680}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 730520178}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
 --- !u!4 &1606359355 stripped
@@ -11608,6 +11671,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1619815680}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 730520178}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
 --- !u!4 &1750946078 stripped
@@ -11916,6 +11983,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1619815680}
+    - target: {fileID: 1134597029933446981, guid: 9006f14bcec7e464884efc6d4d521ee9, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 730520178}
     - target: {fileID: 4138529723165299577, guid: 9006f14bcec7e464884efc6d4d521ee9, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -12645,6 +12716,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 1619815680}
+    - target: {fileID: 1134597029933446981, guid: 9006f14bcec7e464884efc6d4d521ee9, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 730520178}
     - target: {fileID: 4138529723165299577, guid: 9006f14bcec7e464884efc6d4d521ee9, type: 3}
       propertyPath: m_RootOrder
       value: 17

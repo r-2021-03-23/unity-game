@@ -854,6 +854,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 920341221645350542, guid: ea0e608e7e0b14a12bed8c8479d29fa0, type: 3}
+    - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1791986937}
     - target: {fileID: 8580454421325033773, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: m_Name
       value: "\u683C\u6797(1)"
@@ -1629,6 +1633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pause: {fileID: 1082298321}
   pauseMenu: {fileID: 373092860}
+  resume: {fileID: 0}
 --- !u!224 &373092862
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8142,6 +8147,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 920341221645350542, guid: ea0e608e7e0b14a12bed8c8479d29fa0, type: 3}
+    - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1791986937}
     - target: {fileID: 6337475814684377665, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: m_Size.x
       value: 2.3227944
@@ -8786,6 +8795,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1441707666834253113, guid: b36d4ced986f04ff7a91e0daea6ddbc8, type: 3}
   m_PrefabInstance: {fileID: 1766120775}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1791986937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1791986938}
+  m_Layer: 0
+  m_Name: enemydeadspot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1791986938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791986937}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -100, y: -8.003908, z: -468.91644}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1805536731
 GameObject:
   m_ObjectHideFlags: 0
@@ -9044,6 +9083,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 920341221645350542, guid: ea0e608e7e0b14a12bed8c8479d29fa0, type: 3}
+    - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1791986937}
     - target: {fileID: 8580454421325033773, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: m_Name
       value: "\u683C\u6797(2)"
@@ -9125,6 +9168,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 920341221645350542, guid: ea0e608e7e0b14a12bed8c8479d29fa0, type: 3}
+    - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1791986937}
     - target: {fileID: 8580454421325033773, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: m_Name
       value: "\u683C\u6797(4)"
@@ -9241,6 +9288,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 920341221645350542, guid: ea0e608e7e0b14a12bed8c8479d29fa0, type: 3}
+    - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1791986937}
     - target: {fileID: 8580454421325033773, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: m_Name
       value: "\u683C\u6797(3)"

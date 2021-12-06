@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class enemy : MonoBehaviour
 {
-    public static int hp;
+    public int hp;
     public int  max_hp=10;
 
     public GameObject hp_bar;
@@ -19,23 +19,30 @@ public class enemy : MonoBehaviour
 
     public static float rageV;
 
+    public GameObject enemydeadspot;
 
+    float x;
+    public GameObject potPrefab;
+
+    Vector3 oldtransform;
     // Start is called before the first frame update
     void Start()
     { 
-        hp = max_hp;
+        hp = max_hp; 
+        oldtransform = this.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
         this.delta += Time.deltaTime;
-        
+         
         if(hp <= 0) 
         {   
-           this.transform.position = Vector3.zero;
+           this.transform.position = enemydeadspot.transform.position;
         }
 
+       
         float percent = ((float)hp / (float)max_hp);
         hp_bar.transform.localScale = new Vector3(percent, hp_bar.transform.localScale.y, hp_bar.transform.localScale.z);
 
@@ -48,7 +55,14 @@ public class enemy : MonoBehaviour
             }
         }   
 
-  
+        if(hp <= 0)
+        {
+            if(x == 0f) 
+            {
+                Instantiate(potPrefab,oldtransform+new Vector3(0,0,0),Quaternion.identity);
+                x = 1f;
+            }
+        }
 
     }
 

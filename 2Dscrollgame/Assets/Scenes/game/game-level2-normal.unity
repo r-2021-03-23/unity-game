@@ -1451,6 +1451,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 920341221645350542, guid: ea0e608e7e0b14a12bed8c8479d29fa0, type: 3}
+    - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1907615965}
     - target: {fileID: 7152898785215937123, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: m_Controller
       value: 
@@ -1584,6 +1588,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 3113507966237272975, guid: bf84cef65d8c2423aa9f153e66dc1fde, type: 3}
+    - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1907615965}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
 --- !u!4 &547469857 stripped
@@ -1782,6 +1790,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 920341221645350542, guid: ea0e608e7e0b14a12bed8c8479d29fa0, type: 3}
+    - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1907615965}
     - target: {fileID: 7152898785215937123, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: m_Controller
       value: 
@@ -2564,6 +2576,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 920341221645350542, guid: ea0e608e7e0b14a12bed8c8479d29fa0, type: 3}
+    - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1907615965}
     - target: {fileID: 7152898785215937123, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: m_Controller
       value: 
@@ -3397,6 +3413,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 3113507966237272975, guid: bf84cef65d8c2423aa9f153e66dc1fde, type: 3}
+    - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1907615965}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
 --- !u!4 &1203246461 stripped
@@ -4821,6 +4841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pause: {fileID: 1395063150}
   pauseMenu: {fileID: 1448494297}
+  resume: {fileID: 0}
 --- !u!224 &1448494299
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5174,6 +5195,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 920341221645350542, guid: ea0e608e7e0b14a12bed8c8479d29fa0, type: 3}
+    - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1907615965}
     - target: {fileID: 7152898785215937123, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: m_Controller
       value: 
@@ -5264,6 +5289,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 920341221645350542, guid: ea0e608e7e0b14a12bed8c8479d29fa0, type: 3}
+    - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1907615965}
     - target: {fileID: 7152898785215937123, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: m_Controller
       value: 
@@ -6081,6 +6110,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 3113507966237272975, guid: bf84cef65d8c2423aa9f153e66dc1fde, type: 3}
+    - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1907615965}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
 --- !u!4 &1898480181 stripped
@@ -6164,6 +6197,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901036671}
   m_CullTransparentMesh: 1
+--- !u!1 &1907615965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1907615966}
+  m_Layer: 0
+  m_Name: enemydeadspot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1907615966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907615965}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -100, y: -8.003908, z: -468.91644}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1918860646
 GameObject:
   m_ObjectHideFlags: 0
@@ -10953,6 +11016,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 920341221645350542, guid: ea0e608e7e0b14a12bed8c8479d29fa0, type: 3}
+    - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1907615965}
     - target: {fileID: 7152898785215937123, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: m_Controller
       value: 
@@ -11377,6 +11444,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 920341221645350542, guid: ea0e608e7e0b14a12bed8c8479d29fa0, type: 3}
+    - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 1907615965}
     - target: {fileID: 7152898785215937123, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: m_Controller
       value: 

@@ -265,6 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pause: {fileID: 756688196}
   pauseMenu: {fileID: 21299905}
+  resume: {fileID: 0}
 --- !u!224 &21299907
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1377,6 +1378,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 166015160}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 499682676}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
 --- !u!4 &344614996 stripped
@@ -1595,6 +1600,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 166015160}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 499682676}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
 --- !u!4 &430815047 stripped
@@ -1793,6 +1802,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &499682676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 499682677}
+  m_Layer: 0
+  m_Name: enemydeadspot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &499682677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499682676}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -50, y: -8.003908, z: -468.91644}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &528907722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1836,6 +1875,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 6487392695016408204, guid: e4e5acc423296fb41b9950beff26243d, type: 3}
+    - target: {fileID: 3753083249866003565, guid: 6fab0551b596d5c459b952c07a48d027, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 499682676}
     - target: {fileID: 7903693266595084912, guid: 6fab0551b596d5c459b952c07a48d027, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -8797,6 +8840,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 6487392695016408204, guid: e4e5acc423296fb41b9950beff26243d, type: 3}
+    - target: {fileID: 3753083249866003565, guid: 6fab0551b596d5c459b952c07a48d027, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 499682676}
     - target: {fileID: 7903693266595084912, guid: 6fab0551b596d5c459b952c07a48d027, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -9637,6 +9684,10 @@ PrefabInstance:
       propertyPath: rageValue
       value: 
       objectReference: {fileID: 166015160}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 499682676}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
 --- !u!4 &1760388897 stripped
@@ -9692,6 +9743,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 6487392695016408204, guid: e4e5acc423296fb41b9950beff26243d, type: 3}
+    - target: {fileID: 3753083249866003565, guid: 6fab0551b596d5c459b952c07a48d027, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 499682676}
     - target: {fileID: 7903693266595084912, guid: 6fab0551b596d5c459b952c07a48d027, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -10663,6 +10718,10 @@ PrefabInstance:
       propertyPath: BulletPrefab
       value: 
       objectReference: {fileID: 6487392695016408204, guid: e4e5acc423296fb41b9950beff26243d, type: 3}
+    - target: {fileID: 3753083249866003565, guid: 6fab0551b596d5c459b952c07a48d027, type: 3}
+      propertyPath: enemydeadspot
+      value: 
+      objectReference: {fileID: 499682676}
     - target: {fileID: 7903693266595084912, guid: 6fab0551b596d5c459b952c07a48d027, type: 3}
       propertyPath: m_SortingLayer
       value: 2
