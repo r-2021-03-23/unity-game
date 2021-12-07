@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5981739472217634618}
   - component: {fileID: 5531019634117696725}
   - component: {fileID: 3585465737579781170}
+  - component: {fileID: 4556326382326517675}
   m_Layer: 0
   m_Name: "\u4ED9\u4EBA\u638C"
   m_TagString: enemy
@@ -98,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7aaa495fda2ff7418a3a0c1db29bf29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   max_hp: 10
   hp_bar: {fileID: 2833133799105858917}
   BulletPrefab: {fileID: 5096290482238257386, guid: 33b2f7035dd71784993e478361f7a295, type: 3}
@@ -105,9 +107,10 @@ MonoBehaviour:
   player: {fileID: 0}
   span: 2
   delta: 0
-  potPrefab: {fileID: 0}
   rageValue: {fileID: 0}
   release: {fileID: 0}
+  enemydeadspot: {fileID: 0}
+  potPrefab: {fileID: 0}
 --- !u!61 &3585465737579781170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -134,6 +137,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6568432, y: 1.6944916}
   m_EdgeRadius: 0
+--- !u!114 &4556326382326517675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234825704875536222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ec650ecc4ca7e44a3c11d8057d5857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPos: {fileID: 0}
+  pos1: {fileID: 0}
+  pos2: {fileID: 0}
+  ani: {fileID: 0}
+  speed: 1
 --- !u!1 &2833133799105858917
 GameObject:
   m_ObjectHideFlags: 0
