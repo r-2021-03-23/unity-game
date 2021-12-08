@@ -382,6 +382,14 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 162cd3ea54a59d5438945b4db9eb213e, type: 2}
+    - target: {fileID: 6437328663672183299, guid: 9bf66ad3f2aa7f74899c738d8de8a4a9, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437328663672183299, guid: 9bf66ad3f2aa7f74899c738d8de8a4a9, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1697111607
+      objectReference: {fileID: 0}
     - target: {fileID: 6437328663672183356, guid: 9bf66ad3f2aa7f74899c738d8de8a4a9, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -7222,6 +7230,14 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 162cd3ea54a59d5438945b4db9eb213e, type: 2}
+    - target: {fileID: 6437328663672183299, guid: 9bf66ad3f2aa7f74899c738d8de8a4a9, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437328663672183299, guid: 9bf66ad3f2aa7f74899c738d8de8a4a9, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1697111607
+      objectReference: {fileID: 0}
     - target: {fileID: 6437328663672183356, guid: 9bf66ad3f2aa7f74899c738d8de8a4a9, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -9001,6 +9017,14 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 162cd3ea54a59d5438945b4db9eb213e, type: 2}
+    - target: {fileID: 6437328663672183299, guid: 9bf66ad3f2aa7f74899c738d8de8a4a9, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437328663672183299, guid: 9bf66ad3f2aa7f74899c738d8de8a4a9, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1697111607
+      objectReference: {fileID: 0}
     - target: {fileID: 6437328663672183356, guid: 9bf66ad3f2aa7f74899c738d8de8a4a9, type: 3}
       propertyPath: m_RootOrder
       value: 19
