@@ -14158,6 +14158,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1821102514}
     m_Modifications:
     - target: {fileID: 1134597029933446981, guid: 9006f14bcec7e464884efc6d4d521ee9, type: 3}
+      propertyPath: span
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134597029933446981, guid: 9006f14bcec7e464884efc6d4d521ee9, type: 3}
       propertyPath: dialog
       value: 
       objectReference: {fileID: 1729292205156479028}
