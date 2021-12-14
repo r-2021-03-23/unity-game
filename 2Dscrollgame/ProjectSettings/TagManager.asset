@@ -64,6 +64,7 @@ TagManager:
   - "\u4E0B\u4E00\u95DC7"
   - "\u4E0B\u4E00\u95DC8"
   - "\u4E0B\u4E00\u95DC9"
+  - final
   layers:
   - Default
   - TransparentFX

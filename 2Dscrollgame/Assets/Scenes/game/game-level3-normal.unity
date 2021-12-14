@@ -8385,6 +8385,22 @@ PrefabInstance:
       propertyPath: pb
       value: 
       objectReference: {fileID: 756688196}
+    - target: {fileID: 1729292206095999383, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
+      propertyPath: sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729292206095999383, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: "\u738B\u5B50 :\u516C\u4E3B\u4F60\u8981\u6490\u4F4F\u963F\uFF0C\u6211\u5C31\u5FEB\u5230\u4E86\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729292206095999383, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: "\u738B\u5B50: \u6A5F\u95DC\u548C\u6575\u4EBA\u9084\u771F\u591A\u554A\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729292206095999383, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
+      propertyPath: sentences.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
 --- !u!1 &818828873

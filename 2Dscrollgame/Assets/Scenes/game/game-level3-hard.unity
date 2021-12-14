@@ -9671,7 +9671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc19f84f25e1cbf41bb2f1a2c9836e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: UILEVEL
+  sceneName: final
 --- !u!61 &725924034
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9685,7 +9685,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.010159045, y: 0.1262396}
+  m_Offset: {x: 0.002210036, y: 0.005823523}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9696,7 +9696,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.77647036, y: 0.52797353}
+  m_Size: {x: 0.3313842, y: 0.47239667}
   m_EdgeRadius: 0
 --- !u!212 &725924035
 SpriteRenderer:
@@ -9758,8 +9758,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725924032}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 283.48, y: -11.42, z: -944.5685}
-  m_LocalScale: {x: 2.1290998, y: 1.9706, z: 1}
+  m_LocalPosition: {x: 283.27, y: -11.58, z: -944.5685}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1821102514}
   m_RootOrder: 27
@@ -14921,10 +14921,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1729292205299715367}
   sentences:
-  - "\u738B\u5B50:\u4EC0\u9EBC!\u516C\u4E3B\u88AB\u6293\u8D70\u4E86\u3002"
-  - "\u738B\u5B50:\u53EF\u60E1\u7684\u7D2B\u5DD4\u8ECD\u5718\uFF0C\u6211\u8981\u60F3\u8FA6\u6CD5\u6551\u56DE\u516C\u4E3B\u3002"
-  - "\u738B\u5B50:\u6211\u4E00\u5B9A\u8981\u6551\u56DE\u516C\u4E3B\u3002"
-  - 
+  - "\u738B\u5B50 : \u5C31\u5728\u524D\u9762\u4E86\u3002"
+  - "\u738B\u5B50 : \u679C\u7136\u91CD\u5175\u9632\u5B88\u963F\u3002"
   index: 0
   continueButton: {fileID: 1729292204520045992}
   animator: {fileID: 1729292205156479028}
