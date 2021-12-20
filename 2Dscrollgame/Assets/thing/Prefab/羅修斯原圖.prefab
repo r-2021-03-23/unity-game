@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 7903693266595084917}
   - component: {fileID: 3136252042253391805}
   - component: {fileID: 3753083249866003565}
+  - component: {fileID: 5337078987738370212}
   m_Layer: 0
   m_Name: "\u7F85\u4FEE\u65AF\u539F\u5716"
   m_TagString: Untagged
@@ -245,6 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7aaa495fda2ff7418a3a0c1db29bf29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   max_hp: 10
   hp_bar: {fileID: 0}
   BulletPrefab: {fileID: 6487392695016408204, guid: e4e5acc423296fb41b9950beff26243d, type: 3}
@@ -252,6 +254,28 @@ MonoBehaviour:
   player: {fileID: 0}
   span: 0.5
   delta: 0
-  potPrefab: {fileID: 0}
   rageValue: {fileID: 0}
   release: {fileID: 0}
+  enemydeadspot: {fileID: 0}
+  potPrefab: {fileID: 0}
+--- !u!50 &5337078987738370212
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7903693266595084913}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

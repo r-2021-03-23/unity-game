@@ -34,13 +34,14 @@ public class pauseOut: MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.Joystick1Button5))
+         if(Input.GetKeyDown(KeyCode.Joystick1Button9))
         {
-            clickPaused();
+            if(player.isGameOver == false) clickPaused();
+            
         }
         if(Input.GetKeyDown(KeyCode.Joystick1Button7))
         {
-            clickResume();
+            if(player.isGameOver == false) clickResume();
         }
     }
 

@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 3356266792861939603}
   - component: {fileID: 6389051822181888457}
   - component: {fileID: 5980694797499992543}
+  - component: {fileID: 6738982472553093619}
   m_Layer: 0
   m_Name: "\u5E03\u9686\u539F\u5716"
   m_TagString: enemy
@@ -201,6 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7aaa495fda2ff7418a3a0c1db29bf29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   max_hp: 10
   hp_bar: {fileID: 0}
   BulletPrefab: {fileID: 8561975946211281987, guid: ae661ab944f1b504c8f6c42dc0b2f5a9, type: 3}
@@ -208,9 +210,10 @@ MonoBehaviour:
   player: {fileID: 0}
   span: 2
   delta: 0
-  potPrefab: {fileID: 0}
   rageValue: {fileID: 0}
   release: {fileID: 0}
+  enemydeadspot: {fileID: 0}
+  potPrefab: {fileID: 0}
 --- !u!61 &5980694797499992543
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -237,3 +240,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8943337, y: 2.906098}
   m_EdgeRadius: 0
+--- !u!50 &6738982472553093619
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3356266792861939604}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
