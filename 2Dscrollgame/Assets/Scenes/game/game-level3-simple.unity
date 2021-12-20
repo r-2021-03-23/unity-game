@@ -393,8 +393,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: hp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: span
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: dialog
@@ -404,6 +408,10 @@ PrefabInstance:
       propertyPath: hp_bar
       value: 
       objectReference: {fileID: 31208177}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: max_hp
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: player
       value: 
@@ -1169,8 +1177,12 @@ PrefabInstance:
       value: 22793707
       objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: hp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: span
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: dialog
@@ -1180,6 +1192,10 @@ PrefabInstance:
       propertyPath: hp_bar
       value: 
       objectReference: {fileID: 316414618}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: max_hp
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: player
       value: 
@@ -1821,6 +1837,14 @@ PrefabInstance:
       value: 22793707
       objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: hp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: span
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: dialog
       value: 
       objectReference: {fileID: 800826345}
@@ -1828,6 +1852,10 @@ PrefabInstance:
       propertyPath: hp_bar
       value: 
       objectReference: {fileID: 687527670}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: max_hp
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: player
       value: 
@@ -2261,6 +2289,14 @@ PrefabInstance:
       value: 22793707
       objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: hp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: span
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: dialog
       value: 
       objectReference: {fileID: 800826345}
@@ -2268,6 +2304,10 @@ PrefabInstance:
       propertyPath: hp_bar
       value: 
       objectReference: {fileID: 796027769}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: max_hp
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: player
       value: 
@@ -2450,11 +2490,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1729292205401690709, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1729292205401690709, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -293
+      value: -449
       objectReference: {fileID: 0}
     - target: {fileID: 1729292205401690709, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2691,6 +2731,14 @@ PrefabInstance:
       value: 22793707
       objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: hp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: span
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: dialog
       value: 
       objectReference: {fileID: 800826345}
@@ -2698,6 +2746,10 @@ PrefabInstance:
       propertyPath: hp_bar
       value: 
       objectReference: {fileID: 840392000}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: max_hp
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: player
       value: 
@@ -10393,6 +10445,14 @@ PrefabInstance:
       value: 22793707
       objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: hp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: span
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: dialog
       value: 
       objectReference: {fileID: 800826345}
@@ -10400,6 +10460,10 @@ PrefabInstance:
       propertyPath: hp_bar
       value: 
       objectReference: {fileID: 1435736785}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: max_hp
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: player
       value: 
@@ -11392,6 +11456,14 @@ PrefabInstance:
       value: 22793707
       objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: hp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: span
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: dialog
       value: 
       objectReference: {fileID: 800826345}
@@ -11399,6 +11471,10 @@ PrefabInstance:
       propertyPath: hp_bar
       value: 
       objectReference: {fileID: 1864113074}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: max_hp
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: player
       value: 
@@ -11520,6 +11596,14 @@ PrefabInstance:
       value: 22793707
       objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: hp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: span
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: dialog
       value: 
       objectReference: {fileID: 800826345}
@@ -11527,6 +11611,10 @@ PrefabInstance:
       propertyPath: hp_bar
       value: 
       objectReference: {fileID: 1868863665}
+    - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
+      propertyPath: max_hp
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6389051822181888457, guid: be6890227826f06418cbc383a1ca2bb9, type: 3}
       propertyPath: player
       value: 
