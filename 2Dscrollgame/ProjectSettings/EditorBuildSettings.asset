@@ -37,7 +37,10 @@ EditorBuildSettings:
     guid: 8d044e432a3e6a9479bf74eef621d659
   - enabled: 1
     path: Assets/Scenes/game/game-level3-hard.unity
-    guid: cfd90f1ac85bfd1409af5c28e9fdbe25
+    guid: 9bb39887ab57fbb43b0866906add23fb
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: "Assets/Scenes/\u984C\u76EE/\u984C\u76EE1.unity"
     guid: f6c5c917a003218468e06710c71c2bc2

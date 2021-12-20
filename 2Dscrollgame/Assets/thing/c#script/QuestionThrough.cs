@@ -17,7 +17,13 @@ public class QuestionThrough : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(player.isGameOver == true)
+        {
+            for(int i = 0;i<through.Length;i++)
+            {
+                through[i] = false;
+            }
+        }
     }
    void OnTriggerEnter2D(Collider2D other)
     {

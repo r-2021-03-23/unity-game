@@ -11633,7 +11633,7 @@ PrefabInstance:
     - target: {fileID: 6437328663672183298, guid: 9bf66ad3f2aa7f74899c738d8de8a4a9, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 1cc070564d930db48bfddb23a4e69580, type: 2}
+      objectReference: {fileID: 6200000, guid: 3bcf9861e4e5f3743b97936b76c3f8ec, type: 2}
     - target: {fileID: 6437328663672183299, guid: 9bf66ad3f2aa7f74899c738d8de8a4a9, type: 3}
       propertyPath: m_SortingLayer
       value: 1
