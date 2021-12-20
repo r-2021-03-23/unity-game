@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class playerFinal : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Animator ani;
+
+    public Text gameFinish;
 
     float horizontalMove,speed = 3f;
     // Start is called before the first frame update
@@ -44,5 +47,19 @@ public class playerFinal : MonoBehaviour
 
         if(Time.timeScale == 1)
             ani.SetFloat("speed",Mathf.Abs(horizontalMove));
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.tag == "final")
+        {
+            gameFinish.text = "Game Finish!";
+            Invoke("backToLevel",5f);
+        }
+    }
+
+    void backToLevel()
+    {
+        SceneManager.LoadScene("gameStart");
     }
 }

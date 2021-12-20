@@ -20,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/game/game-level1-hard.unity
     guid: 272eb2e88f169a24a855723fdc53dfdb
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/game/game-level2-simple.unity
     guid: 8bd365ac82bf72947aef10c276f1c61e
