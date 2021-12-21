@@ -22,6 +22,7 @@ public class showInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
        a = 0; 
        if(GetComponent<playerBulletSpeedAndLength>().x == 4)
         {
@@ -51,7 +52,7 @@ public class showInfo : MonoBehaviour
         {
              Invoke("wait",5f);
         }
-      
+        
     }
 
     void wait()

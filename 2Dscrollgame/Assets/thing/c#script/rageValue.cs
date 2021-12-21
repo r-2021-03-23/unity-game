@@ -36,9 +36,8 @@ public class rageValue : MonoBehaviour
             rageValues.fillAmount = 0f;
         }
 
-        if(Input.GetKeyDown(KeyCode.V))
+        if(Input.GetKeyDown(KeyCode.V)||Input.GetKeyDown(KeyCode.Joystick1Button4))
         {
-            
             if(rageV >= 0.1f)
             {
                 rageValues.fillAmount = 0f;

@@ -26,7 +26,7 @@ public class cameraChange : MonoBehaviour
     { 
         timecount -= Time.deltaTime;
         time_left_img.fillAmount =  1 - ((timeset - timecount) / timeset);
-        if(Input.GetKeyDown(KeyCode.V))
+        if(Input.GetKeyDown(KeyCode.V) || Input.GetKeyDown(KeyCode.Joystick1Button4))
         {
              if(rageValue.rageV== 0.1f)
             {

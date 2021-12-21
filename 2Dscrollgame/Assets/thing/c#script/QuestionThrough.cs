@@ -2,16 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.LowLevel;
 public class QuestionThrough : MonoBehaviour
 {
     public static bool[] through = {false,false,false,false,false,false,false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
     public static int r,y,x;
     
+    
     public Rigidbody2D rb;
+
+    
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        
     }
 
     // Update is called once per frame
@@ -30,8 +35,8 @@ public class QuestionThrough : MonoBehaviour
         if(other.gameObject.CompareTag("題目-1") && through[0] == false)
         {
             r = Random.Range (0,30);
-
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[0] = true;
             y = 0;
             x = 0;
@@ -42,7 +47,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range (0,30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[1] = true;
             y = 1;
             x = 1;
@@ -52,7 +57,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range (0,30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[2] = true;
             y = 0;
             x = 2;
@@ -63,7 +68,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range (0,30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[3] = true;
             y = 1;
             x = 3;
@@ -73,7 +78,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[4] = true;
             y = 0;
             x = 4;
@@ -84,7 +89,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[5] = true;
             y = 1;
             x = 5;
@@ -94,7 +99,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[6] = true;
             y = 0;
             x = 6;
@@ -105,7 +110,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[7] = true;
             y = 1;
             x = 7;
@@ -115,7 +120,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[8] = true;
             y = 2;
             x = 8;
@@ -125,7 +130,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[9] = true;
             y = 0;
             x = 9;
@@ -136,7 +141,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[10] = true;
             y = 1;
             x = 10;
@@ -146,7 +151,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[11] = true;
             y = 2;
             x = 11;
@@ -156,7 +161,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[12] = true;
             y = 0;
             x = 12;
@@ -167,7 +172,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[13] = true;
             y = 1;
             x = 13;
@@ -177,7 +182,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[14] = true;
             y = 2;
             x = 14;
@@ -187,7 +192,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[15] = true;
             y = 0;
             x = 15;
@@ -198,7 +203,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[16] = true;
             y = 1;
             x = 16;
@@ -208,7 +213,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[17] = true;
             y = 2;
             x = 17;
@@ -218,7 +223,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[18] = true;
             y = 0;
             x = 18;
@@ -229,7 +234,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[19] = true;
             y = 1;
             x = 19;
@@ -239,7 +244,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[20] = true;
             y = 2;
             x = 20;
@@ -249,7 +254,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[21] = true;
             y = 0;
             x = 21;
@@ -260,7 +265,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[22] = true;
             y = 1;
             x = 22;
@@ -270,7 +275,7 @@ public class QuestionThrough : MonoBehaviour
         {
             r = Random.Range(0, 30);
 
-            SceneManager.LoadScene(r+11,LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(r+11,LoadSceneMode.Additive);
             through[23] = true;
             y = 2;
             x = 23;

@@ -26,10 +26,6 @@ public class gameOver : MonoBehaviour
         {
             Time.timeScale = 1f;
         }
-        if(Input.GetKeyDown(KeyCode.Joystick1Button8))
-        {
-            restart();
-        }
     }
 
     public void restart()
