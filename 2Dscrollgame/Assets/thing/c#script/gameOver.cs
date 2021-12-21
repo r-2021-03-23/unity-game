@@ -37,7 +37,15 @@ public class gameOver : MonoBehaviour
         SceneManager.LoadScene(sceneName);
         
     }
+    public void menu()
+    {
+        SceneManager.LoadScene("UILEVEL");
+    }
 
+    public void quit()
+    {
+        Application.Quit();
+    }
     
 
 }
