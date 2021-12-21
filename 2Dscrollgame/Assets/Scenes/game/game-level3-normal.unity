@@ -493,7 +493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rageValues: {fileID: 166015160}
   release: {fileID: 166015162}
-  gameOver: {fileID: 0}
+  gameOver: {fileID: 1994743951}
 --- !u!1 &166635190
 GameObject:
   m_ObjectHideFlags: 3
@@ -11944,7 +11944,7 @@ PrefabInstance:
     - target: {fileID: 7976428303955269010, guid: e39d7c0f56a9fc14d8fef5b20293022d, type: 3}
       propertyPath: gameOver
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1994743951}
     - target: {fileID: 7976428303955269010, guid: e39d7c0f56a9fc14d8fef5b20293022d, type: 3}
       propertyPath: pauseButton
       value: 
@@ -12112,8 +12112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a886482ffcb3a74991f6cdd34f87721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pause: {fileID: 0}
-  sceneName: game-level1-simple
+  pause: {fileID: 756688196}
+  sceneName: game-level3-normal
 --- !u!1001 &2008227905
 PrefabInstance:
   m_ObjectHideFlags: 0

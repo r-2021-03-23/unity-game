@@ -2544,11 +2544,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1729292205401690709, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 1729292205401690709, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -449
+      value: -246
       objectReference: {fileID: 0}
     - target: {fileID: 1729292205401690709, guid: 3c714720bb61d234bb5e43bc496e9714, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3118,7 +3118,7 @@ RectTransform:
   - {fileID: 1440004440}
   - {fileID: 794377631}
   m_Father: {fileID: 1329568786}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3137,8 +3137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a886482ffcb3a74991f6cdd34f87721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pause: {fileID: 0}
-  sceneName: game-level1-simple
+  pause: {fileID: 846755961}
+  sceneName: game-level3-simple
 --- !u!1 &875423441
 GameObject:
   m_ObjectHideFlags: 0
@@ -3433,7 +3433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rageValues: {fileID: 904655476}
   release: {fileID: 904655478}
-  gameOver: {fileID: 0}
+  gameOver: {fileID: 870933279}
 --- !u!1 &934286561
 GameObject:
   m_ObjectHideFlags: 0
@@ -4674,7 +4674,7 @@ PrefabInstance:
     - target: {fileID: 7976428303955269010, guid: e39d7c0f56a9fc14d8fef5b20293022d, type: 3}
       propertyPath: gameOver
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 870933279}
     - target: {fileID: 7976428303955269010, guid: e39d7c0f56a9fc14d8fef5b20293022d, type: 3}
       propertyPath: pauseButton
       value: 
@@ -5080,8 +5080,8 @@ RectTransform:
   - {fileID: 1059720843}
   - {fileID: 230776223}
   - {fileID: 161959123}
-  - {fileID: 800826346}
   - {fileID: 870933280}
+  - {fileID: 800826346}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
