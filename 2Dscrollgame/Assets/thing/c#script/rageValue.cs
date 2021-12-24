@@ -7,6 +7,8 @@ public class rageValue : MonoBehaviour
 {
     public Image rageValues,release;
 
+    public GameObject littleV;
+
     public static float rageV;
 
     public GameObject gameOver;
@@ -31,19 +33,17 @@ public class rageValue : MonoBehaviour
         {
             release.fillAmount = rageValues.fillAmount;
         }
-        if(gameOver.activeSelf == true)
+        if(gameOver.activeSelf == true || littleV.activeSelf == true)
         {
             rageValues.fillAmount = 0f;
         }
 
         if(Input.GetKeyDown(KeyCode.V)||Input.GetKeyDown(KeyCode.Joystick1Button4))
         {
-            if(rageV >= 0.1f)
+            if(rageV >= 0.1f && littleV.activeSelf == true)
             {
                 rageValues.fillAmount = 0f;
-            }
-            
-            
+            } 
         }
     }
 }

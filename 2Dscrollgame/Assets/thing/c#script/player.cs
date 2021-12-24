@@ -28,7 +28,7 @@ public class player : MonoBehaviour
     
     public Animator[] animators;
    
-    public static bool CanPlay = true;
+    public static bool CanPlay;
    
     float horizontalMove = 0f;
     float speed = 3f;
@@ -40,6 +40,7 @@ public class player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
+        CanPlay = true;
     }
 
     // Update is called once per frame

@@ -32,10 +32,9 @@ public class star : MonoBehaviour
             {   
                     images[QuestionThrough.y].color = Color.red;   
             }
-            if(questionController.answerCorrect == 3)
+            if(questionController.answerCorrect == 3 &&  QuestionThrough.through[QuestionThrough.x] == false)
             { 
-                images[QuestionThrough.y].color = Color.white;
-                
+                images[QuestionThrough.y].color = Color.white;    
             }
         }
    

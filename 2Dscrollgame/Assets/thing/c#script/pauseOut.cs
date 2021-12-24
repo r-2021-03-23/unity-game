@@ -67,5 +67,6 @@ public class pauseOut: MonoBehaviour
     public void clickMenu()
     {
         SceneManager.LoadScene("gameStart");
+        isGamePaused = false;
     }
 }

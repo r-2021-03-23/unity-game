@@ -654,6 +654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rageValues: {fileID: 1854691574}
   release: {fileID: 726717065}
+  littleV: {fileID: 1362044507}
   gameOver: {fileID: 402973756}
 --- !u!1 &123786382 stripped
 GameObject:
