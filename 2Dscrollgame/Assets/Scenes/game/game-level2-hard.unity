@@ -406,7 +406,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: c8fe2704028cda14cb075a6af3655bec, type: 3}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: hp
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: span
@@ -418,7 +418,7 @@ PrefabInstance:
       objectReference: {fileID: 636955545}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: max_hp
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: player
@@ -7106,7 +7106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: hp
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: dialog
@@ -7114,7 +7114,7 @@ PrefabInstance:
       objectReference: {fileID: 636955545}
     - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: max_hp
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3094887424437338790, guid: 093c080b54b5383479edb93fb8963058, type: 3}
       propertyPath: player
@@ -7686,7 +7686,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: c8fe2704028cda14cb075a6af3655bec, type: 3}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: hp
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: span
@@ -7698,7 +7698,7 @@ PrefabInstance:
       objectReference: {fileID: 636955545}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: max_hp
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: player
@@ -8856,7 +8856,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: c8fe2704028cda14cb075a6af3655bec, type: 3}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: hp
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: span
@@ -8868,7 +8868,7 @@ PrefabInstance:
       objectReference: {fileID: 636955545}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: max_hp
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: player
@@ -9809,7 +9809,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
       propertyPath: hp
-      value: 9
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
+      propertyPath: span
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
       propertyPath: dialog
@@ -9821,7 +9825,7 @@ PrefabInstance:
       objectReference: {fileID: 149890830}
     - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
       propertyPath: max_hp
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
       propertyPath: player
@@ -10137,7 +10141,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
       propertyPath: hp
-      value: 9
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
+      propertyPath: span
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
       propertyPath: dialog
@@ -10149,7 +10157,7 @@ PrefabInstance:
       objectReference: {fileID: 86756528}
     - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
       propertyPath: max_hp
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
       propertyPath: player
@@ -11397,7 +11405,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
       propertyPath: hp
-      value: 9
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
+      propertyPath: span
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
       propertyPath: dialog
@@ -11409,7 +11421,7 @@ PrefabInstance:
       objectReference: {fileID: 655020918}
     - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
       propertyPath: max_hp
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4251954112705298051, guid: 436b3c6cd90eb468c944331c0a7270d9, type: 3}
       propertyPath: player
@@ -12275,7 +12287,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: c8fe2704028cda14cb075a6af3655bec, type: 3}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: hp
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: span
@@ -12287,7 +12299,7 @@ PrefabInstance:
       objectReference: {fileID: 636955545}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: max_hp
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8181648067917576666, guid: 60c17ad3b247942ba801e7d98640a917, type: 3}
       propertyPath: player
