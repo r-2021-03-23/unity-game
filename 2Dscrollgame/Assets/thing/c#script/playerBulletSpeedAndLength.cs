@@ -45,16 +45,16 @@ public class playerBulletSpeedAndLength : MonoBehaviour
             }
             if(r==1)
             {
-                if(span < 0.1f)
+                if(span < 0.5f)
                 {
                     //text.text = "射速已達上限";
                     x = 4;
-                    span = 0.1f;
+                    span = 0.5f;
                 }
                 else
                 {   //text.text = "射速增加";
                     x = 3;
-                    span -= 0.5f;
+                    span -= 0.2f;
                     
                 }
             }

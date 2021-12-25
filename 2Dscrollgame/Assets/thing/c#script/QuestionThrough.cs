@@ -15,8 +15,8 @@ public class QuestionThrough : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -282,6 +282,15 @@ public class QuestionThrough : MonoBehaviour
             player.CanPlay = false;
         }  
     }
-
-
+    
+    void IS()
+    {
+        if(player.isGameOver == true)
+        {
+            for(int i = 0;i<through.Length;i++)
+            {
+                through[i] = false;
+            }
+        }
+    }
 }

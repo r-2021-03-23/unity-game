@@ -231,7 +231,7 @@ public class player : MonoBehaviour
             rb.AddForce(transform.up * hurtSpeed, ForceMode2D.Impulse);
             ani.SetBool("isJumping", true);
         }
-        if(col.gameObject.CompareTag("floor") || col.gameObject.CompareTag("mainfloor"))
+        if(col.gameObject.CompareTag("floor") || col.gameObject.CompareTag("mainfloor") || col.gameObject.CompareTag("crackFloor"))
         {
             isGround = true;
         } 
@@ -252,7 +252,7 @@ public class player : MonoBehaviour
         {
             ani.SetBool("isJumping", false);
         }
-        if(col.gameObject.CompareTag("floor") || col.gameObject.CompareTag("mainfloor"))
+        if(col.gameObject.CompareTag("floor") || col.gameObject.CompareTag("mainfloor") || col.gameObject.CompareTag("crackFloor"))
         {
             isGround = false;
         }

@@ -97,7 +97,7 @@ public class TITLE_LEVEL1_1: MonoBehaviour
     {
         if(player.xy >= 7)
         {
-            SceneManager.LoadScene("game-level2-simple");
+            SceneManager.LoadScene("game-level3-simple");
         }
         else
         {
@@ -121,7 +121,7 @@ public class TITLE_LEVEL1_1: MonoBehaviour
     {
         if(player.xy >= 9)
         {
-           SceneManager.LoadScene("game-level1-hard");
+           SceneManager.LoadScene("game-level3-hard");
         }
         else
         {

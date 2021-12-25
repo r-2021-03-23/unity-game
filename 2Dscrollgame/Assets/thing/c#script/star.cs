@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class star : MonoBehaviour
 {
-    public  Image[] images;
+    public Image[] images;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +37,7 @@ public class star : MonoBehaviour
                 images[QuestionThrough.y].color = Color.white;    
             }
         }
-   
+  
     }
 
 

@@ -31,6 +31,7 @@ public class gameOver : MonoBehaviour
     public void restart()
     {
         SceneManager.LoadScene(sceneName);
+        player.isGameOver = false;
         
     }
     public void menu()
